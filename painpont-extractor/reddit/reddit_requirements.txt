@@ -1,0 +1,9 @@
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml==4.9.3
+openai>=1.30.0
+python-dotenv==1.0.0
+googlesearch-python==1.2.3
+fastapi==0.104.1
+uvicorn==0.24.0
+anyio>=3.7

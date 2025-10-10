@@ -56,12 +56,11 @@ class PainPointResponse(BaseModel):
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 OPENROUTER_DEFAULT_MODEL = "anthropic/claude-3.5-sonnet"
 
-# Configure logging
+# Configure logging (terminal only)
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('pain_point_analyzer.log'),
         logging.StreamHandler()
     ]
 )
