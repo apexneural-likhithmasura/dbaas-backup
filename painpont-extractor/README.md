@@ -6,9 +6,22 @@ A FastAPI application that extracts pain points from Reddit conversations and ge
 
 - **Pain Point Extraction**: Analyzes Reddit conversations to identify user pain points, frustrations, and unmet needs
 - **Market Gap Generation**: Generates business solutions and market opportunities based on extracted pain points
+- **JSON Data Pipeline**: Process multiple JSON files, extract posts/comments, and generate market insights automatically
+- **Pydantic Validation**: Ensures data integrity with validated models throughout the pipeline
 - **Chained Pipeline**: Automatically passes pain point analysis to solution generator
-- **Flexible Input**: Accepts file uploads or existing file paths
+- **Flexible Input**: Accepts file uploads, file paths, or directories containing JSON files
 - **JSON Output**: Returns structured JSON responses with complete analysis
+
+## Pipeline Modes
+
+### 1. **API Mode** (FastAPI)
+Use the REST API for on-demand analysis with file uploads or paths.
+
+### 2. **Batch Processing Mode** (JSON Pipeline)
+Process multiple JSON files at once using the command-line or programmatic interface.
+
+📖 **See [QUICK_START.md](QUICK_START.md) for the JSON pipeline quick start guide**  
+📖 **See [PIPELINE_README.md](PIPELINE_README.md) for complete pipeline documentation**
 
 ## Setup
 

@@ -4,11 +4,54 @@ from dotenv import load_dotenv
 import os
 import json
 import logging
-from typing import Dict, Any
+from typing import Dict, Any, List, Optional
 from datetime import datetime
+from pydantic import BaseModel, Field
 
 # Load environment variables
 load_dotenv()
+
+
+# ==================== Pydantic Models ====================
+
+class SolutionConcept(BaseModel):
+    """Model for a business solution concept"""
+    name: str = Field(..., description="Clear descriptive name")
+    explanation: str = Field(..., description="2-3 sentence explanation")
+    key_features: List[str] = Field(..., description="Key features or components")
+    value_proposition: str = Field(..., description="Primary value proposition")
+    business_model: str = Field(..., description="Potential business model")
+    pain_points_addressed: List[str] = Field(..., description="Pain points this addresses")
+
+
+class FrameworkSolution(BaseModel):
+    """Model for solutions from a specific framework"""
+    framework_name: str = Field(..., description="Framework name (e.g., Market Segmentation)")
+    solutions: List[SolutionConcept] = Field(..., description="Solution concepts from this framework")
+
+
+class OpportunityAssessment(BaseModel):
+    """Model for opportunity assessment"""
+    rank: int = Field(..., description="Ranking position (1-3)")
+    solution_name: str = Field(..., description="Solution name")
+    market_size_potential: str = Field(..., description="Market size and growth potential")
+    competitive_advantage: str = Field(..., description="Competitive advantage sustainability")
+    implementation_feasibility: str = Field(..., description="Implementation feasibility")
+    category_dominance_potential: str = Field(..., description="Potential for category dominance")
+
+
+class MarketGapAnalysis(BaseModel):
+    """Model for complete market gap analysis"""
+    executive_summary: str = Field(..., description="Brief overview of market opportunity")
+    framework_solutions: List[FrameworkSolution] = Field(..., description="Solutions by framework")
+    opportunity_assessment: List[OpportunityAssessment] = Field(..., description="Top 3 opportunities ranked")
+
+
+class MarketGapResponse(BaseModel):
+    """Model for market gap generation response"""
+    data: MarketGapAnalysis
+    status: str = Field(..., description="Status: success or error")
+    error: Optional[str] = Field(None, description="Error message if any")
 
 # OpenRouter API configuration
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
@@ -25,7 +68,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# System prompt for solution generation - EXACT from document
+# System prompt for solution generation with JSON output
 SOLUTION_GENERATION_SYSTEM_PROMPT = """## Context
 
 I've identified specific pain points within a market through research and customer feedback. Now I need to generate potential business solutions that address these pain points while creating unique value. Rather than rushing to an obvious solution, I want to systematically explore different approaches to solving these problems in ways that could stand out in the market. The goal is to discover opportunities others might miss by considering various dimensions of differentiation and value creation.
@@ -127,7 +170,44 @@ You are an expert Business Opportunity Strategist who specializes in identifying
 - Evaluate each solution for its potential to be "best in its category" in some way
 - Generate solutions across different price points and complexity levels
 - Ensure solutions span both immediate tactical opportunities and longer-term strategic plays
-- Prioritize practical, implementable ideas over theoretical concepts"""
+- Prioritize practical, implementable ideas over theoretical concepts
+
+## CRITICAL: JSON Output Format
+
+You MUST return your analysis as a valid JSON object with the following EXACT structure:
+
+```json
+{
+  "executive_summary": "Brief overview of the identified market opportunity and key solution themes",
+  "framework_solutions": [
+    {
+      "framework_name": "Market Segmentation Framework",
+      "solutions": [
+        {
+          "name": "Solution Name",
+          "explanation": "2-3 sentence explanation",
+          "key_features": ["Feature 1", "Feature 2", "Feature 3"],
+          "value_proposition": "Primary value proposition",
+          "business_model": "Potential business model description",
+          "pain_points_addressed": ["Pain point 1", "Pain point 2"]
+        }
+      ]
+    }
+  ],
+  "opportunity_assessment": [
+    {
+      "rank": 1,
+      "solution_name": "Top Solution Name",
+      "market_size_potential": "Assessment of market size and growth",
+      "competitive_advantage": "Competitive advantage sustainability",
+      "implementation_feasibility": "Implementation feasibility assessment",
+      "category_dominance_potential": "Potential for category dominance"
+    }
+  ]
+}
+```
+
+Return ONLY valid JSON format as specified above. Do not include any text before or after the JSON object."""
 
 
 def generate_solutions(pain_points_data: Dict[str, Any],
@@ -212,17 +292,50 @@ def generate_solutions(pain_points_data: Dict[str, Any],
         response = llm.invoke(messages)
         logger.info("Received solution recommendations from Claude")
         
-        solutions_text = response.content
+        solutions_text = response.content.strip()
         logger.info(f"Response length: {len(solutions_text)} characters")
         
+        # Clean markdown code blocks if present
+        if solutions_text.startswith("```json"):
+            solutions_text = solutions_text[7:]
+        elif solutions_text.startswith("```"):
+            solutions_text = solutions_text[3:]
+        
+        if solutions_text.endswith("```"):
+            solutions_text = solutions_text[:-3]
+        
+        solutions_text = solutions_text.strip()
+        
+        # Parse JSON response
+        try:
+            solutions_json = json.loads(solutions_text)
+            logger.info("Successfully parsed JSON response")
+        except json.JSONDecodeError as e:
+            logger.error(f"JSON parsing error: {str(e)}")
+            logger.error(f"Response text: {solutions_text[:500]}...")
+            # Return text format as fallback
+            return {
+                "data": {"executive_summary": solutions_text, "framework_solutions": [], "opportunity_assessment": []},
+                "status": "success"
+            }
+        
+        # Validate with Pydantic model
+        try:
+            market_gap_analysis = MarketGapAnalysis(**solutions_json)
+            logger.info("Successfully validated with Pydantic model")
+            validated_data = market_gap_analysis.model_dump()
+        except Exception as e:
+            logger.warning(f"Pydantic validation failed: {str(e)}, using raw JSON")
+            validated_data = solutions_json
+        
         result = {
-            "data": solutions_text,
+            "data": validated_data,
             "status": "success"
         }
         
         if output_file:
             with open(output_file, 'w', encoding='utf-8') as f:
-                f.write(solutions_text)
+                json.dump(validated_data, f, indent=2, ensure_ascii=False)
             logger.info(f"Solutions saved to: {output_file}")
             result["output_file"] = output_file
         

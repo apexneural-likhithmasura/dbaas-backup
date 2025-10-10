@@ -4,11 +4,53 @@ from dotenv import load_dotenv
 import os
 import json
 import logging
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional, Any
 from datetime import datetime
+from pydantic import BaseModel, Field
 
 # Load environment variables
 load_dotenv()
+
+
+# ==================== Pydantic Models ====================
+
+class PainPointItem(BaseModel):
+    """Model for a single pain point"""
+    heading: str = Field(..., description="Clear descriptive heading")
+    summary: str = Field(..., description="1-2 sentence summary")
+    quotes: List[str] = Field(..., description="Direct user quotes")
+    frequency_intensity: str = Field(..., description="Note on frequency/intensity")
+
+
+class PainPointCategory(BaseModel):
+    """Model for a category of pain points"""
+    category_name: str = Field(..., description="Category name")
+    pain_points: List[PainPointItem] = Field(..., description="List of pain points in this category")
+
+
+class PriorityRanking(BaseModel):
+    """Model for priority ranking of pain points"""
+    rank: int = Field(..., description="Ranking position")
+    pain_point: str = Field(..., description="Pain point description")
+    frequency: str = Field(..., description="Frequency: high/medium/low")
+    intensity: str = Field(..., description="Intensity: high/medium/low")
+    specificity: str = Field(..., description="Specificity: high/medium/low")
+    solvability: str = Field(..., description="Solvability: high/medium/low")
+    reasoning: str = Field(..., description="Brief explanation of ranking")
+
+
+class PainPointAnalysis(BaseModel):
+    """Model for complete pain point analysis"""
+    summary: str = Field(..., description="Brief overview of major pain points identified")
+    categories: List[PainPointCategory] = Field(..., description="Categorized pain points")
+    priority_ranking: List[PriorityRanking] = Field(..., description="Priority ranked pain points")
+
+
+class PainPointResponse(BaseModel):
+    """Model for pain point extraction response"""
+    data: PainPointAnalysis
+    status: str = Field(..., description="Status: success or error")
+    error: Optional[str] = Field(None, description="Error message if any")
 
 # OpenRouter API configuration
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
@@ -205,15 +247,17 @@ def load_multiple_txt_files(file_paths: List[str]) -> str:
 def extract_pain_points(file_paths: List[str], 
                         api_key: str = None,
                         model: str = None,
-                        temperature: float = 0.7) -> Dict[str, any]:
+                        temperature: float = 0.7,
+                        input_format: str = "txt") -> Dict[str, any]:
     """
-    Extract pain points from TXT files containing Reddit data using Claude via OpenRouter.
+    Extract pain points from TXT or JSON files containing Reddit data using Claude via OpenRouter.
     
     Args:
-        file_paths: List of paths to TXT files containing Reddit conversations
+        file_paths: List of paths to TXT or JSON files containing Reddit conversations
         api_key: OpenRouter API key (uses OPENROUTER_API_KEY env var if not provided)
         model: Model to use (default: "anthropic/claude-3.5-sonnet")
         temperature: Model temperature (default: 0.7)
+        input_format: Format of input files - "txt" or "json" (default: "txt")
     
     Returns:
         Dictionary with:
@@ -223,6 +267,8 @@ def extract_pain_points(file_paths: List[str],
     
     Example:
         >>> result = extract_pain_points(["data1.txt", "data2.txt"])
+        >>> # or with JSON
+        >>> result = extract_pain_points(["data.json"], input_format="json")
         >>> if result["status"] == "success":
         ...     print(json.dumps(result["data"], indent=2))
     """
@@ -257,9 +303,23 @@ def extract_pain_points(file_paths: List[str],
                 logger.error(error_msg)
                 return {"data": {}, "status": "error", "error": error_msg}
         
-        # Load all TXT files
-        logger.info("Loading TXT files...")
-        reddit_text = load_multiple_txt_files(file_paths)
+        # Load files based on format
+        if input_format == "json":
+            logger.info("Loading JSON files...")
+            # Load JSON and format for AI
+            reddit_text = ""
+            for file_path in file_paths:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    json_data = json.load(f)
+                # Format JSON nicely for AI to read
+                reddit_text += f"\n{'='*80}\nJSON DATA: {os.path.basename(file_path)}\n{'='*80}\n"
+                reddit_text += json.dumps(json_data, indent=2, ensure_ascii=False) + "\n\n"
+            logger.info(f"Successfully loaded {len(file_paths)} JSON file(s)")
+            logger.info(f"Total length: {len(reddit_text)} characters")
+        else:
+            # Load TXT files (default)
+            logger.info("Loading TXT files...")
+            reddit_text = load_multiple_txt_files(file_paths)
         
         # Initialize LLM
         logger.info(f"Initializing Claude via OpenRouter: {model}")
