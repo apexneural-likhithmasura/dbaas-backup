@@ -146,7 +146,7 @@ class GoogleSearcher:
                 
             search_query = f"{market_term} {keyword}"
             encoded_query = urllib.parse.quote(search_query)
-            search_url = f"https://old.reddit.com/search?q={encoded_query}&sort=relevance&t=all"
+            search_url = f"https://www.reddit.com/search?q={encoded_query}&sort=relevance&t=all"
             
             try:
                 headers = self._get_headers()
