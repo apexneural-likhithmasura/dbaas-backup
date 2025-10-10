@@ -1,0 +1,40 @@
+2025-10-10 07:27:13,830 - fastapi - ERROR - Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2025-10-10 07:31:17,855 - pain_point_extractor - INFO - ================================================================================
+2025-10-10 07:31:17,855 - pain_point_extractor - INFO - Starting pain point extraction
+2025-10-10 07:31:17,857 - pain_point_extractor - INFO - Timestamp: 2025-10-10 07:31:17.855016
+2025-10-10 07:31:17,857 - pain_point_extractor - INFO - Number of files: 1
+2025-10-10 07:31:17,857 - pain_point_extractor - INFO - Model: anthropic/claude-3.5-sonnet
+2025-10-10 07:31:17,857 - pain_point_extractor - INFO - Loading TXT files...
+2025-10-10 07:31:17,857 - pain_point_extractor - INFO - Loading 1 text files
+2025-10-10 07:31:17,857 - pain_point_extractor - INFO - Loading file 1/1: /tmp/tmpg01br0to/test_data.txt
+2025-10-10 07:31:17,857 - pain_point_extractor - INFO - Loading text file: /tmp/tmpg01br0to/test_data.txt
+2025-10-10 07:31:17,858 - pain_point_extractor - INFO - Successfully loaded text file: /tmp/tmpg01br0to/test_data.txt
+2025-10-10 07:31:17,858 - pain_point_extractor - INFO - Text length: 1284 characters
+2025-10-10 07:31:17,858 - pain_point_extractor - INFO - Successfully combined 1 files
+2025-10-10 07:31:17,858 - pain_point_extractor - INFO - Total combined length: 1472 characters
+2025-10-10 07:31:17,858 - pain_point_extractor - INFO - Initializing Claude via OpenRouter: anthropic/claude-3.5-sonnet
+2025-10-10 07:31:17,971 - pain_point_extractor - INFO - Sending request to Claude...
+2025-10-10 07:31:21,644 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-10 07:31:32,880 - pain_point_extractor - INFO - Received response from Claude
+2025-10-10 07:31:32,881 - pain_point_extractor - INFO - Successfully parsed JSON response
+2025-10-10 07:31:32,881 - pain_point_extractor - INFO - Completed in 15.03 seconds
+2025-10-10 07:31:32,881 - pain_point_extractor - INFO - ================================================================================
+2025-10-10 07:31:32,881 - market_gap_generator - INFO - ================================================================================
+2025-10-10 07:31:32,881 - market_gap_generator - INFO - Starting business solution generation
+2025-10-10 07:31:32,881 - market_gap_generator - INFO - Timestamp: 2025-10-10 07:31:32.881306
+2025-10-10 07:31:32,881 - market_gap_generator - INFO - Model: anthropic/claude-3.5-sonnet
+2025-10-10 07:31:32,882 - market_gap_generator - INFO - Temperature: 0.7999999999999999
+2025-10-10 07:31:32,882 - market_gap_generator - INFO - Using OpenRouter API key from environment variables
+2025-10-10 07:31:32,882 - market_gap_generator - INFO - Pain points data length: 3586 characters
+2025-10-10 07:31:32,882 - market_gap_generator - INFO - Initializing Claude via OpenRouter
+2025-10-10 07:31:32,930 - market_gap_generator - INFO - Sending request to Claude for solution generation...
+2025-10-10 07:31:36,066 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-10 07:31:55,663 - market_gap_generator - INFO - Received solution recommendations from Claude
+2025-10-10 07:31:55,663 - market_gap_generator - INFO - Response length: 5003 characters
+2025-10-10 07:31:55,663 - market_gap_generator - INFO - Solution generation completed successfully
+2025-10-10 07:31:55,664 - market_gap_generator - INFO - Total execution time: 22.78 seconds
+2025-10-10 07:31:55,664 - market_gap_generator - INFO - ================================================================================
