@@ -1,3 +1,4 @@
+import logging
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.responses import JSONResponse
 from typing import List, Optional, Dict, Any
@@ -5,12 +6,23 @@ import os
 import tempfile
 import shutil
 import json
-import importlib.util
+import importlib
 import sys
 import asyncio
 from datetime import datetime
 from pydantic import BaseModel, Field
+from typing import Any
 from dotenv import load_dotenv
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger(__name__)
 
 # Import json-extraction module (with hyphen in name)
 spec = importlib.util.spec_from_file_location(
@@ -92,6 +104,13 @@ class CompletePipelineRequest(BaseModel):
 
 class TopicRequest(BaseModel):
     topic: str = Field(..., description="The topic to expand into market categories")
+
+class RedditPostRequest(BaseModel):
+    """Request model for processing Reddit post JSON through pain point extraction and market gap generation"""
+    reddit_post: Dict[str, Any] = Field(..., description="The Reddit post data in JSON format")
+    model: Optional[str] = Field("anthropic/claude-3.5-sonnet", description="AI model to use")
+    temperature: Optional[float] = Field(0.7, description="Model temperature for pain point extraction")
+    solution_temperature: Optional[float] = Field(0.8, description="Model temperature for solution generation")
 
 class PromptResponse(BaseModel):
     message: str
@@ -267,14 +286,17 @@ async def _run_complete_pipeline(
 async def root():
     """Root endpoint with API information"""
     return {
-        "message": "Pain Point & Market Gap Analyzer API",
+        "status": "success", 
+        "message": "API is running", 
         "version": "2.0.0",
-        "endpoints": {
-            "/pipeline/complete": "POST - Complete pipeline: Market query → Reddit → Market Gaps (Recommended)",
-            "/generate-prompt": "POST - Generate market expansion prompts only (no Reddit search)",
-            "/pipeline/status": "GET - Check system status and AI models",
-            "/health": "GET - Health check"
-        },
+        "endpoints": [
+            "/",
+            "/health",
+            "/pipeline/complete",
+            "/pipeline/status",
+            "/generate-prompt",
+            "/analyze-reddit-post"
+        ],
         "features": {
             "ai_powered_expansion": "Claude 3.5 Sonnet",
             "reddit_scraping": "Automated search and analysis",
@@ -398,5 +420,140 @@ async def generate_prompt(request: TopicRequest):
         raise HTTPException(
             status_code=500,
             detail=f"Error generating prompt: {str(e)}"
+        )
+
+
+@app.post("/analyze-reddit-post", response_model=Dict[str, Any])
+async def analyze_reddit_post(
+    files: List[UploadFile] = File(..., description="List of JSON files containing Reddit post data"),
+    model: str = "anthropic/claude-3.5-sonnet",
+    temperature: float = 0.7,
+    solution_temperature: float = 0.8
+):
+    """
+    Process multiple Reddit post JSON files through JSON extraction, pain point extraction, and market gap generation.
+    
+    This endpoint accepts multiple JSON files containing Reddit post data, processes them through the JSON extractor,
+    then sends the combined extracted data to the pain point extractor and market gap generator.
+    
+    Args:
+        files: List of JSON files containing Reddit post data
+        model: AI model to use for processing
+        temperature: Temperature for pain point extraction (0.0 to 1.0)
+        solution_temperature: Temperature for solution generation (0.0 to 1.0)
+        
+    Returns:
+        JSON response with combined extracted data, pain points, and market gap solutions
+    """
+    if not files:
+        raise HTTPException(
+            status_code=400,
+            detail={"status": "error", "message": "No files provided"}
+        )
+    
+    # Check if all files are JSON files
+    for file in files:
+        if not file.filename.lower().endswith('.json'):
+            raise HTTPException(
+                status_code=400,
+                detail={"status": "error", "message": f"File {file.filename} is not a JSON file"}
+            )
+    
+    try:
+        # Create a temporary directory to store the uploaded files
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_files = []
+            
+            # Save all uploaded files
+            for file in files:
+                temp_file_path = os.path.join(temp_dir, file.filename)
+                with open(temp_file_path, 'wb+') as temp_file:
+                    shutil.copyfileobj(file.file, temp_file)
+                temp_files.append(temp_file_path)
+                logger.info(f"Saved file: {file.filename}")
+            
+            # Step 1: Process all JSON files using json_extraction
+            logger.info(f"Processing {len(temp_files)} JSON files...")
+            extracted_data = await asyncio.to_thread(
+                json_extraction.process_multiple_json_files,
+                temp_files
+            )
+            
+            # Save the combined extracted data to a temporary file
+            extracted_file_path = os.path.join(temp_dir, 'combined_extracted_data.json')
+            with open(extracted_file_path, 'w', encoding='utf-8') as f:
+                json.dump(extracted_data.model_dump(), f, ensure_ascii=False, indent=2)
+            
+            # Step 2: Extract pain points from the combined processed data
+            logger.info("Extracting pain points from combined data...")
+            pain_points_result = await asyncio.to_thread(
+                extract_pain_points,
+                file_paths=[extracted_file_path],
+                api_key=os.getenv("OPENROUTER_API_KEY"),
+                model=model,
+                temperature=temperature,
+                input_format="json"
+            )
+            
+            if pain_points_result["status"] != "success":
+                raise HTTPException(
+                    status_code=400,
+                    detail={
+                        "status": "error",
+                        "message": "Failed to extract pain points",
+                        "error": pain_points_result.get("error")
+                    }
+                )
+            
+            pain_points_data = pain_points_result["data"]
+            
+            # Step 3: Generate market gap solutions from combined pain points
+            logger.info("Generating market gap solutions...")
+            solutions_result = await asyncio.to_thread(
+                generate_solutions,
+                pain_points_data=pain_points_data,
+                api_key=os.getenv("OPENROUTER_API_KEY"),
+                model=model,
+                temperature=solution_temperature
+            )
+            
+            if solutions_result["status"] != "success":
+                raise HTTPException(
+                    status_code=400,
+                    detail={
+                        "status": "error",
+                        "message": "Failed to generate solutions",
+                        "error": solutions_result.get("error")
+                    }
+                )
+            
+            # Return the complete analysis
+            return {
+                "status": "success",
+                "file_count": len(files),
+                "extracted_data": extracted_data.model_dump(),
+                "pain_points": pain_points_data,
+                "solutions": solutions_result["data"],
+                "metadata": {
+                    "model": model,
+                    "temperature": {
+                        "pain_points": temperature,
+                        "solutions": solution_temperature
+                    },
+                    "files_processed": [file.filename for file in files],
+                    "timestamp": datetime.utcnow().isoformat()
+                }
+            }
+    
+    except json.JSONDecodeError as e:
+        raise HTTPException(
+            status_code=400,
+            detail={"status": "error", "message": "Invalid JSON file", "error": str(e)}
+        )
+    except Exception as e:
+        logger.error(f"Error in analyze_reddit_post: {str(e)}", exc_info=True)
+        raise HTTPException(
+            status_code=500,
+            detail={"status": "error", "message": "Internal server error", "error": str(e)}
         )
 
