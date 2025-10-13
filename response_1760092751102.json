@@ -1,0 +1,1290 @@
+{
+  "message": "✅ Complete pipeline finished successfully!",
+  "status": "completed",
+  "data": {
+    "market": "senior yoga",
+    "timestamp": "2025-10-10T10:39:11.077050",
+    "reddit_analysis": {
+      "total_posts_found": 30,
+      "posts_ranked": 10,
+      "posts_deep_analyzed": 5
+    },
+    "pain_point_analysis": {
+      "total_pain_points": 5,
+      "categories": 3,
+      "summary": "Analysis reveals several key challenges in senior yoga instruction and practice, with major themes around physical limitations, safety concerns, class management, and accessibility needs. The conversations highlight significant pain points around adapting traditional yoga practices for older practitioners while maintaining effectiveness and ensuring safety."
+    },
+    "market_gaps": {
+      "executive_summary": "The senior yoga market reveals significant opportunities centered around accessibility, safety, and customization needs. Key pain points include floor transition difficulties, mobility limitations, and instructional challenges. Solutions should focus on innovative props, technology-enabled instruction, and specialized training systems.",
+      "total_solutions": 4,
+      "frameworks": 3,
+      "top_opportunities": [
+        {
+          "rank": 1,
+          "solution_name": "Chair Yoga Plus",
+          "market_size_potential": "Large and growing with aging population trends",
+          "competitive_advantage": "Proprietary equipment and comprehensive system approach",
+          "implementation_feasibility": "High - builds on existing chair yoga practices",
+          "category_dominance_potential": "High potential to become industry standard for senior yoga"
+        },
+        {
+          "rank": 2,
+          "solution_name": "SmartProp System",
+          "market_size_potential": "Medium to large, growing with tech adoption in seniors",
+          "competitive_advantage": "First-mover in IoT yoga props for seniors",
+          "implementation_feasibility": "Medium - requires technology development",
+          "category_dominance_potential": "High potential in tech-enabled yoga props category"
+        },
+        {
+          "rank": 3,
+          "solution_name": "Senior Yoga Academy",
+          "market_size_potential": "Medium - targeted at professional instructors",
+          "competitive_advantage": "Comprehensive curriculum and community approach",
+          "implementation_feasibility": "High - can be launched with existing knowledge",
+          "category_dominance_potential": "Medium - potential to become leading certification"
+        }
+      ]
+    },
+    "output_dir": "/root/dbas/backend-final/painpont-extractor/output/senior_yoga",
+    "pain_points": {
+      "summary": "Analysis reveals several key challenges in senior yoga instruction and practice, with major themes around physical limitations, safety concerns, class management, and accessibility needs. The conversations highlight significant pain points around adapting traditional yoga practices for older practitioners while maintaining effectiveness and ensuring safety.",
+      "categories": [
+        {
+          "category_name": "Physical Limitations and Safety Concerns",
+          "pain_points": [
+            {
+              "heading": "Difficulty with Floor Transitions",
+              "summary": "Seniors struggle with getting up and down from the floor multiple times during class",
+              "quotes": [
+                "to reduce the amount of up-and-down from the ground. the folks i have led do not have the mobility to get up-and-down more than 1x a class",
+                "Getting up and down from the floor is something folks lose as they age so we make sure we always practice adaptive ways to do it",
+                "DO NOT GO UP AND DOWN. (I was taught this as The American yoga class.)"
+              ],
+              "frequency_intensity": "High frequency, mentioned across multiple posts with strong emphasis"
+            },
+            {
+              "heading": "Joint and Mobility Issues",
+              "summary": "Many seniors face challenges with specific poses due to joint problems and limited mobility",
+              "quotes": [
+                "many people have knee and hip issues as they age",
+                "high lunge is often hard, due to lack of mobility in the soles of the feet",
+                "You'll hear about knee and hip replacements in the 60s, along with rotator cuff damage"
+              ],
+              "frequency_intensity": "Very high frequency, consistently mentioned across posts"
+            }
+          ]
+        },
+        {
+          "category_name": "Class Management Challenges",
+          "pain_points": [
+            {
+              "heading": "Sequence Adaptation Difficulties",
+              "summary": "Teachers struggle to create appropriate sequences that accommodate varied ability levels",
+              "quotes": [
+                "this seems a bit much for a \"seniors\" class based on the attendees of the \"seniors\" classes I have led",
+                "to set your expectations of the ppl you will have attending \"Yoga for Seniors.\" my experience has folks showing up who are wanting to \"get a good stretch...\"",
+                "It's such a mixed bag--some 75yos are marathoners; some 60yos can barely get around with a walker"
+              ],
+              "frequency_intensity": "High frequency, particularly in instructor discussions"
+            },
+            {
+              "heading": "Communication Challenges",
+              "summary": "Instructors face difficulties in clear communication with senior students",
+              "quotes": [
+                "One thing I've noticed pretty regularly is hearing issues. Music needs to be SOFT, or don't use it at all",
+                "you need to over-enunciate every consonant and speak slowly",
+                "You might need to raise your volume a little as well"
+              ],
+              "frequency_intensity": "Medium frequency, but consistently emphasized"
+            }
+          ]
+        },
+        {
+          "category_name": "Accessibility and Equipment Needs",
+          "pain_points": [
+            {
+              "heading": "Prop and Support Requirements",
+              "summary": "Need for extensive props and support equipment to make poses accessible",
+              "quotes": [
+                "We used 2-3 chairs each. We also went to the wall quite a bit",
+                "Props and modifications are our best friends",
+                "Chairs will be available to assist with balance"
+              ],
+              "frequency_intensity": "High frequency, mentioned as essential requirement"
+            }
+          ]
+        }
+      ],
+      "priority_ranking": [
+        {
+          "rank": 1,
+          "pain_point": "Floor transition difficulties",
+          "frequency": "high",
+          "intensity": "high",
+          "specificity": "high",
+          "solvability": "medium",
+          "reasoning": "Consistently mentioned as a major barrier to practice, affects most senior practitioners"
+        },
+        {
+          "rank": 2,
+          "pain_point": "Joint and mobility limitations",
+          "frequency": "high",
+          "intensity": "high",
+          "specificity": "high",
+          "solvability": "medium",
+          "reasoning": "Widespread issue affecting pose selection and modification needs"
+        },
+        {
+          "rank": 3,
+          "pain_point": "Sequence adaptation challenges",
+          "frequency": "high",
+          "intensity": "medium",
+          "specificity": "high",
+          "solvability": "high",
+          "reasoning": "Critical for class success but can be addressed through better teacher training"
+        },
+        {
+          "rank": 4,
+          "pain_point": "Communication barriers",
+          "frequency": "medium",
+          "intensity": "medium",
+          "specificity": "high",
+          "solvability": "high",
+          "reasoning": "Important for effective instruction but can be addressed through simple adjustments"
+        }
+      ]
+    },
+    "market_gap_solutions": {
+      "executive_summary": "The senior yoga market reveals significant opportunities centered around accessibility, safety, and customization needs. Key pain points include floor transition difficulties, mobility limitations, and instructional challenges. Solutions should focus on innovative props, technology-enabled instruction, and specialized training systems.",
+      "framework_solutions": [
+        {
+          "framework_name": "Market Segmentation Framework",
+          "solutions": [
+            {
+              "name": "Chair Yoga Plus",
+              "explanation": "Comprehensive chair-based yoga system designed specifically for different mobility levels. Includes proprietary chair attachments and support accessories designed for senior safety and comfort.",
+              "key_features": [
+                "Specialized ergonomic chair attachments",
+                "Mobility level classification system",
+                "Progressive difficulty programs"
+              ],
+              "value_proposition": "The safest and most comprehensive chair yoga system specifically engineered for seniors",
+              "business_model": "Product sales (chairs and accessories) + certification program for instructors",
+              "pain_points_addressed": [
+                "Floor transition difficulties",
+                "Joint and mobility limitations"
+              ]
+            },
+            {
+              "name": "Active Agers Program",
+              "explanation": "Specialized program targeting more mobile seniors who want to maintain their activity levels. Focus on strength, balance, and preventative practices.",
+              "key_features": [
+                "Progressive balance training",
+                "Strength maintenance protocols",
+                "Social group practice elements"
+              ],
+              "value_proposition": "Maintain independence and mobility through targeted yoga practices",
+              "business_model": "Subscription-based classes with home practice materials",
+              "pain_points_addressed": [
+                "Sequence adaptation challenges",
+                "Joint and mobility limitations"
+              ]
+            }
+          ]
+        },
+        {
+          "framework_name": "Product Differentiation Framework",
+          "solutions": [
+            {
+              "name": "SmartProp System",
+              "explanation": "IoT-enabled yoga props that provide real-time feedback on alignment and pressure. Includes smart chairs, blocks, and straps that communicate with a mobile app.",
+              "key_features": [
+                "Pressure-sensitive props",
+                "Real-time alignment feedback",
+                "Progress tracking analytics"
+              ],
+              "value_proposition": "Technology-enhanced safety and guidance for senior yoga practice",
+              "business_model": "Hardware sales + subscription for analytics platform",
+              "pain_points_addressed": [
+                "Safety concerns",
+                "Communication challenges"
+              ]
+            }
+          ]
+        },
+        {
+          "framework_name": "Business Model Innovation Framework",
+          "solutions": [
+            {
+              "name": "Senior Yoga Academy",
+              "explanation": "Comprehensive training platform for yoga teachers specializing in senior instruction. Includes certification, continuing education, and community support.",
+              "key_features": [
+                "Specialized certification program",
+                "Video library of modifications",
+                "Instructor community platform"
+              ],
+              "value_proposition": "Become an expert in safe and effective senior yoga instruction",
+              "business_model": "Tiered subscription model for training and certification",
+              "pain_points_addressed": [
+                "Sequence adaptation difficulties",
+                "Communication challenges"
+              ]
+            }
+          ]
+        }
+      ],
+      "opportunity_assessment": [
+        {
+          "rank": 1,
+          "solution_name": "Chair Yoga Plus",
+          "market_size_potential": "Large and growing with aging population trends",
+          "competitive_advantage": "Proprietary equipment and comprehensive system approach",
+          "implementation_feasibility": "High - builds on existing chair yoga practices",
+          "category_dominance_potential": "High potential to become industry standard for senior yoga"
+        },
+        {
+          "rank": 2,
+          "solution_name": "SmartProp System",
+          "market_size_potential": "Medium to large, growing with tech adoption in seniors",
+          "competitive_advantage": "First-mover in IoT yoga props for seniors",
+          "implementation_feasibility": "Medium - requires technology development",
+          "category_dominance_potential": "High potential in tech-enabled yoga props category"
+        },
+        {
+          "rank": 3,
+          "solution_name": "Senior Yoga Academy",
+          "market_size_potential": "Medium - targeted at professional instructors",
+          "competitive_advantage": "Comprehensive curriculum and community approach",
+          "implementation_feasibility": "High - can be launched with existing knowledge",
+          "category_dominance_potential": "Medium - potential to become leading certification"
+        }
+      ]
+    },
+    "extracted_data": {
+      "extracted_data": [
+        {
+          "post": {
+            "title": "Had One of the Most Unpleasant Experiences of My Yoga Teaching Career Today",
+            "content": "\nI've been a yoga teacher for seven years, running classes at a small studio. Today, I had one of the most uncomfortable experiences of my career, and I'm honestly still a bit shaken.\n\nAt our studio, we have a policy of locking the door when class starts. We usually wait around 5 minutes for latecomers, but after that, we lock the door and begin. This is a standard practice in every yoga studio I know in my city—it’s simply unfair to those who arrive on time, and late arrivals disrupt the class.\n\nToday, a new student didn't show up, so I locked the door and started teaching. About 10 minutes in, someone started knocking. At first, I ignored it, but the knocking got louder and more aggressive. Then they started rattling the door handle and shouting, \"Hey!\" over and over. It became so disruptive that I had to apologize to my students, stop the class, and open the door.\n\nOutside was a furious student, yelling at me that she had been knocking for 15 minutes and that it was unacceptable not to let her in just because she was \"a few minutes late.\" I explained our policy and how allowing late arrivals is unfair to the other students who show up on time. After all, if someone is more than 5 minutes late, still needs to change, maybe use the restroom, it creates a disturbance for everyone. She refused to accept this, stormed off, and loudly announced that she would leave me a bad Google review.\n\nI’m honestly shocked. In all my years of teaching, I’ve never experienced anything like this. Has anyone else dealt with something similar? How do you handle situations like this?"
+          },
+          "comments": [
+            {
+              "body": "Shocking behavior. I think you handled it perfectly. Anyone who knows anything about yoga would see that review for what it is."
+            },
+            {
+              "body": "Thank you for the reassurance! I felt pretty shaken up after it happened, and the threat of a bad review has been stressing me out a bit. I did my best to make sure the rest of the class still had a good experience, but it was definitely a distraction for everyone."
+            },
+            {
+              "body": "Honestly I wouldn’t even sweat the bad review. If the person is honest “I was just a feeew minutes late!” Everyone will know that’s the policy of the studio. Or she’ll lie and say she was on time and locked out. No one will believe that, what teacher WANTS fewer students? Most likely you have higher respect from the students in the room for staying professional."
+            },
+            {
+              "body": "All the studios I’ve been to have 0 minutes late policy, this is pretty standard for London. \n\nClearly the new student would have benefited from the class to destress (/s) but poor time management is no one else’s fault."
+            },
+            {
+              "body": "Same.\nWe take it up a notch, closing the door 5 min before class starts.\nWe don't accept tardiness. The class will start on the hour. \nSometimes there is these crazy students banging the door. Sorry but, if your ego is so far up your butt that you think you have the right to steal everyone's peace, just to get yours? You aren't going to be coming to our studio for long. 😆 \n\nFirst time is pretty shocking when someone complains, but mostly everyone appreciates the rule."
+            },
+            {
+              "body": "I completely agree with this!!!  \n\nIf I saw a bad review, who's only gripe was that she was late and couldnt get let inside, I would immediately think this studio is awesome for respecting the other attendees time and effort they took to be there on schedule.  \n\nOnce the class has begun the class has begun. OP, you handled this perfectly. You cant please everyone, especially people as entitled as this who think all rules should be bent for them. Luckily, most sane people will read between the lines of her \"bad review\" (if she does leave one) and will know the problem was HER."
+            },
+            {
+              "body": "if I saw a review like that, I would know that is the studio I want to go to, any studio I have practiced at does the same thing. I would seek out a studio where lateness and entitled behavior is not tolerated"
+            },
+            {
+              "body": "I often look up bad reviews to see if they're bullshit like that.\n\nThere's always going to be some idiot keaving a 1 star and actually revealing why the place is chill!"
+            },
+            {
+              "body": "exactly! I do the same, I also work with the public and know exactly how insufferable \"yelpers' can be and reviews are always one sided, I have noticed lately that places are responding to the reviews which I love"
+            },
+            {
+              "body": "Oh god the responses can also be so telling on a place! When the owner of the establishment starts insultung people for leaving a bad review!"
+            },
+            {
+              "body": "Respond to the bad review honestly and explain how the class was disrupted due to this persons behavior.  Also, talk about the safety of the staff and students requires a locked door, which, I assume, is all spelled out on your website(if not, it should be!).  Don't get emotional, but state facts.\n\nAlso...don't sweat it.  People can be jerks, and they may not even leave a bad review."
+            },
+            {
+              "body": "[removed]"
+            },
+            {
+              "body": "If the student's behavior that day is at all typical of their emotional stability, the review will sound unhinged.\n\nEven though you're 100% in the right, resist the temptation to respond to a bad review.  Not responding demonstrates your equanimity to prospective non-crazy students."
+            },
+            {
+              "body": "I agree with this. Not responding will not validate the unhinged student's review. Responding and talking about it would give more credibility and doubt, whereas not responding would not validate the reviewer. With time, the person reading the post will forget."
+            },
+            {
+              "body": "Ignore reviews lol.\n\nOnce someone left a review at my studio claiming the teacher didn’t know the difference between exalted warrior and reverse warrior. Or that they didn’t appreciate “being taught about Hindu”??"
+            },
+            {
+              "body": "I would reply on the review and explain that you told her after 5 minutes doors are locked to prevent disrupting the class! People will know she’s the one with the problem not you"
+            },
+            {
+              "body": "Other people’s shitty behavior is NOT your responsibility.  Frankly I don’t think you should’ve even engaged with this person, policy is policy, the whole  idea of a “universal standard” is that it applies to everyone, newbies and veterans alike, that’s what keeps it all equitable and fair."
+            },
+            {
+              "body": "I work in customer service, and honestly, this is not that shocking any longer.  It’s ridiculous &amp; unacceptable. Kudos to you for standing ground regardless of a tardy bully."
+            },
+            {
+              "body": "Absolutely. Honestly that review would make me more inclined to take your class because I would appreciate you holding the boundary with that student"
+            },
+            {
+              "body": "Agree. A review like that would show me that you value the safety of the students."
+            },
+            {
+              "body": "if this is in the US I'm not shocked at all. plenty of people with a ME ME ME attitude even if they're practicing yoga or they follow a religion that preaches kindness. as an ex medical receptionist I had to regularly tell patients \"no i cannot interrupt the doctors appointment with another patient to make him refill your meds RIGHT NOW\""
+            },
+            {
+              "body": "I have coined it- “enabling the entitled”"
+            },
+            {
+              "body": "Same! I can’t believe the level of entitlement people have these days and lack of accountability. \nI am on the opposite end of the stick where I leave ridiculously early so that I make it to class in time. \n\nSure things come up for people to arrive late however that doesn’t mean they have the right to barge into class late to interrupt others and the teacher’s time. Just cop the no show/late cancel fee and move on - I know I have. \n\nI think OP handled it well and it’s a shame they had to experience that. \n\nI wouldn’t worry about the negative Google review as to me that wouldn’t make me think less of the yoga studio. Even though it was the client’s fault I’d still like to read a respectful, professional response from the Yoga studio reiterating the late policy and apologising for the frustration. As unhinged responses make me not want to book classes with certain studios haha."
+            },
+            {
+              "body": "I’m in the US and most of the studios I’ve attended (20 years on) let people in even ten minutes past start time which I think is incredibly inconsiderate for those who arrived on time. It’s disruptive and distracting. I think the five minute policy is completely reasonable. Maybe she’s used to other studios allowing late students? In any case, I can’t believe they’d actually pound on the door! Entitled!!"
+            },
+            {
+              "body": "The studio can respond to the review using similar language that you used with the client."
+            },
+            {
+              "body": "Bad reviews are a great way to show off your customer service and management skills in an honest way.  People make decisions on the way companies respond more than the rating of the stars. If you respond defensively then people won’t likely go to you. \n\nYou can say something like, “we’re so sorry you felt that way. As a new student we know you were excited but by industry standards doors are locked for safety and to prevent disruption, so we can offer the best experience in our classroom.   Even though we started off on the wrong foot we hope you would give it another chance. Please see our terms to prepare for next time and we hope to see you soon.”"
+            },
+            {
+              "body": "Pro!"
+            },
+            {
+              "body": "Yep. This person definitely needs yoga :-)"
+            },
+            {
+              "body": "Totally agree"
+            },
+            {
+              "body": "Sounds like you handled it very professionally."
+            },
+            {
+              "body": "Thanks for the reassurance! I was really upset by the whole situation, and reading all the supportive comments here really helps."
+            },
+            {
+              "body": "You definitely handled it well and locking the door after practice begins is standard everywhere I have been. If they do leave a review, just respond politely and professionally like you outlined it here and move on. On the off chance this person does try to come back, I would put them on the shit list and ban them."
+            },
+            {
+              "body": "Yep, sometimes you read bad reviews and they actually make you want to go to a business.  The funniest one I read was someone who was horrified at a berry picking farm because a farmer wasn’t happy two adults were picking the berries and throwing them at each other.  \n\nIf I read this review, my takeaway is that the studio is committed to creating a distraction free setting for my practice."
+            },
+            {
+              "body": "Oh absolutely! A well thought out response from the business owner can definitely make me want to go there despite a negative review. Customers are not always right and I think we've all seen enough Karen videos by now to spot when someone has a legitimate issue versus is just not a good person."
+            },
+            {
+              "body": "This is why I pay no mind to the star ratings and actually read reviews."
+            },
+            {
+              "body": "In this situation, the only possible “better” move would’ve been to say something like, “I’m currently the only one here and trying to teach class in the other room. We lock the door at 5 minutes after for security purposes. If you email the team, I’m sure they’ll be able to get you rebooked for another class, but I have to get back to the class now. Thank you. (Shut and lock door.)”\n\nMost of the studios I go to though have a 2 person policy. Someone is always up front at the desk while another person teaches. Late-comers are tolerated. Early arrivers sit on their phones in the waiting area. I think it’s partially to leave the front door open and allow for general coming and going, but also for safety. I’ve been to some late night classes (like starting at 8:30, 9pm) and will be the only student there. I could see how a teacher or student might be uncomfortable being alone with a stranger (okay, let’s be real, how a woman would be uncomfortable being alone with a man). \n\nThe redundancy is also good for the studio in case one person calls in sick. Might have to pay more, but won’t lose business."
+            },
+            {
+              "body": "You should be proud of yourself for not letting them in just to diffuse the situation. Many people would, and it just fuels entinited behavior. You seem very professional"
+            },
+            {
+              "body": "Thank you!  I did question myself, wondering if I handled it the right way, but reading the supportive comments here has been really reassuring. I really appreciate it!"
+            },
+            {
+              "body": "I've been on both sides of that locked door (the timely student and the late one). You did the right thing."
+            },
+            {
+              "body": "Pride and yoga, do not go hand-in-hand, especially not when you get deep into the philosophy.\n\nAnd I will encourage you to think about how the woman still went away, feeling entitled. Her getting locked out of the class definitely didn’t change her entitled behavior and it did fuel it to become more angry and more resentful."
+            },
+            {
+              "body": "Sounds like the same policy as at most studios I’ve attended and worked at."
+            },
+            {
+              "body": "So first of all, you handled that really well.Is there a note outside the door about the locking rule? If not maybe considering adding it ? Either way she sounds rude"
+            },
+            {
+              "body": "Thanks for the kind words! And that’s a good idea about the sign… We do have it mentioned on our website and in the booking system, but it definitely wouldn’t hurt to put a reminder on the door as well"
+            },
+            {
+              "body": "Yes, we have a sign the front desk puts on the door “Class in progress. No entry”."
+            },
+            {
+              "body": "Sorry to hear that happened. I go to a small studio as well, with no front desk. We have a sign on the front door that clearly states the class schedule and late policy. That might help newcomers who aren't aware of it. Though some of the less considerate ones might still ignore it, of course."
+            },
+            {
+              "body": "Thanks for the kind words! Someone else also suggested putting up a sign, and I think that’s a great idea. I’m definitely going to suggest it to the studio owner!"
+            },
+            {
+              "body": "I wouldn’t worry about it for another minute. This is the policy of every studio. If a review does come in just reply with a polite short response. Don’t apologize!"
+            },
+            {
+              "body": "People can suck and few can be held accountable. At my studios we have the exact same door-locking policy; not only for courtesy to the students, but for SAFETY. \n\nOur students’ belongings are left in the lobby unattended while the class is happening. \n\nWhenever I have an upset student like that, I explain that safety is our number one priority and leaving the door unlocked to accommodate someone running late puts everyone’s belongings at risk of getting stolen. \n\nAlso, I remind them our policy is clearly stated on the website and booking registration email. \n\nAs a first time occurrence I may offer a free class for their time, but it seems they either don’t come back or don’t repeat the mistake again bc it never seems to happen more than once with a person. \n\nYou did nothing wrong. That person was rude. Don’t let it ruin your day 💗"
+            },
+            {
+              "body": "Thanks for your kind words, I really appreciate it!"
+            },
+            {
+              "body": "I’m grateful that at my yoga studio there’s a receptionist so the teachers won’t have to deal with this sort of thing"
+            },
+            {
+              "body": "As long as your policy is clearly stated, you did nothing wrong. Also, businesses are allowed to respond to negative reviews on Google, so keep an eye out if she follows through on her threat. You can explain exactly what happened and that you have an existing policy that people know about when they sign up."
+            },
+            {
+              "body": "Not someone you’d want in your class then either bringing all that in"
+            },
+            {
+              "body": "I wish my studio had this policy. There is a group of people that have this clique and one of them is always late. One particularly full class one of her friends put a mat out for her and she never showed. So for the whole packed class there was an empty mat taking up space."
+            },
+            {
+              "body": "When I had a toddler, my treat for myself was a monthly 3 hour yin class.  I loved the studio, and left early enough to arrive early, just so I could be there early and bliss out in the space. Unfortunately, I hit accident related traffic and arrived 3 to 5 minutes late and the door was locked.  Was I disappointed?   Uh, yeah! Would I beat on the door and make a scene about it?   Nope.  I found something else to do.  It wasn’t as good as yin, but I had a sitter, so I enjoyed some me time. Life is all about learning how to pivot.  \nStudio policy is studio policy.  You did what you were supposed to do.  It is unfortunate that the student acted in a manner that could have had a negative impact on the rest of the class. Find a way to smooth yourself and don’t let this experience get you down."
+            },
+            {
+              "body": "Thanks for sharing! I can definitely understand that it's frustrating to look forward to a class and then end up in front of a locked door. What really threw me off, though, was the aggression. It’s one thing to be disappointed, but the way she reacted was just so intense. \n\nAnyway, I’m feeling much better now,  after reading all the supportive comments! :)"
+            },
+            {
+              "body": "Please remember that anger is simply fear’s bodyguard. Anger is never a root cause. While it doesn’t excuse the behavior, understanding that the person probably felt panicked by shame at being late and locked out, and that it probably triggered some age old “being left out” wounds can help us recognize that it was not personal, not to do with ourselves, or anything we’ve done. 90% of what goes on in a person’s head truly doesn’t have anything to do with anyone other than themselves. Remembering this helps keep me compassionate and out of judgment, and can make these scary occurrences less scary, being able to view them through this lens. You encountered a triggered child in an adult’s body having a fit, that’s all. Don’t carry it with you, don’t harbor resentment, and don’t blame yourself. Please be well."
+            },
+            {
+              "body": "I can tell you during my yoga teacher training, I had more traumatic experiences that anything else... so yeah sitting home alone and reading a book on yoga philosophy or just doing beginner yoga at your own time, or going out to eat Gelato ice cream is better than doing yoga in a studio where there IS BAD VIBES IN THE AIR, due to yoga politics at the studio."
+            },
+            {
+              "body": "i’ve seen it happen a handful of times at other studios too."
+            },
+            {
+              "body": "Yeah no you did everything correct, she's in the wrong. We do that at my studio too. If you're late, you snooze you lose. You handled that great"
+            },
+            {
+              "body": "I am sad that happened to you.\n\nPersonally, I would defend my policy and actions versus public rage in my review response.\n\nIn the studio I work for, we wait longer, up to 10 minutes, for regulars but begin class regardless. Usually, my regular students text if they're running late. We've had periods where there was a sign posted on the door, \"Shhhh, classes begin on time, and the door is locked until...\""
+            },
+            {
+              "body": "I’d start locking the door on the hour.  I had a teacher who did this and to this day I’ve got nothing but respect for her, despite getting locked out myself at least once."
+            },
+            {
+              "body": "That’s so rude! Honestly it’s serendipitous she was late, I wouldn’t want to have someone like this as a student. "
+            },
+            {
+              "body": "Leaving the studio unlocked once class starts is also a security issue. A studio in my city had an intruder during class and it was scary for all involved"
+            },
+            {
+              "body": "Where I live, every couple of years there are incidents of thefts in yoga studios."
+            },
+            {
+              "body": "As a pupil I would have been happy with how you handled it."
+            },
+            {
+              "body": "My instructor locks the door and if you're late...well, she'll see you next week. No exceptions. One time, someone was able to gain access through the ladies room. She let them stay but after class explained it was unacceptable."
+            },
+            {
+              "body": "You will be better off without said \"student\". Ban or have banned this person for good and spread the word to other studios, not out of pettiness, but because you care about your fellow teachers."
+            },
+            {
+              "body": "That's wild behavior and totally unacceptable for any studio standard. Not a client you want to have honestly. Keep in mind you can respond to Google reviews and I think it would be wise for the studio to comment if they do. Anyone who's been to a yoga studio before will understand. Sorry this happened to you. Totally unfair."
+            },
+            {
+              "body": "Good riddance and hopefully this one never comes back. "
+            },
+            {
+              "body": "This happened during a class I was in. Same exact situation. The person was unhinged. I'm sorry that happened."
+            },
+            {
+              "body": "perhaps the greatest Simpsons tv show gif of all time:   \"Dont Make Me tap the sign!\"\n\nasuming there was a sign, or studio has one on the door"
+            },
+            {
+              "body": "The bad review would be a plus to me if I read it."
+            },
+            {
+              "body": " Adult temper tantrum. Your policy and reaction are completely justified."
+            },
+            {
+              "body": "I can’t even count the number of times I’ve had this conversation, maybe 50? 150? So many I’ve lost count. I hope something in my experience will help you. \n\nEspecially when you have to leave class to address it, it’s a bummer, I’m sorry op. \n\nMany times this happened in very busy studios where “late comers” we’re coming to steal the other student’s belongings while they were in class. Or would get injured by skipping warm up. Or leave an exterior door unlocked ajar behind them in their haste to enter so that other students’ cell phones were robbed in the lobby while they are trying to meditate.\n\nNothing in life is “fair” but safety is something we can agree has importance. \n\n1. Signage “For safety of all students, we do not admit anyone to class after 5 minutes. Thank you for rebooking the next class.” \n\n2. Online “For safety of all students please arrive at the studio 15 minutes before class, and arrive dressed on your mat before class start time. We appreciate your respect for everyone in class.” \n\n3. Purchase pop up “Thank you. Please arrive on your mat dressed, with full water bottle and towel promptly by 8am. We look forward to seeing you. \n\n4. “Thank you, friends, for arriving on your mat. We appreciate you for working so hard to get here. Arriving was the hard part…” \n\n5. (After it became clear that the disruption wouldn’t stop). “Hello, friend, I’m so sorry but I’m not able to admit you past the 5 minute mark, for everyone’s safety. We can not admit students past 5 minutes.” \n\nFriendliness, empathy, reason, policy- in that order. They will restate their perspective, excuse, reason. Listen briefly and repeat: Friendliness, empathy, reason, policy, add 2 choices for next steps. \n\n“I would either come back at the next class, which is noon or come back tomorrow at 6:45am, 15 minutes before class start, which of those is better for you?” \n\n“I must close the door now. I do hope you can return.” \n\nGenuine respect and earnest vocal tone can diffuse quickly. We’ve all had rough days like this where every light is red and nothing goes as planned. Treat the disruption with as much forbearance as you can muster.  \n\nIt’s too much to expect a person in this state to have empathy for your situation or the fairness to other students, don’t explain. But you CAN help them save face and have good chance for quick transition employing steps outlined above. \n\n6. Resume class confidently without discussion or apology. Only If you are a little thrown off and feel YOU need a moment to rejoin successfully… “Thank you for your patience” or “Thank you for taking a recentering breath.” —The students are unlikely to need anything except reassurance that YOU are confident and gracefully moving on. \n\nI hope something in this is helpful for you. Remember that having people who want to join class is a good problem to have, and a privilege, an honor, and like all things … quite temporary. \n\nBeing human is hard. But I hope next class is a little easier."
+            },
+            {
+              "body": "Yes, I’ve had this happen when teaching once and I actually ended up switching Studios.\n\nI will never try to justify someone behaving abruptly and rudely, but as far as yoga philosophy goes, I think there’s a lot to learn about this situation from a teaching standpoint. And I’m not suggesting that you do what I do and leave the studio that you’re teaching at because that will likely not happen ever again in your entire career (or maybe just one other time).\n\nI thought about it from the angry mothers perspective that desperately needed a yoga class. I understood that she failed to manage her time well. And then I admitted to myself that I do this from time to time too. And then I further admitted I would be upset if I got locked out of a yoga class that I desperately needed to attend for my mental health.\n\nSo, I’ve been teaching for 10 years now and I’m only 31 years old and I work at a climbing gym that allows me to let students come into my class at literally anytime during the entire hour and I wholeheartedly love it because I have seen how transformative it has been in people who do not get off work on time to make the start of the class.\n\nI have an older couple who comes in consistently for only the last 15 minutes of my class, they’re just there to cool down and lay in final rest with everyone else.\n\nMy personal focus with yoga is creating an inclusive community. So, I’ll leave it at studios can do their thing and I’m going to do mine. And I encourage everyone to do whatever makes their heart filled with joy."
+            },
+            {
+              "body": "I owned a studio until quite recently, and my approach was “you are always right on time.”\n\nWhy?\n\nMostly it was because I had students who used public transportation, and buses run late sometimes.  So I was either going to be a studio who excluded those students or one who walked the talk when it comes to inclusivity and allowing. \n\nI made it clear as a teacher that life happens, and staying in your practice while someone comes in late and respectfully gets settled in has value.\n\nThe other issue is most teachers aren’t doing much more than narrating a sequence while they do it in front of the class, very few can actually cue, give feedback, and be comfortable off their mats.  It wasn’t a problem for me to continue to teach, unlock and open the door and help the student get situated - handled in usually under 90 seconds without missing a beat with my cues."
+            },
+            {
+              "body": "If that was one of the most unpleasant teaching experiences in 7 years… you’re blessed with an uneventful career. Be grateful. 😉"
+            },
+            {
+              "body": "Rude, and you handled it as you should have. Just a reminder to consider the fire code. A locked door in an environment like this could be a hazard!"
+            },
+            {
+              "body": "What an extremely rude person. Let's hope she doesn't come back and let's hope"
+            },
+            {
+              "body": "(Continued) she'd already paid it serves her right."
+            },
+            {
+              "body": "Ughh…so sorry you had to deal with this. I can imagine how badly it messed with your energy at the time.\n\nI would NOT sweat the threat of bad reviews. Anyone trying to complain online about this policy is going to come off like an entitled asshole, particularly to an audience of laid back yogis. 😉"
+            },
+            {
+              "body": "That’s exactly it—it wasn’t the easiest to get back into teacher mode and reset the energy, especially with everyone having just heard her yelling at me. But after class, a few students told me they also thought her behavior was way out of line and were glad I didn’t let her join. Such a weird day! 😅"
+            },
+            {
+              "body": "Sounds like the kind of person that would make your class appreciative you don’t let in. Just nuts and inappropriate, very disrespectful. You did perfectly, and the bad review would reflect well on your practice if she does make one."
+            },
+            {
+              "body": "...\"there was a furious former student...\""
+            },
+            {
+              "body": "The threat of a bad google review should always result in telling someone to leave and never come back."
+            },
+            {
+              "body": "Let her write that Google review of “being a few minutes late”. When choosing studios as a student, and if I see such reviews, I’ll know that this is exactly the studio I like. One that really upholds its policy of not letting latecomers disturb the lesson! 👍"
+            },
+            {
+              "body": "My studio allows people to show up 15 min into class…I find it very disruptive! As a student I’d be grateful for an instructor that tried to shield us from that, especially if it’s already a policy at your studio. Sorry you had to deal with this today :("
+            },
+            {
+              "body": "That sucks.\n\nMaybe consider a sign you can put on the door once class starts / door lock that says something to the effect of: \n\n\"This door is locked. Class is in session. \n\nIf you're reading this You Are Late and will not be admitted in to this class unless there has been explicit communication about your tardiness with the teacher.\n\nPlease Do Not Knock or Bang on this door as it disrupts everyone in class right now.\n\nBetter luck next time.\" "
+            },
+            {
+              "body": "As a chronically late person, if the studio door is locked after 5 mins as stated in the policy… I simply take my L and leave. It’s awesome when I am let in, and I jump in as quickly and quietly as possible, but it’s not an expectation ever."
+            },
+            {
+              "body": "Omg I was once locked out when I was literally one minute late and I just walked back home with my tail between my legs, knowing full well it’s my responsibility to be there before the doors lock and no one else’s responsibility to wait for me. It’s wild to me that someone would feel no shame disrupting an entire class! Once I experienced being locked out, I just made it my mission to show up extra early for every class since lol"
+            },
+            {
+              "body": "You handled it well. If that student continues to be a problem, you can advise them to go to another studio. This person clearly has no respect for others, it’s not a loss."
+            },
+            {
+              "body": "Would you do anything different if that kind of scenario were to occur again?"
+            },
+            {
+              "body": "Puh, good question. Some commenters here said I shouldn’t have opened the door at all, and I’ve thought about whether that would have been the better option. But it was really disruptive—and honestly, also a bit creepy. The yelling and rattling felt so aggressive and I wanted to resolve the situation so my other students could still have a good experience. So I think opening the door was the right call—but I’d probably try to send her away more quickly next time. I spent quite a bit of time explaining, even though it was clear she wasn’t going to accept it."
+            },
+            {
+              "body": "You did what you could in the circumstances.  \n\nPerhaps a notice in the door might avoid some people trying to enter. ‘Yoga class has started. Do not disturb. Latecomers do not knock. Do not enter.’\n\nIt does sound like this person would benefit from a calming yoga class. Perhaps next time they’ll make it."
+            },
+            {
+              "body": "Sometimes my studio has a receptionist during classes and doors remain open, other times once class starts studio doors are locked.\n\nIn any case, my studio is somewhat chill with occasional lateness and will give 5 minutes like yours does. If there’s a receptionist and you’ve called and they set up a mat for you, you’re pretty much covered. But if there’s doors are closed, then don’t pound on the door, you ain’t getting in"
+            },
+            {
+              "body": "Sounds like you handled this perfectly! And I bet the class appreciated you not letting the person inside to further disrupt. Best case scenario, this person doesn’t come back to your studio."
+            },
+            {
+              "body": "If someone said that in front of me I would immediately write a good google review for you and call her ass out. This is so unacceptable and disgusting behavior!"
+            },
+            {
+              "body": "It happened to me once but I was the student in that time.\n I drove 35min to get to the studio after an horrible day. When I knocked the door the teacher told me NO.\nIt was so disappointing. I just felt lack of empathy. I had the worst day ever I drove 35min to get to the studio 5 minutes late (in a 2 hour class) and I drove again 35min again back to my home.\nI never came back to that studio.\n Now I'm the teacher and sometimes people are late. All of them are welcome to my class (students don't care at all and usually they are happy to see the other student coming)"
+            },
+            {
+              "body": "Interesting conversation considering not that long ago everyone was defending latecomers. I'll say it again - NO to late. Yoga isn't just a fitness class, it's much much more (or supposed to be). People coming in late change the tone."
+            },
+            {
+              "body": "Well, that’s a good policy and most people know about it so apparently this never happens. Which is exactly why when she first knocked you should have opened the door and let her in. Since it’s so unusual, did it occur to you it might be an emergency? Perhaps someone from the last class mistakenly left their keys /phone/purse in the back of the room. That turned out not to be the case; it was just someone who didn’t know about the policy (a note on the door would have gone a long way). The responses here are disturbingly void of empathy, dripping with superiority and condemnation. With me you would be forgiven the first time. Beyond that, you know the policy. I understand why you were shaken. She was rude. It escalated because she was already stressed out and then ignored, and then denied. I would have opened the door, allowed her into class then talked to her afterward so she would not make that mistake again. Everyone gets a pass the first time. It’s a kindness that is reasonable, as it is extended to everyone."
+            },
+            {
+              "body": "Discussion of manners aside--except that it sounds to me like you handled that professionally--I have volunteer firefighting experience I'd feel a bit uncomfortable with a locked door between me and the fire escape."
+            },
+            {
+              "body": "You handled it very well, maybe going forward yoy should get a sign on the door which says \"Please do not disturb\"."
+            },
+            {
+              "body": "If you would have let obnoxious latecomer in, it would have thrown off the vibe for everyone else. You were 100% correct to protect the class that was ready and waiting for you. Hold those boundaries!"
+            },
+            {
+              "body": "Honestly one less nutcase in your class. Good riddance"
+            },
+            {
+              "body": "I think that's grounds for being banned from the studio. Wildly inappropriate behavior that should be shared with other local studios to beware of."
+            },
+            {
+              "body": "I’m guessing this is a person experiencing some sort of trauma. I’m trying to get better at picking up on signs of this, but it’s really hard to detach in the moment. At least you’ll be better prepared next time something like this transpires. Thx for posting, I learned from your story."
+            },
+            {
+              "body": "You are like the only person in this thread trying to have any compassion at all for this person, who clearly acted poorly, but nevertheless, like all, still deserves compassion. The fact that there are over a hundred comments and not one other that frames it in this way makes me so distressed as to the state of the world. Thank you for commenting, I see and appreciate you."
+            },
+            {
+              "body": "Namaste and thank you."
+            },
+            {
+              "body": "That sounds like Borderline Personality Disorder, Intermittent explosive disorder (IED), or oppositional defiant disorder (ODD). People with these disorders are not able to control their anger and may disproportionately become angry quickly or are unable to control their anger over something many would consider just a small issue.\n\nI would not take it personally. Aka, don't be \"shocked\". Just think of it this way, there are many types of people out there. Not everyone is like you. Some may have had a traumatic past that is triggered by certain events, some may have a personality disorder such as Borderline which can make them get uncontrollably angry, and are not in a \"logical\" state of mind."
+            },
+            {
+              "body": "What is this comment, even? Oppositional defiant disorder is a childhood diagnosis. Intermittent explosive disorder is most commonly diagnosed in childhood and adolescence. Borderline Personality disorder is seen by many clinicians as pathologizing the ways that women respond to trauma, abuse, and oppression, and mental health researchers and providers around the world have called for its removal from diagnostic categories because of its sexist roots, its stigma for patients, its inexact categorizations, and the massive behavioral overlap with how PTSD and neurodivergence can present, causing endless misdiagnoses.\n\nThis kind of armchair diagnosing is honestly just gross, and so full of judgment. Doing so spreads unnecessary stigma, and I can in no way see how it might be helpful. Your comment without your first paragraph would have been great all by itself, and helpful! Your unnecessary, inappropriate, and purely speculative diagnostic mentions just don’t belong. The focus should just be, this person is experiencing something that isn’t your fault. Their past may be at play, we can’t be certain. Keeping yourself safe while coming from compassion is the best you can do, and is all you can do."
+            },
+            {
+              "body": "Let's laugh a bit: \nSeems like SHE needs yoga to relax!!"
+            },
+            {
+              "body": "Haha, you’re right! Maybe I should offer her a free class to help her find some inner peace!\n\n...Or maybe not, I’m not exactly eager for a reunion!"
+            },
+            {
+              "body": "I'm sorry to hear you had a disruption in your class today. But honestly, the way you handled yourself is how it should be handled. I dislike with a passion people who show up late to the yoga class I attend and the teacher is older pettie fragile lady so she let's so much slide from loud gum chewing, to 15 mins late-comers to people with their noisy track suits on and squishy sandals...its ridiculous and these are repeated offenders...its annoying...one comes specifically 15 mins late and makes all the disruption in the world just with his body...I know we are to focus on our breathing and ourselves mind and i know minor things like I've mentioned are petty but the teacher not enforcing peace, simple meditation the whole entirety of yoga class is the opposite of yoga...isn't it? In my opinion. And that person managed to accomplish that with her entitled mentality wanting to show up late...which in reality sounds like she was just not ready for yoga class and good she stormed off, no need for that kind of energy to enter your class."
+            },
+            {
+              "body": "Honestly I would have just let her keep knocking and ignore it. She would have went away and learned her lesson for the future."
+            },
+            {
+              "body": "You might suggest to Mgmt to emphasize to new clients how important it is to arrive and get settled BEFORE the practice begins.  Courtesy is always important and appreciated."
+            },
+            {
+              "body": "Yeah that person was totally out of line, not you. I had similar-ish experience a few years ago. I locked the door 10 minutes after class started. About 5 minutes later, I hear incessant knocking at the front door and because I left the studio door open for air flow, one of my students could see the person at the door and waved at me to get my attention so I felt like I had to address it and let her in. After class, I politely told her it was a good thing that the studio door was open or I wouldn’t have known she was there because we always lock the door 5-10 mins after the start of class. Aka, please don’t bother coming if you’re going to be that late. She took it ok though, and as far as I know, didn’t do it again. Locking the door is a safety issue when you’re the only employee in the building. Anyone familiar with yoga etiquette will read that review and just roll their eyes."
+            },
+            {
+              "body": "If I saw a bad review like that I wouldn’t take it seriously, and would think you did the right thing. She was obviously disruptive and rude."
+            },
+            {
+              "body": "https://i.redd.it/mdumvy9pjene1.gif"
+            },
+            {
+              "body": "i had a similar experience once. i teach at a gym that has some other equipment in the classroom that people can freely use. i used to ask people to be quiet if they wanted to train while my yoga class was happening and while this did cause some uncomfortable/distracting moments it was mostly fine. one day i taught a class and while we were in the middle of flowing someone entered the room and SHOUTED „HELLOOOO WHATS UP“. After looking at this guy in extreme shock and terror i told him he had to be quiet or hed have to leave the room. He continued shouting his replies at me and then left the room while slamming the door. I apologized to my students (all of them were just as shocked as me) and thought that was it. At the end of class during savasana he entered the room again and then proceeded to complete an entire ab workout while huffing and puffing extremely loud. He also used his smart watch that continuously beeped every 30s. Needless to say it was extremely distracting and completely killed the vibe of my class. After class was over several students complained about him (very valid). I know I shouldve kicked him out at the very start but this happened pretty early in my career when I was still very unconfrontational and didn’t want the situation to further escalate. By the time I went to talk with him my heart rate had skyrocketed and I had a complete crash out in front of him lol. Its so difficult to create a relaxing safe space and having someone act like this and destroy it in seconds is soo frustrating. The guy obviously didnt apologize or even see why his behavior was not okay. Moral of the story I put up a sign immediately after I talked to him and now no one is allowed to use the classroom while my yoga class is going on. I really sympathize with you. But in the end my experience has taught me to stand my ground and protect my students‘ peace at all cost which I think has made me a better teacher. I hope you can get something similar out of this experience in the end!!"
+            },
+            {
+              "body": "Is it a written policy that is easily findable on the contract and website? If so, then their complaining is unfortunate, but really none of your business.\n\nEvery policy like this that I've interacted with is easily findable, and students are made aware of it. So, this sounds like nothing more than entitlement on the student's part."
+            },
+            {
+              "body": "I would post the policy on the door and say no exceptions. It's also  a matter of safety to lock the door because I've been in studios that had things stolen from the front room, like wallets merchandise etc."
+            },
+            {
+              "body": "Customer service is like that sometimes."
+            },
+            {
+              "body": "Always take the high ground. Say politely to the impolite student,” I’m sorry you were inconvenienced, and explain as you did why you have your rules. Let them rant but don’t let it rile you."
+            },
+            {
+              "body": "I think you handled it well. They were late. Anywhere I’ve gone for any sort of group activity-it CLEARLY states to arrive early, doors will be locked, late entry will not be permitted. \n\nPeople will see past one bad Google review. \n\nThe student was absolutely in the wrong, not you 🫶🏻"
+            },
+            {
+              "body": "I would just want to go to your studio more if I read that review.  We have an older woman who consistently comes into yin-type classes 10-15 minutes late.  Which, ok, we all run late but she also consistently flops her metal bottle down, tosses her mat around, and goes in and out of the prop closet multiple times.  A hot yoga class I probably wouldn’t even notice but it’s ALWAYS quiet classes she does it in"
+            },
+            {
+              "body": "Very late people who expect to be let in are the worst of all people"
+            },
+            {
+              "body": "So sad and stressful for you! In my studio here in Japan the door of the studio and check in area is locked at the start of classes so she couldn’t even get in the building to knock on the main door. Weird Karen needs to chill."
+            },
+            {
+              "body": "I don't think I would not worry about the Google review too much, most yogis (even most people) know that you cannot walk-in late to a yoga class, regardless of studio policies. I'm a very late person in life, and I know that yoga is the exception to my lateness. I can't even tell you how many times I didn't even show up to the studio when I realized I would be late, lol. \nThat person must've not been very self aware or mindful of their environment to be willing to disrupt a yoga class, I'd get so much second hand embarrassment..."
+            },
+            {
+              "body": "I had someone doing this once at it was one of these sorta classpass people where I got next to nothing for a sign up. I even sent my karma yogi downstairs to check and she was gone. A furious mail followed talking about how she was waiting. I stopped working with that subscription on that day and my confirmation clearly states now that doors lock when class starts."
+            },
+            {
+              "body": "How very entitled of her. \nShe was late and refuses to acknowledge her part in the situation. \nIt just sounds to me like action met consequences."
+            },
+            {
+              "body": "I don't think that it is reasonable for a business to lock a door and leave a student outside for being late, especially if they have paid for a service and especially if it is their first time and the \"policy\" has not been explained to them.  I imagine it would be very frustrating and embarrassing to have to knock outside for 5min and be ignored.  She may have a long commute, she may have kids, we don't live in a perfect world and sometimes we can't control traffic or other circumstances. It's a Yoga class, not an opera performance.  Someone entering a few minutes late would not cause any significant disruption.   Clearly locking the door caused a much bigger disruption.  Time to rethink that policy."
+            },
+            {
+              "body": "\"How do you handle situations like this?\"  \nLet it go. Some parents never taught their kids the meaning of the word 'no' and now they're struggling. Not your fault."
+            },
+            {
+              "body": "People have lost their minds. I’m glad you held the boundaries. I’m sorry you’re shaken up."
+            },
+            {
+              "body": "Just breath, everything is perfectly fine. You did a great job. Could have reacted sooner, maybe at the first knock? Were you trying to avoid a confrontation? Rules are the rules, and that person needed a reminder I guess.\n\nSome humans are just ethically different and see themselves as the center of the universe.\n\n~. Breath .~"
+            },
+            {
+              "body": "Yelling to get in to a yoga class, lol"
+            },
+            {
+              "body": "Maybe put a sign on the door indicating that the class has begun and please do not knock on the door"
+            },
+            {
+              "body": "Everyone is the victim. We’ve had a number of one star reviews in this genre. One even saying the class was too difficult for her and calling the teacher a “greasy white dude”. It won’t be the last unpleasant thing that happens. They’ll be more."
+            }
+          ],
+          "total_comments": 137,
+          "source_file": "/root/dbas/backend-final/painpont-extractor/output/senior_yoga/senior yoga_post_rank_1.json"
+        },
+        {
+          "post": {
+            "title": "Old people who regularly do yoga or other movement practices: how's your aches and pains?",
+            "content": "I took up hot yoga at 50 (14 years ago) and lifelong pains in my back and elsewhere almost completely went away. Curious if other older people have had similar experiences. I see lots of old folks on this sub complaining of aches and pains. "
+          },
+          "comments": [
+            {
+              "body": "Please do not comment directly to this post unless you are Gen X or older (born 1980 or before).  See [this post](https://www.reddit.com/r/AskOldPeople/comments/inci5u/reminder_please_do_not_answer_questions_unless/), the rules, and the sidebar for details.\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/AskOldPeople) if you have any questions or concerns.*"
+            },
+            {
+              "body": "I was a hot mess. Everything hurt, especially my knees. I couldn’t bend down to pick something up without pain. I quit my corporate job, started working at Trader Joe’s and training in Brazilian jujitsu. While I *have* been injured from the jujitsu, I take my recovery seriously, and heal quickly, but after a lifetime of being sedentary, I have never been more generally pain-free and am so much more flexible than friends my own age."
+            },
+            {
+              "body": "i noticed when I turned THIRTY that sedentary friends who subsisted on junk food were already blaming age for their choices. I( didn't mention in my OP that I also gave up alm ost all meat 13 years ago, which has also been a big benefit). Seems like our choices catch up to us more quickly as we age, and I realize many people don't have strong will power (and I'm grateful for having a lot)."
+            },
+            {
+              "body": "Right? I became a vegetarian in my late 30s, and I haven’t had nearly the health issues my parents had. My friends were pretty shocked because I loved meat, and they didn’t understand it. They do now."
+            },
+            {
+              "body": "Same, Bjj brought this old codger back to life. Everything works great now, and a few bad habits went in the bin as well....recommend it fully, I have serious concerns over the injuries, though....they hurtssss."
+            },
+            {
+              "body": "Good for you! I feel like every time I make a step forward I take two steps backward, but I’ve also learned to push through the pain when it’s warranted and take recovery seriously, so for me, that’s a win."
+            },
+            {
+              "body": "Yoga keeps my sciatica at bay. And just makes me feel better. It aids strength and flexibility. And helps with anxiety. I've had to switch to chair yoga but it's still great."
+            },
+            {
+              "body": "Yeah the combination of mental/emotional and physical impact is real"
+            },
+            {
+              "body": "Explore Somatics by Thomas Hanna to totally control sciatica."
+            },
+            {
+              "body": "I do the chair yoga programs as well."
+            },
+            {
+              "body": "I do yoga nightly, have since I was around 55 (that means 10 years.) I can still hop up onto and off of the bed of a pick-up easily and a lot of guys younger than me cannot. When I skip a day or two, I can tell. Really does help, especially with my back."
+            },
+            {
+              "body": "My husband took up yoga at 70 and I swear he is ten years younger after four years."
+            },
+            {
+              "body": "I have fibromyalgia and yoga works perfect for me; it is also an energetic reset for me! Dance party at my house several days a week also keeps me moving (really just me and the dogs :)."
+            },
+            {
+              "body": "It unfortunately isn't doing much for my fibromyalgia or for my arthritis. I do it just so I won't get worse. I'm happy it works for some people at least."
+            },
+            {
+              "body": "I do yoga once a week and walk half an hour a day and I still live with chronic pain. In fact it makes it worse in the short term but I do it anyway.\n\nBoth give me huge emotional benefits as well as keeping me in shape."
+            },
+            {
+              "body": "[deleted]"
+            },
+            {
+              "body": "You realize you can breathe through the hard things and they'll pass."
+            },
+            {
+              "body": "Yes…Learning to distinguish between the 99% of “I’m gonna die” thoughts that are just anxious BS, vs the &lt;1% that deserve to be treated as a priority."
+            },
+            {
+              "body": "Yoga is meant to be a form of meditation. Sounds like you’re getting some double benefits"
+            },
+            {
+              "body": "I’m sixty, I don’t have regular aches and pains. Occasionally I have menstrual cramping, very uncomfortable, yoga stretches and poses help. I’m a runner, fit and slim my whole life. I’m also a physical therapist and I teach yoga, adding that because I feel it’s important, I use that in my daily life, strong muscles and bones, correct movement prevent multiple injuries I see in people my age.\n\nI started taking yoga classes at forty five, teaching yoga at fifty. I never had regular aches and pain, I feel healthier and more active since doing yoga regularly."
+            },
+            {
+              "body": "Menstrual cramping at age 60 is something you should probably get checked out"
+            },
+            {
+              "body": "Thank you but I still have regular periods, my providers are aware. My mother and older sister’s medical history is similar, it’s normal. Not every women stops menstruating at forty five on the dot, women are different, menopause experiences are different, no need for shaming."
+            },
+            {
+              "body": "I don't think they were shaming you. I believe they were trying to be helpful."
+            },
+            {
+              "body": "I’ve been doing yoga for 20 yrs but pain didn’t start reducing until I started strength training."
+            },
+            {
+              "body": "55 and I do yoga everyday and now back problems are rare"
+            },
+            {
+              "body": "Same, but I also mix in some Tai Chi"
+            },
+            {
+              "body": "I’d like to learn tai chi"
+            },
+            {
+              "body": "Don’t do yoga but maybe two days a week of mobility exercises and three days a week of lifting.  Add in some daily walks plus a long hike on Saturday and at 57 rarely have an ache or pain to complain about."
+            },
+            {
+              "body": "I have had a daily practice of tai chi for over 30 years in addition to being normally active daily; I don’t have “aches and pains”. I have a hip that will get achy if I sit too long, but it goes away with a little but of movement. I’m 62."
+            },
+            {
+              "body": "It doesn't have to be yoga. I was good about walking and stretching and resistance training for years. I was by no means a fitness fanatic, but I regularly stretched and exercised.\n\nThen the weather turned bad and I misplaced my gym pass. Stupidly, instead of just calling and getting another pass, I stopped being good.\n\nNow I'm dealing with the consequences -- painful back spasms. It takes me five minutes to get out of bed in the morning. I'm walking around gingerly like an old(er) man. I'm taking a muscle relaxant my doctor prescribed, but it's not helping. I expect to start physical therapy soon if it doesn't get better this week.\n\nAs soon as I deal with these spasms, I'm going to be good again for the rest of my life!"
+            },
+            {
+              "body": "Yoga is good for a few reasons - stretching, twisting helps all the lymphatic fluids, balance, breathing and strength.  It can have amazing results."
+            },
+            {
+              "body": "I’m not discounting yoga at all. Pilates and Tai Chi are also particularly good for senior citizens. I’m just testifying to my personal experience with brisk walking and a circuit of weight machines at my health club."
+            },
+            {
+              "body": "Thanks for sharing. I like exercise but I don’t like yoga as much as a lot of people seem to."
+            },
+            {
+              "body": "My problem with yoga, Pilates, and Tai Chi is that I would need months if not years of lessons to do it right. That can work for some people — my sisters loves taking exercise classes, and even tried ballet. \n\nBut it requires money, a good instructor, and a consistent schedule. I don’t want to blow off exercise because I missed a class."
+            },
+            {
+              "body": "I’m 60.  About 4 years ago, I got sick of waking up with back pain every morning.  I started taking reformer Pilates.  Back pain has eased and my flexibility has greatly increased.  Limited movement I had post lymphectomy, has gone away and I can lift my arm completely.  \n\nHighly recommend.  It’s the only thing I’ve ever stuck with."
+            },
+            {
+              "body": "I got nothing to add, except to ask, WTF is Hot Yoga?\n\nI'm 50 and thinking of doing something... Anything"
+            },
+            {
+              "body": "It's yoga in a really hot room."
+            },
+            {
+              "body": "Yoga in a hot room. It encourages your muscles to loosen in the heat, so you're able to stretch more deeply.\n\nI haven't done it, I hate being hot and sweaty, but Hatha yoga is great."
+            },
+            {
+              "body": "Hot yoga is more hard core. Hatha is chill but still challenging."
+            },
+            {
+              "body": "It's something I hate with a passion."
+            },
+            {
+              "body": "I do yoga-ish stuff every morning just to keep  the joints moving (lots of body weight exercises that aren't necessarily yoga poses).. Still have aches and pains but there are chronic disease processes that I cannot control. The goal is to stay strong, flexible, able to bend over and pick something up, get down on the floor and get back up, and be able to hold my head off the ground if I slip on the ice. \n\nIt doesn't matter to me if I progress in reps or anything like that. I don't compete against myself. I do up my reps when whatever I'm doing gets ridiculously easy, but only if I feel like it. The point is to do it daily, work in every body part in some way or another, and don't do anything today that will keep me from doing it tomorrow."
+            },
+            {
+              "body": "I started getting serious back pain when I was 14, and started yoga at 16, I'm 43 now.\n\nOur culture doesn't pay enough attention to core strength. There is a whole suite of muscles that, when conditioned, support the spine. If you start having age related pain in your 30s you can turn that around."
+            },
+            {
+              "body": "Stretching is part of my daily routine now. Much of it is yoga based although they don't use all of the names. It goes a long way towards me not waking up and feeling like I was beaten in the middle of the night.\n\nOther positive side effects are being able to touch my toes for the first time since I was very young. I'm naturally pretty stiff and this has been an eye opener."
+            },
+            {
+              "body": "I like yoga but find it hard to get in the habit or fit it into my schedule. I learned how to hula hoop at a much older age than most and found it to be the fountain of youth! It works all your joints to help regenerate the fluids that help you stay flexible, tones your muscles (especially your back) so you have better posture &amp; less lower back pain. It burns 300-600 calories an hour and is great fun if you put on your favorite music &amp; dance around with your hoop. \n\nYou do need a good hoop, though, you can't just use a cheap kids' hoop from a big box store. And you can't use one of those bumpy, weighted hoops. They're not good."
+            },
+            {
+              "body": "Glad you found something that worked – – and glad it makes you feel like a kid again!"
+            },
+            {
+              "body": "I frequently get low back pain and it absolutely helps alleviate it. I do one class that is basically just doing stretching poses and I love it. Flexibility and balance are helped as well."
+            },
+            {
+              "body": "75m. Qigong routine before bed, gym 2 times per week, no daily pain, have to be careful how I lift things tho, ha."
+            },
+            {
+              "body": "I do Pilates, PiYo, and some yoga. I also walk 4-5 miles a day. All of the above keep me reasonably limber and pain-less."
+            },
+            {
+              "body": "I've been playing with Tai Chi for about 10 years. Since I was 58 or so. Currently I teach six classes a week. I have an occasional ache and pain but there's plenty of days when I've never felt better in my life."
+            },
+            {
+              "body": "Definitely, exercise is good. Dancing, yoga, tai chi, etc are all good. I don't \"know\" anything formally, I just put on some music and boogie to it. It's not only physical, but mental, too, because I'm paying a lot of attention to the music. \n\nI like 'el manicero' to start moving. I like mambo, samba, etc. I dance to Beethoven. Keep moving!"
+            },
+            {
+              "body": "I started doing yoga to loosen my joints. Especially my hips . They just seemed tight and would take a while to loosen up on my walks. I hurt my knee so bad doing yoga that I’m now limping around waiting for an ortho appointment next week. Hurts like a mofo."
+            },
+            {
+              "body": "Swimming and pool classes work for me. At 63, I hurt when I don’t go to the pool."
+            },
+            {
+              "body": "Hot yoga just made me delirious from dehydration I lift heavy. You can do the poses…or you can do the poses under a weight load and get more flexible and stronger. Whatever.  Lifting is more time efficient but you can also spend more time per day in stretching or Pilates. It all works!!"
+            },
+            {
+              "body": "Stretch, strengthen and don't sit down too long."
+            },
+            {
+              "body": "I've heard this from a youngster so I was skeptical.  But if someone can confirm?"
+            },
+            {
+              "body": "I haven't done yoga in almost 20 years, BUT when my lower back hurts (which is somewhat frequently, I sit a lot), I do yoga back stretches and the relief is immediate about 80% of the time."
+            },
+            {
+              "body": "Ditto. My lower back seizes about twice a year. Yoga is the way it resolves."
+            },
+            {
+              "body": "I had crazy-tight hamstrings, from cycling 150-200 miles a week. Then I couldn’t even finish a long ride without stopping to stretch my hams (not practical during a race). My hams still can suddenly coil up, but now with yoga I can just work them out, and get my palms on the ground while standing.  When I had all the back issues, I just thought I had some kind of unfixable deformation."
+            },
+            {
+              "body": "I am 59 and have done yoga and stretching seriously for about six months.  I feel so much better.  I had gone to gyms and classes for many years the this at home regiment finally stuck!"
+            },
+            {
+              "body": "I'm 43. Been doing yoga around 25 years. I don't really have aches and pains if I don't injure myself."
+            },
+            {
+              "body": "Not quite yoga but I started doing a \"foundation training\" exercise that's similar and it's done wonders for my tight lower back from sitting too much."
+            },
+            {
+              "body": "There are many good chair yoga programs and QiGong programs on YouTube and I do them 2 or 3 times a week.  Yeah, it  helps.  Around 60'ish I noticed myself not being as flexible as I once was."
+            },
+            {
+              "body": "I had a pretty serious accident at work that left me with terrible back pain. The doctors recommended physical therapy, which did help somewhat, but I was still struggling day to day. Then I discovered a combination that's really turned things around for me.  I started practicing hot yoga, which might sound intense when you're dealing with pain, but it's been incredibly helpful. It really helps loosen up my muscles and ease the tension.\n\nAlong with the yoga, I found this great herbal tea. I drink one type during the day to help manage the discomfort, and another blend before bed. The nighttime tea has been amazing for helping me get restful sleep, which I hadn't had in ages.  It's remarkable how these simple changes have made such a big impact. I've gone from being in constant pain to feeling much more comfortable and able to enjoy my daily activities again. It just goes to show that sometimes the most effective solutions can be surprisingly straightforward."
+            },
+            {
+              "body": "It’s great to hear success stories!"
+            },
+            {
+              "body": "Huge difference"
+            },
+            {
+              "body": "I’m a former ballerina. I’ve exercised sporadically ever since, but not consistently. I’m still very limber and stretchy. For example, I can stand up and put the palms of my hands on the floor with my knees locked straight…. cold…. without warming up. Aside from a little occasional foot pain from years of abuse to them, I do not have aches and pains. This is after three car wrecks which injured my back, but did not leave lasting pain. I count me blessings."
+            },
+            {
+              "body": "I had lots of aches and pains, especially back and joints, because of metaflammation due to type 2 diabetes and aggravated due to a herniated disc in 2011 at age 60. A number of things have alleviated these pains, including McGill's big three back exercises, a whole body vibration plate, but most importantly, the consumption of an NAD+ precursor, nicotinamide riboside, starting in 2018. When I switched over to a liposomal version in January of 2022, all of my back and joint pain vanished. I now spend 7-8 hours a week playing pickleball and 2-3 hours a week doing resistance training and I haven't felt this biologically robust since my early 50's."
+            },
+            {
+              "body": "My 65 yo friend does it every morning for his knee."
+            },
+            {
+              "body": "I don't know that I'm old, I'm only 50. But I'm fairly athletic and exercise several days a week. I hike, walk, swim, lift, and box. My only pain is in my feet and ankles. I'm fat, for one, but also I've broken them so many times in various misadventures that I think they're just worn out."
+            },
+            {
+              "body": "Good. Yoga has helped for sure."
+            },
+            {
+              "body": "I started yoga over 10 years ago (around 45 yo). Felt great but circumstances changed and I stopped after a cross country move. But, It got me into enough of an exercise habit that it stuck. My routines change, but I always try to stay fit. I ran for awhile and got to my goal of ultramarathon which got me injured pretty good. Enough to stop running. Going in for knee surgery tomorrow.\n\nI'm either achey from exercising or achey from not exercising. I choose the former because if I'm not fit, my gut and all kinds of other quirks start getting bad. So, I just keep exercising. My main goals these days (60 yo) are around Obstacle Course Racing (Spartan)."
+            },
+            {
+              "body": "I’m doing Tai Chi as soon as my surgeries are finished."
+            },
+            {
+              "body": "I did chair yoga when I was recovering from cancer treatment. It made a remarkable difference. The key part for me was we were encouraged to do only what felt comfortable to your body on the day of the class as everyone was ill to one degree or another including the teacher. The teacher made you feel like just turning up and doing the breathing was a success if your body couldn’t handle anything more.\nThat teacher has since retired and her replacement is very young and fit and not as encouraging and skipping classes has my body revolting again."
+            },
+            {
+              "body": "My wife is a yoga teacher (currently on hiatus due to surgery) and specializes in the kind of yoga you’re referring to. Caters to older, injured, or just people who want a restorative and cautious class. There are lots of them out there n most good studios, generally with classes less than half full. I’ll bet you can find another teacher like the one you previously had! Good luck"
+            }
+          ],
+          "total_comments": 74,
+          "source_file": "/root/dbas/backend-final/painpont-extractor/output/senior_yoga/senior yoga_post_rank_2.json"
+        },
+        {
+          "post": {
+            "title": "Yoga for Seniors ",
+            "content": "Hello, \n\nI am seeking input regarding teaching a yoga class to seniors. Here is the sequence I have so far - mountain pose, cat/cow (standing), Salutations, chair, pigeon, tree, warrior two, side angle, triangle, forward fold, modified down dog, high lunge, and warrior 3 followed by horse stance. Any ideas/suggestions on what I may be able to add? Chairs will be available to assist with balance. "
+          },
+          "comments": [
+            {
+              "body": "this seems a bit much for a \"seniors\" class based on the attendees of the \"seniors\" classes I have led. \n\nyou might re-think this sequence...\n\nto reduce the amount of up-and-down from the ground. the folks i have led do not have the mobility to get up-and-down more than 1x a class, glad you have chairs available to help with balance and support\n\nto set your expectations of the ppl you will have attending \"Yoga for Seniors.\" my experience has folks showing up who are wanting to \"get a good stretch...\" or check out a yoga class to see what it's all about\n\nbest of luck with the class!"
+            },
+            {
+              "body": "I am definitely planning on modified salutations. Only getting down on the floor once. Where do you get your ideas and inspiration for the senior yoga classes you have led?"
+            },
+            {
+              "body": "I’d recommend doing some additional CEUs to get more comfortable and familiar working with specific populations like this!"
+            },
+            {
+              "body": "I like the way you think. I have been teaching in a retirement community for almost ten years now!! Part of the issue is I haven't taught yoga there in about three years so I feel very insecure with cueing and sequencing since it has been so long. I will seek out additional CEUs."
+            },
+            {
+              "body": "very cool! don't worry about it your cueing and sequencing...it'll come back to you as you and your yogis get to know one another. have fun!!"
+            },
+            {
+              "body": "my ideas come from gentle, basics, and beginner classes for the poses but the ppl are the ones who really help me craft the class. it's a part you get by asking questions and after teaching a group a few times. another way to say this would be i do my best to design a class i know they will all enjoy, feel confident with their abilities participating in, and gives them a little help with their flexibility and mobility concerns."
+            },
+            {
+              "body": "I'd suggest figure 4 on your back rather than pigeon. I have found that many people have knee and hip issues as they age, and figure 4 is often more accessible. (Also, you might want to move that later in the sequence, toward the end of class.) \n\nIf by \"salutations\" you mean full sun salutations, offer some alternatives to downward-facing dog. (Table top, plank, or skip it all together). \n\nStanding half-salutations are always nice. I like to include T-twists in there with arms open wide to mix it up a little. \n\nI'd also suggest including some form of locust pose and/or bridge (or some gentle backbend). \n\nIf lying on your back, reclined twists and banana pose are nice too."
+            },
+            {
+              "body": "I teach a similar class and find that any pigeon pose is tricky due to knee issues and balance. Also high lunge is often hard, due to lack of mobility in the soles of the feet. I usually start my class on the ground and bring them back to the ground, but this might be something you need to work with depending on your clients. Getting up and down from the floor is something folks lose as they age so we make sure we always practice adaptive ways to do it. We use the wall or chairs for balance and do warrior 3 using that. Accessible Yoga has a fantastic training coming up this month on teaching this demographic, well worth checking out, because there are lots of potential issues to consider including hearing loss for clients, arthritis, osteoporosis, etc. But honestly its my favourite class to teach. Aging bodies get so much more from a yoga practice, its so rewarding to lead. Good luck!"
+            },
+            {
+              "body": "Thank you so much!! Can you tell me more about the training accessible yoga has coming up? Or where I can find out more about it?"
+            },
+            {
+              "body": "For sure! Here is the link (I am debating signing up so might be there too!): [https://www.accessibleyogaschool.com/accessible-yoga-for-older-adults](https://www.accessibleyogaschool.com/accessible-yoga-for-older-adults)"
+            },
+            {
+              "body": "Thanks! I appreciate your help! I sent a message asking if there is a way for me to participate if I am unable to attend the live session. I will look up Baxter Bell and Nina Zolotow. If ever you want some ideas for chair yoga, Sherry Zak Morris is pretty good."
+            },
+            {
+              "body": "I am always looking for new ideas :-) I  will look Sherry up - thank you."
+            },
+            {
+              "body": "Here is another training that I found that is recognized by Yoga Alliance. \n\n[https://www.teachingyogatoseniors.com/](https://www.teachingyogatoseniors.com/)"
+            },
+            {
+              "body": "Fantastic, I will check this out - thank you!"
+            },
+            {
+              "body": "I also follow Baxter Bell who is great at Yoga for Aging content on YouTube, and Nina Zolotow."
+            },
+            {
+              "body": "Balancing for folks over 60 is a lot of work good to have support. I’d suggest skipping pigeon and warrior 3. Maybe add Low lunges (knee in the floor) with a hamstring stretch flow."
+            },
+            {
+              "body": "I would start them on the mat with some warm ups like a seated twist, side bend and sukhasana  forward bends. Then cat/cow, extended child’s then half dog and a strengthening like bird dog."
+            },
+            {
+              "body": "I am a senior who teaches seniors. Start standing, go to seated on floor, finally prone. DO NOT GO UP AND DOWN. (I was taught this as The American yoga class.)\nTriangle and Reverse Triangle are fine. Modified tree. Easy cobra, Easy bridge. Most can get legs in position for pigeon. Knees to chest. \nThe cervical vertebrae are delicate and dry out as we age. I teach table to cat and back. Never cow, or tilting head back. \nI remind students to listen to their bodies. Never force or strain. \nGood luck with your class! Make it fun. \nP. S. In my opinion, certainly you may disagree, a yoga teacher for seniors should be at least 60 years old."
+            },
+            {
+              "body": "I do agree that instructors of seniors need to be older. I'm not quite 60 yet, but am in my 50s."
+            },
+            {
+              "body": "You’ll hear about knee and hip replacements in the 60s, along with rotator cuff damage. I took an online certification course with Silver Age Yoga."
+            },
+            {
+              "body": "In addition to what others said, skip triangle."
+            },
+            {
+              "body": "Lots of valuable feedback but here but adding consider looking into using the wall as a prop for some poses depending on abilities"
+            },
+            {
+              "body": "I like this idea! Is this something you've done in your classes? How do you invite your students to the wall? Particularly if there isn't enough wall space for everyone."
+            },
+            {
+              "body": "Make it chair yoga - same as vet centers"
+            }
+          ],
+          "total_comments": 24,
+          "source_file": "/root/dbas/backend-final/painpont-extractor/output/senior_yoga/senior yoga_post_rank_3.json"
+        },
+        {
+          "post": {
+            "title": "Yoga for seniors-tips please!",
+            "content": "Hi all, my day job is as a speech therapist at a continuum of care retirement community. I’ve recently agreed to take over a twice weekly yoga class as the previous instructor (who I don’t believe is an RYT but that’s another issue altogether) sprained his ankle badly. I’m happy to do this but I’m nervous! My students will likely be anywhere from age 65+ and likely a lot of mobility limitations, old injuries, etc. Wondering if anybody has any experience with this and any tips for a successful and fulfilling class that would be best for this student population? Thank you!"
+          },
+          "comments": [
+            {
+              "body": "Hi there!\nI think the most important thing is to teach to whoever shows up in front of you. \n\nIntroduce yourself, give them plenty of permission at the beginning of class to take care of themselves, meaning having no pain and coming in and out of poses as needed. \n\nIf you have time before class, you can ask your students if anyone has an injury, be it past or present that they’d like to bring to your awareness. Use that information to offer modifications, props, and assists in practice. \n\nConsidering the age of your students, they may be prone to conditions such as high blood pressure, osteoporosis, and arthritis. Offer pranayama to help with their blood pressure, offer modifications for common cranky joints (ie. wrists, knees, shoulders), hold weight bearing poses for 72 seconds to promote an increase in bone density. Only make your students get up off the ground once during the class as that can be very challenging. Once they are standing work on all the standing poses you have in store for the class before you bring them back down to their mat. \n\nThese are just some things that Ive picked up along the way. I hope they help you feel more comfortable. \n\nMany of my regular students were in that age range and I found our shared practice to be one of the most fulfilling of my yoga career.\n\nWishing you a great class, \n\nNamaste"
+            },
+            {
+              "body": "Thank you so much for this beautifully thought out response! Namaste 🙏🏻"
+            },
+            {
+              "body": "I've worked with seniors a lot, especially those with old injuries and disabilities. I try to model everything, every time. It's such a mixed bag--some 75yos are marathoners; some 60yos can barely get around with a walker. So I'll show the pose modified in a chair (i.e. Warrior 2--it works best if chairs have no arms and you straddle the corner of the seat so you can straighten one leg), with a mat in front of me held by the front chair legs. Then I'll just stand up from there in the pose for those who are stronger, then sit back down. They can decide what they're up to.\n\nOne thing I've noticed pretty regularly is hearing issues. Music needs to be SOFT, or don't use it at all. And you need to over-enunciate every consonant and speak slowly. You might need to raise your volume a little as well lol, but see if slow, careful speaking is enough.\n\nRemember their bodies are likely fragile. A fellow teacher I know has regularly put her whole class of seniors in headstands against a wall, and there have been no injuries, but I haven't the courage. A brittle vertebra could be cracked, or a shoulder sprained, or they could have vertigo and fall the wrong way. One on one, with me assisting hands-on, if they ask for it? Sure. But a room with 12 scattered around? Not halppenin' lol. \n\nOne last thing I'll mention here is that if they've been in a retirement setting, most haven't used an ab muscle in a decade! 🥰 So since I've always been a bit insistent on ab work, I don't let seniors off the hook. They'll complain lol, but they need it. If they're seated, there are still things they can do:\n- March in place, lifting knees as high as possible WITHOUT lying against the back of the chair!\n- Cross their ankles and hold their knees up.\n- Seated bicycles.\n- Push down against the seat with their hands and try to lift their bottoms. They most likely won't go anywhere, but the effort is using all the same muscles.\n-If they can stand up at all, hands in prayer while they S-L-O-W-L-Y lower to the seat. Or try to lol.\n\nHonestly, I'm charmed by this age group. They are so grateful for any personal attention, and they return any light-heartedness or laughter 3x what you give. Enjoy! Namaste."
+            },
+            {
+              "body": "I teach an older population and they continually surprise me. Props and modifications are our best friends. Asking about injuries or ailments is also key. I had a student that had a compressed disc in her back and my peak pose was bow pose and she couldn’t do it and only told me about it when I saw she was resting instead of in the asana. Had I known, I may have not chosen that. Knowledge is key. \nOtherwise, they are strong and willing and just show up for them and make sure you are keyed into what they are doing and not hyper focused on your sequence and planning."
+            },
+            {
+              "body": "I worked with seniors extensively.  Some were very mobile and some not so much.  We used 2-3 chairs each.  We also went to the wall quite a bit---- That way I could show lots of options and modifications.  Remind them they should be enjoying the class and not feel PAIN.  I would encourage them all to modify.  I find they are very receptive to chanting, pranayama and yoga history.  But every class is different.  See how they respond and offer lots and lots of options.  I have a couple of chair videos if you are interested I can send the links - but they are not necessarily for seniors - but you can modify and get ideas."
+            }
+          ],
+          "total_comments": 5,
+          "source_file": "/root/dbas/backend-final/painpont-extractor/output/senior_yoga/senior yoga_post_rank_4.json"
+        },
+        {
+          "post": {
+            "title": "Disruptive student (to me), any advice?",
+            "content": "I suppose it was inevitable, my first post expressing frustrating about yoga class.\n\nI regularly attend an early morning class. A new student has shown up. He's clearly experienced with yoga, very fit, clearly practiced at the poses. Hooowweevveerr...\n\nHe arrives very late (5-10 min late for a 1hr class), and he doesn't follow the flow at all. He also has a very prominent ujjayi breath, which I understand isn't considered a bad thing, but he projects and his breathing isn't in synch with the instructor's breathing instructions. He isn't just taking alternative poses or opting out, he engages in entirely different poses and breathing patterns from the rest of the class. \n\nAs far as I can tell, he is not otherwise disruptive nor does he set up unnecessarily close to anyone or bother people, so that isn't the issue here. But because he is late and the class is well attended (but not crowded), his late arrival and non-participation in the flow would affect someone who might have preferred to find a different spot, if given the choice. \n\nI also need to acknowledge that I am unusually noise and distraction sensitive, to the point that I am a clear outlier. My guess is that most people are not as distracted as I am, though I also think that if this bothers me, it almost certainly irritates other people to some extent. I do know people who won't attend yoga classes because they've experienced the late arrival who shacks up too close to them too many times, after it's too late to find a new spot. \n\nFor now I'm just going to see how long this lasts, newcomers who do their own thing often don't stay long term. But eventually I may need to look for a new studio or time slot (this is possible but not trivial, I really do like the location and the early session is ideal for my schedule). \n\n  \n\n\n"
+          },
+          "comments": [
+            {
+              "body": "I used to belong to a studio that had signs on the door that you needed to be in studio 5-10 minutes before the start time and the instructor would lock the door before starting her class ( the door could be opened from the inside)  people learned quickly that they needed to be on time. Loved it."
+            },
+            {
+              "body": "This is how my studio is! One of my favorite things about it. The instructor always waits a few minutes and steps out to lock the door while we rest for a few breaths after warming up a bit, cueing so we all know our belongings and an hour’s worth of practice are safe from the outside world."
+            },
+            {
+              "body": "My studio back then when I started 15 years ago did and prob does the same"
+            },
+            {
+              "body": "This is the norm for every studio I've been to in my area. I'm always shocked on here when i read that some places allow late entry"
+            },
+            {
+              "body": "The studio I go to is strict about lateness and won't let you in if you're late. It's really nice"
+            },
+            {
+              "body": "My studio still locks the door at the start of class. No late arrivals."
+            },
+            {
+              "body": "My studio does the same thing. I absolutely love it"
+            },
+            {
+              "body": "My studio only opens the door 10 minutes before class and locks the door when class is about to start.  This is not only to prevent disruption of the class by late-arriving students, but also to provide security for students' belongings in the cubbies by the door."
+            },
+            {
+              "body": "Retired 7th grade teacher here: Sigh! Even in a yoga studio. This is passive-aggressive behavior. Arriving late, making little distractions like the poses and the breathing; not enough to disrupt, but enough to distract. It really is the teacher's call, but you should at least share your feelings.\n\nBtw as a classroom teacher, I can tell you that you are not alone. It's called \"field dependent\" vs. \"field independent\": how well you can tune out noise and distractions.\n\nFinally you could make it into a Buddhist practice: see his behavior as a thing that your mind has fixated on, and let it go. Like an annoying dog barking or the sound of sirens; don't label it.  Just let the thought arise, and float away. No judgement. No emotionally-charged cognition."
+            },
+            {
+              "body": "[removed]"
+            },
+            {
+              "body": "OP could also try and focus on their own breath instead, with short mantras like „I am x, I am y, …“ (whatever adjectives you identify with)"
+            },
+            {
+              "body": "It seems like the instructor could reserve some spots close to the door for latecomers and set a policy that if you are late, you must set up in those spots. That way folks could at least know where to set up to avoid Mr. Disruptive Latecomer."
+            },
+            {
+              "body": "Definitely speak with the instructor. The lateness is the distraction. The breathing, other poses, etc. is their practice. Nothing you can do about their practice - but all that attention you are paying them is attention you are not paying to yourself - and that’s why you are there in the first place! \n\nTake this as a challenge to help you grow the mental side of your practice. But definitely talk with your instructor. Chances are you are not the only one adversely affected."
+            },
+            {
+              "body": "my studio locks the door at class time, there would be no way this guy is coming in where I practice. You are allowed to be annoyed by rude people, you are allowed to feel what you are feeling, you can mention your concerns to management. Lateness is disruptive to the entire class and the instructor."
+            },
+            {
+              "body": "Can you practice in the front row so you don't have to see him?"
+            },
+            {
+              "body": "see that's the thing, he shows up late. I could be 5-10 minutes into practice before I know he'll be attending or where he'll set up his mat."
+            },
+            {
+              "body": "The teacher could be notified that he’s registered and put a mat out for him. If he comes late with out notice and sets up in the front, does a different sequence, he is unsafe &amp; insane. Say something to the teacher or studio manager."
+            },
+            {
+              "body": "Can you email/talk to the studio about how distracting late arrivals are and maybe they will start locking the door. All my studios lock doors at start time."
+            },
+            {
+              "body": "My 2 cents - Talk honestly with your teacher (and/or the studio owner if necessary) and say some thing like \"the distraction of someone consistently coming in late really bothers me and I'm worried I'm not going of be able to come to this class anymore because of it.\" and see what comes of that. \n\nI can't stand ppl being late or students who come to a paid Led class only to ignore the instructor and everyone around them who also paid with $, time and energy to be there and just focus on themselves. I could see a couple of really specific, outlier circumstances pertaining to mental health, where that could be given a reasonable pass, but I find it to be disrespectful and unnecessarily distracting in a Led class. \n\nI don't know how much say you'd really have in that matter as a student but the lateness could definitely be mentioned and framed in a kind but concerned way."
+            },
+            {
+              "body": "This is good advice .  A lot of other folks on here just commenting about their studio policies or teachers saying what they do .  OP is asking for advice on what they can do .  Thanks for advising them."
+            },
+            {
+              "body": "I legitimately do not understand why someone would take the time to go to a studio, pay a fee, and then not follow the instructor. That seems wildly counter-productive, and the icing on the cake is sauntering in late. Your instructor should lock the door when class starts. His mum and daddy didn’t teach him how to be respectful so unfortunately it falls on others."
+            },
+            {
+              "body": "Not all of us have the same physical capabilities.  I have to skip certain poses and do other PT at that time. Or sit still, I always find a place in the back.  Are you saying if we can’t do all the poses we shouldn’t be allowed?"
+            },
+            {
+              "body": "Either you’re looking for a reason to be mad or you didn’t read OP’s post. Go pick a fight elsewhere. Namaste."
+            },
+            {
+              "body": "The class instructor should speak with the student to find out why this is happening. There is a lot of interesting speculation in this thread, but perhaps the instructor and student can reach some compromise before class regulars start dropping out. I would bet you’re not the only annoyed person."
+            },
+            {
+              "body": "Chat to the teacher, because I guarantee it's pissing her off just as much! If it's getting to the point where it's annoying other students then it would be time for her to confront it."
+            },
+            {
+              "body": "[I answered this not long ago](https://www.reddit.com/r/yoga/comments/1i8y1mn/coming_to_class_to_do_your_own_flow/m8xk4r6/)\n\n&gt; When I was teaching I would routinely, politely but firmly, ask these students to leave.\n\nStudents that don't follow my cueing are a potential liability and a distraction to everyone.  If they want to do their own flow, they may ask to use the room when a class is not in session, or do it at home.\n\nThat being said, I told my students that *modifying* poses is always fine.  Respect your body.  Ask me if you need any advice on how to modify.\n\nBut this doesn't sound like what you describe.\n\nAs for the loud breathing, I might take the student aside after the class and talk to them about it.  Or just let it go.  It depends on whether it's so loud that students can't hear my instructions.  If not, it's just another thing to learn how to clear from your aura."
+            },
+            {
+              "body": "I think you can confidently focus on his lateness. Breathing with the class and not wanting to do certain poses could have to do with conditions that he has and can be more of a sensitive topic (not necessarily but potentially). While being late objectively is something you can stand on as an issue and as disrespectful. He /may/ have medical or physical conditions or injuries that prevent him from accessing certain poses or would cause pain in those poses. At least be open to that possibility. But lateness is something that there's no real excuse for that you can definitely set a hard boundary on. Try to find a common ground and mutual respect in a private conversation with him and if he continues being late work towards -- oh wait you're not the teacher sorry! Idk ask the teacher"
+            },
+            {
+              "body": "OP says he's clearly experienced, doesn't sound like he's doing easier versions, which would be the normal way of dealing with not being able to do something. It also presumably wouldn't be the entire class."
+            },
+            {
+              "body": "I have scoliosis so I have to skip some twists that look easy for most people. I'm sure it sometimes looks like I'm choosing harder poses but really it's because I can't do the \"easy\" one. I'd agree that we should give people grace on how they modify their practice while focusing on minimizing their disruptions (arrive in time, don't sit at the front, etc)."
+            },
+            {
+              "body": "Sorry i realise that might be the case but he's not just skipping some moves, he's doing something completely different the whole class. Surely he can do at least a version of some part of the class. I just find it weird somebody would pay for a class and not do any of it."
+            },
+            {
+              "body": "I do agree that it's weird, I just don't think OP focusing on that is a way to fix it. The studio owner or teacher has some easy concrete things they can do that don't involve asking this (rude, yes) man to change his practice. Focusing on arriving on time so people can set up away from him seems like it is more likely to be received well."
+            },
+            {
+              "body": "You can't arrive late to yoga class.  You missed the class if you're not on time.  Late arrivals break the spell.  And as a fellow male, I also think it's disrespectful of what is probably a predominantly female environment. And don't get me started on those who are too cool to participate in what is intended to be a sycnchronized activity."
+            },
+            {
+              "body": "THANK YOU for saying what needs to be said! Do NOT be late to class. It's very rude and disrespectful and distracting for the teacher and the entire class. Period. There was a guy who did this at the studio where I used to practice. Very disturbing. Made me want to totally abandon my hard-won cool vibe and smack him. I don't know if our teacher - who was also the studio owner - had a conversation with him or what, but he only came to class a few times. We were all glad that he disappeared. And he was SO not cool. Not even close."
+            },
+            {
+              "body": "There’s always a Captain Try-hard with rampant “pick-me” energy. I assure you other students are just as annoyed as you are. I’d say something if you can muster the stones to do so."
+            },
+            {
+              "body": "No offense"
+            },
+            {
+              "body": "Lock the door at five minutes past. That’s what my yoga studio does."
+            },
+            {
+              "body": "Talk to the instructor and let them know that is disruptive.  The teacher can talk with the late arriver.\n\nI used to teach a hot yoga class and we locked the door AT the start of class.  Everyone knew it and was always on time."
+            },
+            {
+              "body": "That is super late, and he shouldn't be allowed in. Our studio policy is that we lock the doors at the start of class unless a student calls that they are running a few minutes behind. We have trains in our town that sometimes hold up students. However, our policy is 5 mins max. We used to have a student who would be on time to the studio but would putz around in the locker rooms and still be super late, and management had to say something."
+            },
+            {
+              "body": "I've taught for quite a while now. Early on, I would get annoyed with late arrivals and or early departures. Overtime, I was just happy they managed to get in some practice - in spite of jobs, elder care, child care, etc. Same with the do your own thing. I have a woman who comes in 5 minutes late for every class - does largely her own thing - leaves 5 minutes early. Why? IDK also don't care. Just happy that she is getting it in. \n\nYou can't control what other people do - work on controlling your reaction to what they are doing. If you think he is 'attention seeking' or 'acting passive aggressively' - just 'smile at it' and get on with your practice. That said, you don't really know what is going on with him nor do you need to."
+            },
+            {
+              "body": "Yes, I have a woman that slips in late and leaves early to my class, she lets me know so I put a mat and props out for her in a spot close to the door, it’s not disruptive or annoying at all. She can’t find more time and I want her to be there."
+            },
+            {
+              "body": "Where I live there are hardly any classes not during work hours - sometimes I am a few minutes late to my 530 class (the latest class available!). I work until 5. Sometimes a call runs a few minutes late and it just makes me a few minutes late to class by the time I change and get my things together and drive / park etc. I try to come in as quiet as I can and always apologize to the teacher after. There’s a lot of comments here saying you can never be late and while that’s not my intention sometimes it just happens - life! At least I can arrive quietly, get settled and join the flow. Now being disruptive is a whole other story - I take more issue with that than anything. This guy needs to just practice at home!"
+            },
+            {
+              "body": "Absolutely, slipping in late with discretion (or leaving early) should not be disturbing if you are being considerate.   I’ve also been in packed 70+ person, mats 2 inches from each other class where a teacher rolls in 20 mins late like a rock star. I think she was also not sober, and that was not safe or okay."
+            },
+            {
+              "body": "It's nearly impossible to have good hard-and-fast rules. I wouldn't want to deny entry to someone like you described either. I know people like you describe, who might have only one hour available in between school drop off and work, who need to arrive 5 min late and/or leave 5 min early. You describe someone who might be in this situation or something like it, and if she sets up quietly and discreetly, and isn't a bother to anyone, it seems unkind to deny her the opportunity to join the class. There are also degrees of \"doing your own thing\" - my guess is that you have your limits as well, I think we all do, but that the woman you described isn't exceeding them. \n\nUnfortunately, it's often a combination of things that accumulate to a problem: arriving late, not following the flow, setting up too close to people after class has started and it's hard to readjust to create space, and using poses and breathing patterns that notably disrupt the flow... \n\nAnother problem is that it takes everyone to create a serene environment, but only takes one person to disrupt it, and it's very hard (maybe impossible) to create rules that don't have edge cases where we'd really want to be flexible and accommodate people."
+            },
+            {
+              "body": "Everyone we meet is a mirror, showing us something about ourselves. What's he showing you? "
+            },
+            {
+              "body": "I love this! I ask myself the same question with the people who annoy me in my classes. So far I have the guy who flexes in the mirror constantly is reminding me to look inward at how I’m feeling in the asana, and not what I aesthetically look like. He also checks his Apple Watch constantly and that reminds me to make sure I’m putting it on do not disturb so I can focus on the present and not on the outside world.\nFor the record his absolutely annoys the fuck out of me but I’m trying 😭🤣"
+            },
+            {
+              "body": "This. Whenever I get frustrated with other people I ask myself, why does this bother me? And I work to let it go. We can’t change our external world. We can change our internal world."
+            },
+            {
+              "body": "Hmm that is a bit frustrating. Being late here and there happens sometimes, but if it’s a consistent thing the studio should really say something to him. Any studio I know who gets a heads up about a student being late or having to leave early just makes sure to designate a spot for them by the door. That way there’s very little disruption. If it continues and you have a communicative relationship with the studio, it wouldn’t hurt to gently mention it to a teacher or owner and see if there’s a solution\n\nThis can also be a great opportunity for you to overcome your sensitivity to distractions. Asana practice is all about you and your mat. See if there’s anything you can do to keep your focus coming back to you. Maybe that’s a stronger breath or more of a focus on the breath, more muscular engagement, a more disciplined dhristi/gaze, etc\n\nIn an ideal world we wouldn’t have to deal with disruptive students, but I also know that sometimes my annoyance with another student comes from something more internal than external"
+            },
+            {
+              "body": "The concept of overcoming distractions vs finding an environment free of distractions will be an eternal balancing act for me. \n\nTo exist and focus in the world, we all need to be able to close out distractions, and this is particularly important for noise sensitive people. This happens all the time. Outside my urban studio, I there are car alarms, garbage trucks, motorcycles. Inside my studio, people stumble, water bottles are knocked over.  It's important to stay focused, and there is no version of a quiet, focused environment that doesn't require some level of mental consistency. \n\nOn the other hand, as a parent, I know that if a kid is having trouble focusing on homework, question #1  on the parent teacher conference is: \"does your kid have an environment free of distractions?\" Is a nearby cell phone flashing constant text messages, do people constantly walk in and out of the room asking questions, are there loud conversations nearby? There's a reason yoga studios strive to have a serene environment, even if the world inevitably disrupts it. \n\nWhile we all draw our line in a different place, there are distractions that virtually everyone would agree are an inevitable part of life, and distractions that people would almost universally acknowledge destroy the possibility of calm focus. In between is a huge grey area, and yeah, I do know I'm on the highly noise and distraction sensitive side."
+            },
+            {
+              "body": "Loved \"eternal balancing act\"!"
+            },
+            {
+              "body": "I get being mad about being late but in my classes we’re allowed to do whatever we want when it comes to poses and our bodies. Obviously there’s instruction but we’re told before class to do what OUR BODIES NEED. Also he may have asthma or something and that’s why he breaths disruptive. Many times I can’t follow the breathing in certain poses bc it triggers an attack."
+            },
+            {
+              "body": "There is a HUGE difference between doing what our bodies need and following the teachers instruction. If you can’t do something modify the asana or sit in child’s pose, hero, savasana… not following the teachers flow is distracting for everyone, disrespectful and honestly it can be potentially dangerous.\nBut I genuinely want to understand, why go to a class if you don’t plan on following the teachers instruction? I don’t love every single asana, but there’s benefit to all of them and sometimes it’s necessary to do one to safely move one to another."
+            },
+            {
+              "body": "My instructor literally says we can do our own thing. And no it is not dangerous."
+            },
+            {
+              "body": "It can be, it’s not always. But say the student is trying to do a hand/head stand incorrectly, they could hurt themselves or others. And just because your instructors say you guys can do it doesn’t make it right.\n\nBut again I’ll ask, why would you go to a class where you wouldn’t follow the teacher direction?"
+            },
+            {
+              "body": "Not true at all. Every teacher I have says \"modify as needed, including going with your own flow.\" Most students don't of course, but the more experienced ones will on occasion. Often another teachers will join a class and it's 50/50 whether they follow the class or just do their own series. \n\n\"Annoying\" people 99% of the time are a \"you\" problem, not a \"them\" problem. We are there to breath and focus on our center, not evaluate what anyone else is doing."
+            },
+            {
+              "body": "Every teacher I’ve said also has said to modify as needed, but not one of them has ever said to “go with your own flow” outside of inviting child’s pose or savasana at anytime. \nI 100% agree that most of the time when you are annoyed by someone else it can be a “you” problem, I’m not sure why your telling me that, since I’ve not mentioned being annoyed by anything that’s been discussed."
+            },
+            {
+              "body": "*\"not following the teachers flow is distracting for everyone, disrespectful...\"*  \nI took your critique to equal \"annoyance\" or to be communicating some kind of frustration at the least. Is that not the case? Also, to say it's *distracting to* ***everyone*** sounds more like an assumption based on your own feelings, not an aggregate of the actual class.\n\n*\"why go to a class if you don’t plan on following the teachers instruction?\"*   \nI wouldn't know the reasons for the OP's example, but: The space, the community, the music, the vibe, the room temperature, the wood floors?   \n  \n**I personally wouldn't keep going to classes that I didn't follow the series because for one thing, I'm not a teacher, and I appreciate them being there for guidance**. And to be clear: I don't think it's respectful to the teacher to show up late all the time. But either way I'm not there to evaluate or judge what other people are doing. Sure, it'd be distracting if they were doing free-form dancing between all the mats, but if they're doing yoga on their own mat? *Live and Let Live.*"
+            },
+            {
+              "body": "I’m pretty indifferent to what others are doing in class, but it doesn’t change my opinions. Does “can be distracting to anyone” work better? But it certainly provides an opportunity to practice pratyahara!"
+            },
+            {
+              "body": "You have no idea who this person is or what is going on in their life and you don’t need to know.  Try to create a scenario in your head that allows you to be empathetic. \n\nMaybe this is the only hour they have, maybe they are dying, maybe they have a nasal issue. \n\nThe reality is that you are sharing a space and this is all a part of being in community."
+            },
+            {
+              "body": "Concentrate on your own breath, focus on your mat… This is a yoga lesson. ✌️🧡🙏\n\nYou should do nothing. This is your challenge to overcome, not the other yogi’s behaviour/actions to change. \n\nA yoga instructor is a guide only. They should never instruct to follow anyone’s breath other than their own. \n\nAgain, a yoga instructor is a guide, not a guru! They can do whatever they want on their mat… It is their 3 foot by six foot space. What they do is their business."
+            },
+            {
+              "body": "I understand what you are saying. \n\nAre you finding yourself fixated on his lateness and breathing/practice? \n\nWe can’t control how others behave. But we can control how we react to their behavior. If you are the only one bothered by it, it might be enough to find another class."
+            },
+            {
+              "body": "Most of this stuff sounds super distracting and odd, but expecting someone to sync their breath to the teacher's cues is ridiculous.\n\nEither way, every time another yogi's behaviour is bothering me, I try to bring my attention back to the confines of my own mat."
+            },
+            {
+              "body": "Let the studio owner and teacher know the late arrivals are distracting. Ask them what their late policy is - maybe they have one and not enforcing it? See if they could implement a late policy - like they lock the doors 5 minutes after class or if people signed up haven’t arrived, the teacher will put out mats for late arrivals to occupy. And then the teacher should announce the policy before everyone (especially that guy) leaves. And continue announcing the policy in every class for a week."
+            },
+            {
+              "body": "So if I’m in the back and someone walks in and places their mat in the front row but right I’m front of me blocking my view of seeing myself during my practice - is that rude for someone to come in and go directly in front of you . I was always taught to kinda zig zag yourself"
+            },
+            {
+              "body": "I adore my instructor because he absolutely does not allow anyone to be more than five minutes late. He isn’t allowed to lock the door as it’s in a gym, but he always stands firm. \n\nHis reasoning is two things. Number 1, you’re distracting everyone who knows how to manage their time properly. Number 2, you missed the important first stretches and you may injure yourself. The man used to be in the army so he’s kind of a stickler. \n\nHe gets really annoyed at phones going off, and everyone in his class knows better. This time of year is great because there are lots of newbies which is wonderful, but anyone who sticks his class out knows not to be late, or have your phone out and on! \n\n\nI’m considering teaching and I will absolutely follow this. Being late is sometimes unavoidable because of circumstances but someone who’s constantly late is just simply not managing their time well. To me, someone who’s constantly late is extremely self centered."
+            },
+            {
+              "body": "I worked in a studio where students were allowed to join the class any time they want. It sounded very disrespectful, but it's actually their practice and their problem not mine. I tried to feel empathy for those people, let it go. I focus on my own practice, not others"
+            },
+            {
+              "body": "This is winsome yoga instructors LOCK the door when beginning class. Problem solved"
+            },
+            {
+              "body": "Small clear earplugs, the kind that cut the volume (and especially stuff like heavy breath-work) but not to the point where you can't still hear the teacher might do the trick. This will take care of the audible aspect. I actually use these for a yoga Class that I otherwise love, except that the teacher plays her music much to loud for me (not ear damaging loud, just distraction-level loud). It's clear to me though that my teacher loves it like this (she may have gone to too many live concerts over the years so it might not seem loud, who knows?). Point is: The ear plugs bring the levels down to where I can focus more easily.\n\nThe visual aspect? That is the \"work\" set out for you. Notice that you are very likely choosing to keep looking their way, which honestly is contrary to where your focus should be: your body, your breath, your internal flow. I have some fellow students that occasionally do almost entirely their own routines in class (they don't generally arrive late though). At least one is trained as a teacher and who's to say they \"have\" to follow the teacher up front? \n\nPart of the practice is becoming more grounded and centered. When aspects of a class come up that feel annoying, the first thing I ask myself is: Is this objectively a problem? Or are my expectations the problem? At that point, I take it like any other aspect: don't fight it as much as observe and breath through it. \n\nMake the \"problem\" (or this person) your friend by silently giving them your blessing. Make your \"annoyance\" your friend too! Give those feelings of control and irritation your blessing as well. And then? Come back to your breath and body and keep going."
+            },
+            {
+              "body": "It's clearly the job for your teacher. Sorry, but you gotta tell on him. This is a very obvious disruptive behaviour. And it is the teachers job to make sure that everyone benefits equally from the class and not one person who just likes to \"show off\". Teacher should politely ask him to be on time for the class and not be disruptive to other students because they are also there to learn."
+            },
+            {
+              "body": "To all the people saying “my studio would never allow this” that is not helpful advice. That’s wonderful that your studio doesn’t allow latecomers but OP’s studio does. Pointing out this does nothing to alleviate their concern or offer solutions. \n\nIf it’s the same instructor, I’d chat with them first. If it’s all different instructors, I’d go to the owner or head person in charge and share my concerns and then they can pass any concerns along to all instructors. \n\nIf you know the late students name, that also might be helpful for the owner, they could reach out to the student personally or they might send out a generic email to all registered students about class time and/or expected behaviors during classes, hoping late student gets the memo. \n\nIt is very frustrating when this happens but one component of yoga is practicing non-attachment and learning to let go. Acknowledge &amp; let go of things that you cannot change. (Not saying you should feel uncomfortable but it is something you can try in the meantime until the owner can address the situation with late student guy) "
+            },
+            {
+              "body": "You aren’t being unreasonable at all. I would find this really challenging. Unfortunately, it  sounds like entitlement and a touch of self-righteousness. Maybe lack of consideration for others in the room as well. I know better than to judge, but I also know that I would be very respectful and thoughtful about the people around me."
+            },
+            {
+              "body": "Have the instructor explain basic rules and kindnesses it may come down to asking the person to be considerate"
+            },
+            {
+              "body": "In a case like this it has to be addressed by an instructor or management, as it is disruptive for everyone else. Unacceptable behaviour! We had this happen twice and it was dealt with immediately. At my place the front door to the studio is locked before a class begins. Coming late is not an option."
+            },
+            {
+              "body": "Often times people do yoga; and other times people are the yoga"
+            },
+            {
+              "body": "This is a great opportunity for you to practice detachment. Any time your attention or gaze goes to him just bring it back to yourself, to your breath and your body. \nThere isn’t much we can ‘do’ about disruptive people, as they live and are experiencing their own reality and so should we.\nIt’s just good to remember that any trigger is an opportunity to dismantle poisons and practice detachment. \nTake care and I hope you don’t choose to leave à studio and à class that you obviously enjoy because of this!"
+            },
+            {
+              "body": "For me the lateness is less of an issue as the distraction of not doing the same sequence. It’s incredibly distracting for one person to do a different sequence, not just amending some postures. I’d let the teacher know you won’t be coming anymore if he’s allowed to disrupt the supposed safe space of a group yoga class. I’m sure the teacher would love to be supported with your statement as he’s likely disturbing them too. This guy is either going through something or he’s simply toxic and wants to be disruptive and get attention. If he wants to be part of the class he will understand and adjust"
+            },
+            {
+              "body": "The true definition of a \"safe\" space for a yoga class is being able to go and NOT be judged by other students as being annoying, or different, for not following \"the program.\" This isn't elementary school gym class where everyone has to be the same, and those \"out of line\" get called put for it. Focus on yourself, focus on cultivating empathy, being more grounded: that is what yoga class is for."
+            },
+            {
+              "body": "Focus on yourself and also be mindful for the sake of the community. It’s not elementary school, so adults need to behave adhere to community guidelines. If this studio doesn’t have guidelines it’s not safe and they shouldn’t ask people to pay. I started yoga 20 yrs ago at Yoga To The People, which was not holding safe space, but I didn’t realize that until I found other studios. Pre registering and letting the studio/teacher know you need to run late, and do different movements in a way that keeps in line with being part of the class, breathing deeply, is not out of line. Doing all these things as if you are the only person there &amp; having a teacher that doesn’t manage that could be extremely wacky and unsafe. It’s up to the teacher to manage the space more than anyone."
+            },
+            {
+              "body": "Every practice I have ever been to starts off by saying this is your own practice. Do what is best for your body and follow me as a guide if you wish. Yoga is a personal practice. I don’t think this person is wrong"
+            },
+            {
+              "body": "You could just love him. Think something like \"I see you, your anxiety and intensity and need, and how hard you work and how much you need a studio and a group, and how hard it is for you to cohere with the flow or surrender to another.\" and hold the frequency of inclusion. It's hard to do if you've been brought up to be on time as a sign of respect or follow the rules or not be a bother. It's also hard to do if you are a people pleaser and need to make sure everyone else is okay.\n\nI have a hard time mentally staying on my own mat when I see other people in a class taking a posture in a way that will hurt them, and the teacher can't get to everyone in the room. BUT it's not my job in the moment. Although it is often my job! so I go to the front and try to limit my gaze to the teacher and my own body. It doesn't always work. \n\nGood luck!\n\nChristine Marie Mason"
+            },
+            {
+              "body": "You Yogis can be a sensitive bunch.\n\nIf the studio and instructor do not have rules against being late, or students doing their own thing, then you will either have to accept it, or find a studio that is a better fit."
+            },
+            {
+              "body": "People like this guy (and worse) are why I just YouTube Yoga at home."
+            },
+            {
+              "body": "Be open and receptive. His behavior might be the only way he knows how to communicate. If he's given acknowledgement and acceptance he might engage in the flow and learn to harmonize."
+            },
+            {
+              "body": "Just use AirPods and set them to “noise cancellation” I do that in yoga all the time especially when the teacher keeps talking on and on and on. This way you can really get into the practice"
+            }
+          ],
+          "total_comments": 83,
+          "source_file": "/root/dbas/backend-final/painpont-extractor/output/senior_yoga/senior yoga_post_rank_5.json"
+        }
+      ],
+      "total_posts": 5,
+      "total_comments_all": 323,
+      "processed_at": "2025-10-10T10:38:12.801680"
+    }
+  }
+}
