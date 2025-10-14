@@ -543,20 +543,16 @@ async def analyze_reddit_post(
                     }
                 )
             
-            # Return the complete analysis
+            # Return only the final market research (market gap solutions)
             return {
                 "status": "success",
-                "file_count": len(files),
-                "extracted_data": extracted_data.model_dump(),
-                "pain_points": pain_points_data,
-                "solutions": solutions_result["data"],
+                "message": "Market research analysis completed successfully",
+                "data": solutions_result["data"],
                 "metadata": {
                     "model": model,
-                    "temperature": {
-                        "pain_points": temperature,
-                        "solutions": solution_temperature
-                    },
-                    "files_processed": [file.filename for file in files],
+                    "files_processed": len(files),
+                    "total_posts_analyzed": extracted_data.total_posts,
+                    "total_comments_analyzed": extracted_data.total_comments_all,
                     "timestamp": datetime.utcnow().isoformat()
                 }
             }

@@ -32,10 +32,7 @@ class RedditScraper:
             response = requests.get(url, headers=self.headers, timeout=10)
             response.raise_for_status()
             
-            try:
-                soup = BeautifulSoup(response.text, 'lxml')
-            except Exception:
-                soup = BeautifulSoup(response.text, 'html.parser')
+            soup = BeautifulSoup(response.text, 'lxml')
             
             # Check if it's old.reddit.com
             is_old_reddit = 'old.reddit.com' in url

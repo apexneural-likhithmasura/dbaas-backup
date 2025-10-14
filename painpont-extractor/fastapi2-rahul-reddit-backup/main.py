@@ -16,16 +16,16 @@ from openai_ranker import PostRanker
 class MarketOpportunityIdentifier:
     """Main class orchestrating the market opportunity identification workflow."""
     
-    def __init__(self, openai_api_key):
+    def __init__(self, openrouter_api_key):
         """
         Initialize the identifier with necessary components.
         
         Args:
-            openai_api_key: OpenAI API key
+            openrouter_api_key: OpenRouter API key
         """
         self.searcher = GoogleSearcher()
         self.scraper = RedditScraper()
-        self.ranker = PostRanker(openai_api_key)
+        self.ranker = PostRanker(openrouter_api_key)
         self.base_output_dir = 'd:/redditdemo/output'
         self.market_output_dir = None  # Will be set per market
     
@@ -78,7 +78,7 @@ class MarketOpportunityIdentifier:
         ranked_posts = self.ranker.rank_posts(posts_data, market_to_explore, top_n)
         
         if not ranked_posts:
-            print("\n❌ Failed to rank posts. Please check your OpenAI API key.")
+            print("\n❌ Failed to rank posts. Please check your OpenRouter API key.")
             return
         
         # Save ranked posts
@@ -319,11 +319,11 @@ def main():
     # Load environment variables
     load_dotenv()
     
-    # Get OpenAI API key
-    api_key = os.getenv('OPENAI_API_KEY')
+    # Get OpenRouter API key
+    api_key = os.getenv('OPENROUTER_API_KEY')
     
     if not api_key:
-        print("❌ Error: OPENAI_API_KEY not found in .env file")
+        print("❌ Error: OPENROUTER_API_KEY not found in .env file")
         return
     
     print("\n" + "=" * 80)

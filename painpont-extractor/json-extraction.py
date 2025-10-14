@@ -2,7 +2,7 @@ import json
 import os
 import glob
 from typing import List, Dict, Any, Union, Optional
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field, validator
 from datetime import datetime
 import logging
 
@@ -24,8 +24,7 @@ class CommentModel(BaseModel):
     """Model for a single comment."""
     body: str = Field(..., description="Comment text content")
 
-    @field_validator('body')
-    @classmethod
+    @validator('body', pre=True)
     def validate_body(cls, v):
         if v is None:
             return ""
@@ -37,15 +36,13 @@ class PostModel(BaseModel):
     title: str = Field(..., description="Post title")
     content: str = Field(default="", description="Post content/selftext")
 
-    @field_validator('title')
-    @classmethod
+    @validator('title', pre=True)
     def validate_title(cls, v):
         if v is None:
             return ""
         return str(v)
 
-    @field_validator('content')
-    @classmethod
+    @validator('content', pre=True)
     def validate_content(cls, v):
         if v is None:
             return ""
@@ -195,29 +192,89 @@ def extract_from_reddit_api_format(data: List[Dict[str, Any]]) -> Dict[str, Any]
     }
 
 
-def extract_post_and_comments(json_file_path: str) -> Dict[str, Any]:
+def extract_from_api_response_format(data: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """
+    Extract data from API response format (from /reddit/scrape-posts endpoint).
+    
+    Format:
+    {
+      "status": "success",
+      "data": {
+        "posts": [
+          {
+            "url": "...",
+            "full_data": {
+              "post": {...},
+              "comments": [...]
+            }
+          }
+        ]
+      }
+    }
+    
+    Args:
+        data: API response data
+        
+    Returns:
+        List of extracted post and comment data
+    """
+    extracted_posts = []
+    
+    # Navigate to the posts array
+    posts_data = data.get("data", {}).get("posts", [])
+    
+    for post_item in posts_data:
+        full_data = post_item.get("full_data")
+        
+        if not full_data:
+            logger.warning(f"Skipping post {post_item.get('url', 'unknown')} - no full_data")
+            continue
+        
+        # Extract using simplified format (full_data has 'post' and 'comments')
+        extracted = extract_from_simple_format(full_data)
+        extracted_posts.append(extracted)
+    
+    return extracted_posts
+
+
+def extract_post_and_comments(json_file_path: str) -> Union[Dict[str, Any], List[Dict[str, Any]]]:
     """
     Extract post title, content, and all comment bodies from JSON file.
-    Supports both simplified format and Reddit API format.
+    Supports multiple formats:
+    1. Simplified format: {"post": {...}, "comments": [...]}
+    2. Reddit API format: [{...post...}, {...comments...}]
+    3. API Response format: {"status": "success", "data": {"posts": [...]}}
     
     Args:
         json_file_path: Path to the JSON file
         
     Returns:
-        Dictionary containing post data and all comments
+        Dictionary or List containing post data and all comments
     """
     with open(json_file_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
     # Determine format and extract accordingly
-    if isinstance(data, dict) and "post" in data:
-        # Simplified format
-        return extract_from_simple_format(data)
+    if isinstance(data, dict):
+        # Check if it's API response format (has status/data/posts)
+        if "status" in data and "data" in data and isinstance(data.get("data"), dict):
+            if "posts" in data["data"]:
+                # API Response format from /reddit/scrape-posts
+                logger.info("Detected API response format (from /reddit/scrape-posts endpoint)")
+                return extract_from_api_response_format(data)
+        
+        # Check if it's simplified format
+        if "post" in data:
+            # Simplified format
+            logger.info("Detected simplified format")
+            return extract_from_simple_format(data)
+    
     elif isinstance(data, list):
         # Reddit API format
+        logger.info("Detected Reddit API format")
         return extract_from_reddit_api_format(data)
-    else:
-        raise ValueError("Unknown JSON format")
+    
+    raise ValueError(f"Unknown JSON format in file: {json_file_path}")
 
 
 # ==================== Multi-file Processing ====================
@@ -244,28 +301,40 @@ def process_multiple_json_files(json_files: List[str]) -> ProcessedDataModel:
             # Extract data from file
             extracted = extract_post_and_comments(json_file)
             
-            # Create validated model
-            post_model = PostModel(
-                title=extracted['post']['title'],
-                content=extracted['post'].get('content', '')
-            )
+            # Handle different return types (dict for single post, list for multiple posts)
+            posts_to_process = []
+            if isinstance(extracted, list):
+                # API response format returns list of posts
+                posts_to_process = extracted
+                logger.info(f"Found {len(extracted)} posts in API response format")
+            else:
+                # Single post format
+                posts_to_process = [extracted]
             
-            comments_models = [
-                CommentModel(body=comment['body']) 
-                for comment in extracted['comments']
-            ]
-            
-            extracted_data_model = ExtractedDataModel(
-                post=post_model,
-                comments=comments_models,
-                total_comments=extracted['total_comments'],
-                source_file=json_file
-            )
-            
-            all_extracted_data.append(extracted_data_model)
-            total_comments_count += extracted['total_comments']
-            
-            logger.info(f"✓ Extracted: {extracted['total_comments']} comments from {os.path.basename(json_file)}")
+            # Process each extracted post
+            for post_data in posts_to_process:
+                # Create validated model
+                post_model = PostModel(
+                    title=post_data['post']['title'],
+                    content=post_data['post'].get('content', '')
+                )
+                
+                comments_models = [
+                    CommentModel(body=comment['body']) 
+                    for comment in post_data['comments']
+                ]
+                
+                extracted_data_model = ExtractedDataModel(
+                    post=post_model,
+                    comments=comments_models,
+                    total_comments=post_data['total_comments'],
+                    source_file=json_file
+                )
+                
+                all_extracted_data.append(extracted_data_model)
+                total_comments_count += post_data['total_comments']
+                
+                logger.info(f"✓ Extracted: {post_data['total_comments']} comments from post '{post_model.title[:60]}...'")
             
         except Exception as e:
             logger.error(f"✗ Error processing {json_file}: {str(e)}")

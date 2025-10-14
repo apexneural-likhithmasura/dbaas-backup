@@ -84,10 +84,7 @@ class GoogleSearcher:
             response = self.session.get(search_url, headers=headers, timeout=15)
             response.raise_for_status()
             
-            try:
-                soup = BeautifulSoup(response.text, 'lxml')
-            except Exception:
-                soup = BeautifulSoup(response.text, 'html.parser')
+            soup = BeautifulSoup(response.text, 'lxml')
             
             # Find all result links
             for result in soup.find_all('a', class_='result__a'):
@@ -156,10 +153,7 @@ class GoogleSearcher:
                 response = self.session.get(search_url, headers=headers, timeout=10)
                 response.raise_for_status()
                 
-                try:
-                    soup = BeautifulSoup(response.text, 'lxml')
-                except Exception:
-                    soup = BeautifulSoup(response.text, 'html.parser')
+                soup = BeautifulSoup(response.text, 'lxml')
                 
                 # Find post links - multiple selectors
                 # Try different HTML structures

@@ -1,6 +1,7 @@
 """
-OpenAI Ranker Module
-Uses OpenAI API to analyze and rank Reddit posts by product development potential.
+OpenRouter Ranker Module
+Uses OpenRouter API (NOT OpenAI) to analyze and rank Reddit posts by product development potential.
+ONLY uses OPENROUTER_API_KEY from environment variables.
 """
 
 from openai import OpenAI
@@ -9,20 +10,23 @@ import os
 
 
 class PostRanker:
-    """Ranks Reddit posts using OpenAI's GPT models."""
+    """Ranks Reddit posts using OpenRouter's API with Claude models."""
     
     def __init__(self, api_key):
         """
-        Initialize the ranker with OpenAI API key.
+        Initialize the ranker with OpenRouter API key.
         
         Args:
-            api_key: OpenAI API key
+            api_key: OpenRouter API key (from OPENROUTER_API_KEY env variable)
         """
-        self.client = OpenAI(api_key=api_key)
+        self.client = OpenAI(
+            api_key=api_key,
+            base_url="https://openrouter.ai/api/v1"
+        )
     
     def rank_posts(self, posts_data, market_to_explore, top_n=10):
         """
-        Ranks posts by product development potential using OpenAI.
+        Ranks posts by product development potential using OpenRouter.
         
         Args:
             posts_data: List of post metadata dictionaries
@@ -32,9 +36,9 @@ class PostRanker:
         Returns:
             list: Ranked list of posts with justifications
         """
-        print(f"\n🤖 Using OpenAI to rank posts for '{market_to_explore}'...")
+        print(f"\n🤖 Using OpenRouter API (Claude) to rank posts for '{market_to_explore}'...")
         
-        # Prepare the data for OpenAI
+        # Prepare the data for Claude
         posts_summary = []
         for i, post in enumerate(posts_data):
             posts_summary.append({
@@ -49,9 +53,9 @@ class PostRanker:
         prompt = self._create_ranking_prompt(posts_summary, market_to_explore, top_n)
         
         try:
-            # Call OpenAI API
+            # Call OpenRouter API with Claude
             response = self.client.chat.completions.create(
-                model="gpt-4-turbo-preview",
+                model="anthropic/claude-3.5-sonnet",  # Changed to Claude
                 messages=[
                     {
                         "role": "system",
@@ -94,13 +98,13 @@ class PostRanker:
             return enriched_posts
             
         except Exception as e:
-            print(f"  ✗ Error calling OpenAI API: {str(e)}")
+            print(f"  ✗ Error calling OpenRouter API: {str(e)}")
             # Fallback: simple ranking by engagement
             return self._fallback_ranking(posts_data, top_n)
     
     def _create_ranking_prompt(self, posts_summary, market_to_explore, top_n):
         """
-        Creates the prompt for OpenAI ranking.
+        Creates the prompt for OpenRouter (Claude) ranking.
         
         Args:
             posts_summary: List of post summaries
