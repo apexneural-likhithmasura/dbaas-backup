@@ -1,0 +1,1368 @@
+{
+    "success": true,
+    "message": "Scraped complete data from 2 Reddit posts",
+    "data": {
+      "posts": [
+        {
+          "post": {
+            "title": "Struggling to focus working remotely — what actually helps?",
+            "selftext": "Been working from home a lot more lately and it's been harder than I expected to stay focused. I’ve tried to block time for tasks, but distractions always creep in.  \nCurious what’s worked for you — Pomodoro, apps, outsourcing small stuff?  \nJust trying to figure out what actually sticks.",
+            "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Been working from home a lot more lately and it&amp;#39;s been harder than I expected to stay focused. I’ve tried to block time for tasks, but distractions always creep in.&lt;br/&gt;\nCurious what’s worked for you — Pomodoro, apps, outsourcing small stuff?&lt;br/&gt;\nJust trying to figure out what actually sticks.&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;",
+            "is_self_post": true,
+            "post_type": "text",
+            "author": "A_Niamul",
+            "score": 14,
+            "upvote_ratio": 0.94,
+            "num_comments": 37,
+            "created_utc": 1749491796,
+            "url": "https://www.reddit.com/r/productivity/comments/1l7blor/struggling_to_focus_working_remotely_what/",
+            "permalink": "/r/productivity/comments/1l7blor/struggling_to_focus_working_remotely_what/",
+            "subreddit": "productivity",
+            "link_flair_text": null,
+            "domain": "self.productivity",
+            "is_video": false,
+            "thumbnail": "self",
+            "preview_images": []
+          },
+          "comments": [
+            {
+              "author": "CoryKellis",
+              "body": "You could try setting up a specific spot at home just for work, if possible, somewhere away from common distractions. It really helps your brain associate that space with focus. Also, a solid playlist can go a long way. Pick whatever genre gets you in the zone (even video game soundtracks work great for some people).",
+              "score": 11,
+              "created_utc": 1749492258,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "A_Niamul",
+                  "body": "That’s a great tip! I’ve heard video game soundtracks are surprisingly good for focus—any favorites you’d recommend? Also curious, do you use any tools or systems to stay on track once you’re in that focused zone?",
+                  "score": 2,
+                  "created_utc": 1749492458,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "CoryKellis",
+                      "body": "Notion’s been super helpful for me, mainly because I can manage to-dos with deadlines and keep everything in one place. It’s flexible enough to build a simple task tracker or a full project dashboard, depending on what you need.\n\nAs for staying in the zone, honestly, still figuring that part out too lol. Sometimes just setting a timer and telling myself “focus for 25 mins” does the trick.",
+                      "score": 1,
+                      "created_utc": 1749494216,
+                      "depth": 2,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "author": "Novel_University_362",
+                  "body": "Yes, a dedicated physical workspace is always helpful.  Also, if you have a work laptop, don’t do any personal stuff on it and conversely, don’t do any work stuff on your personal devices.  Shut down your work laptop at the end of the day and put it away.  Go for a walk to give yourself some physical separation from the workday before you get “home”.  \n\nHave a list of things you want to get done each day and work through that list in 25 minute blocks and taking five minute breaks.  Take a lunch break or workout or go for a walk at lunch time.",
+                  "score": 1,
+                  "created_utc": 1749515428,
+                  "depth": 1,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "author": "disasterous_fjord",
+              "body": "Do you have enough work to do? I hit a skid at home or in the office when I have too much bandwidth. When we’re busy, though, ain’t no time for fucking around.",
+              "score": 7,
+              "created_utc": 1749493083,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "camerongillette",
+              "body": "Great questions bro. Working remotely is kinda like when society transitioned out of a physical labor society. Previously, no one needed to go the gym, we lived athletic lives. But in removing most physical jobs, we removed the physical health regulation that they provided. And the same thing applies to remote work. Working in an office has free regulation by just existing there. It's hard to watch netflix all day if you have to hide it from your boss walking past. Working remotely doesn't have a huge amount more of practical freedom, it just means you have to be your own oppressive boss haha.\n\nI have to have a bunch of oppressive rules for myself, overwise I quickly fall in a lazy cycle  \n1. No netflix or video games before 5. EVER\n\n2. No reddit scrolls before 5. EVER",
+              "score": 6,
+              "created_utc": 1749505260,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "DarickOne",
+              "body": "Just discuss with ChatGPT different topics of your work: it will activate right neurons in your brain, then use momentum",
+              "score": 5,
+              "created_utc": 1749498254,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "Little_Bishop1",
+                  "body": "Dopamine right here",
+                  "score": 2,
+                  "created_utc": 1749525393,
+                  "depth": 1,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "author": "og_hooey",
+              "body": "Body doubling is helpful for need. You can Focusmate.com for free or other sites with a free trial.\nIt’s also helpful to set up a work focus on devices.",
+              "score": 3,
+              "created_utc": 1749513342,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "omniaexplorate",
+              "body": "Noise cancelling headphones. No sound",
+              "score": 2,
+              "created_utc": 1749493831,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "popeculture",
+                  "body": "Often for people like me (and I suspect OP), external noises and events are not the main distraction. It's generally internal noises in the head and on-screen distractions that's the problem.",
+                  "score": 2,
+                  "created_utc": 1749497564,
+                  "depth": 1,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "author": "Harshvpareek",
+              "body": "Nothing...you'll be fired then you'll struggle to get a new job and then you'll work with focus",
+              "score": 2,
+              "created_utc": 1749552012,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "lost_in_d_act",
+              "body": "-Pomodoro helps\n\n-Install site blockers to block social sites\n\n-Put your phone on focus mode (no app notifications except calls) and keep it slightly away from you - this helped me from constantly checking the phone for any new msgs/txts\n\n-Time block tasks and try to get them done. Take a break and then repeat.\n\n-This is very important and I'm still figuring out - Be realistic about how much work you want to get done in a day. Be practical, start small and increase slowly..\n\n-Do not multitask. Work on tasks one after the other.\n\n-Block separate time for responding to emails and chats.\n\n-Reduce time spent on social media overall. \n\nHope this helps 👍🏻🙌🏻💪🏻",
+              "score": 2,
+              "created_utc": 1749570539,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "Key-Payment-310",
+                  "body": "Loved your input here , try momentum instead of Promodoro or soemthing, that seems to be much better.",
+                  "score": 2,
+                  "created_utc": 1754461976,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "lost_in_d_act",
+                      "body": "Thanks. I'll check it out.",
+                      "score": 1,
+                      "created_utc": 1754485331,
+                      "depth": 2,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "author": "TypicalDesk3096",
+              "body": "In which way did you block time for tasks? Just an hour block of focus time, or more specific and detailed like 20 min answer emails, 30 lin write project report etc? Because for me the latter is what works. Being specific about what task to focus on, and to set a time limit and timer for that task",
+              "score": 1,
+              "created_utc": 1749499058,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "AncientLights444",
+              "body": "Dedicated office space",
+              "score": 1,
+              "created_utc": 1749507787,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "nighttdive",
+              "body": "White noise, rain noise, rain walks, youtube long form videos of people literally just working. It helps me a lot",
+              "score": 1,
+              "created_utc": 1749512478,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "ThisIsTheBookAcct",
+              "body": "Depends on what the distraction is. Easy, time wasting tasks always call to me when I’m tired.",
+              "score": 1,
+              "created_utc": 1749513847,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "JamesEconomy52",
+              "body": "Set aside a work area for yourself, separate from your living area! And make a schedule, which will greatly improve your work efficiency",
+              "score": 1,
+              "created_utc": 1749522492,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "Royal_Dependent9022",
+              "body": "Same. I’ll have a whole plan and then somehow lose 45 minutes googling something random.  \nlately what helps a bit is time blocking tasks in my calendar and hopping on a silent voice call with a friend no talking, just both working.",
+              "score": 1,
+              "created_utc": 1749533931,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "SalmonApproved",
+              "body": "Someone already suggested having a dedicated spot for your work environment \n\nI would add going on 20-30 minute walks twice per day, about at the same time :\n- when your concentration is faltering, you have this to look forward to \n- acts like a pomodoro insofar that you don’t have unending stretches of time to get work done \n\nAnd you probably already know that Pomodoro leverages the fact that good focus happens approx 25 minutes at a time",
+              "score": 1,
+              "created_utc": 1749542186,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "Significant-Desk-379",
+              "body": "Working remotely can serious blur the lines- I struggled with focus too, especially when I started.\nWhat helped me was simplifying things: I started using a minimalist planner to set just three main tasks for the day, and I also planned small breaks on purpose so my brain had time to reset.\nI've got the planner I used linked in my profile-its nothing fancy,but it made a big difference. You're definitely not alone in this one.",
+              "score": 1,
+              "created_utc": 1749543796,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "[deleted]",
+              "body": "[removed]",
+              "score": 1,
+              "created_utc": 1749574291,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "productivity-ModTeam",
+                  "body": "Hello, r/productivity does not allow advertising, including and not limited to other forms of promotion, as well as the solicitation/surveying of products &amp; services; this content has been removed.  Any further instances will result in a permanent ban and the app/service being added to our spam list.\n\n\n&gt;*If you are not sure or believe this is an error please [send us modmail here](https://www.reddit.com/message/compose?to=/r/productivity&amp;subject=RE: Advertising content removal: possible error).*\n\n^(Trying to circumvent this warning may result in a ban if contents are still related to advertising. *There are no special exceptions.*)",
+                  "score": 1,
+                  "created_utc": 1749632456,
+                  "depth": 1,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "author": "CleverFox1990",
+              "body": "Focus music\nShort deadlines/quotas\nA routine",
+              "score": 1,
+              "created_utc": 1749581855,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "RaIsThatYouMaGuy22",
+              "body": "As someone who works from home like 90% of the time for the last 3 years, having a routine especially with your job is important. \n\nIt gives me more time to work on my side stuff too but pomodoro helps a lot to focus on heavy tasks, make sure you have a good work environment and take regular breaks too like walks or time away from your desk. \n\nIt all takes time to implement and find a rhythm though so you’ll have to experiment with a good system.",
+              "score": 1,
+              "created_utc": 1749594235,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "Lower-Insect-3617",
+              "body": "Using noice cancelling headphone + separate working and sleep space has helped me tremendously",
+              "score": 1,
+              "created_utc": 1749609459,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "AustinBranch",
+              "body": "I’ve found that keeping my personal laptop shut (not just off, we’re talking monitor down) and listening to music I’m intimately familiar with keeps me focused. Occasionally I’ll need to sing along with Kelly Clarkson (My December is a criminally underrated album btw) but for the most part I can dive into work and the day goes by quickly.",
+              "score": 1,
+              "created_utc": 1750091476,
+              "depth": 0,
+              "replies": []
+            }
+          ],
+          "total_comments": 21
+        },
+        {
+          "post": {
+            "title": "Struggling Psychologically with Remote Work",
+            "selftext": "So I've been working remotely for 5 years. My entire professional career has been remotely , I never had the in-person office politics thing. Before that I worked in service where there was terrible pay but hustle and bustle.\n\nNow I make more than I ever have but I find everyday feels like I'm wasting away. My tasks are open ended , with deadlines I set. There never is any consequence to me doing something at 2pm or me doing something at 2 am. I go from screen to screen , laptop ,phone, tv and it's disheartening. \n\nI really struggle with the discipline needed for work and for personal growth. I've read atomic habits and tried to implement small wins but 1 win to a 16 hour day is still out of balance. I've tried to do co-working spaces but my job has a lot of meetings so I end up locked up in one of those phone booths which doesn't feel much better.\n\nI live alone and I don't have kids but I do have 1 cat. I really have no reason to interact with the outside world except to get groceries or do laundry. Every day feels like one long day and even when I break it up with a walk, or a hang with a friend , a gym class , it's like I have to be a helicopter parent and schedule my every hour to make it work cause I fall off so fast and that in itself is exhausting.\n\nThese feelings really scare me cause it makes me feel like I might need a new job , something hybrid but that feels like it could be an overreaction. Sometimes I feel like i should be able to just start a new habit or hobby and build up a side hustle but then I get intimidated by the prospect of doing that well too. \n\nHas anyone dealt with this too? How did you cope? Did something help you break the cycle?\n\nThank you in advanced. ",
+            "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;So I&amp;#39;ve been working remotely for 5 years. My entire professional career has been remotely , I never had the in-person office politics thing. Before that I worked in service where there was terrible pay but hustle and bustle.&lt;/p&gt;\n\n&lt;p&gt;Now I make more than I ever have but I find everyday feels like I&amp;#39;m wasting away. My tasks are open ended , with deadlines I set. There never is any consequence to me doing something at 2pm or me doing something at 2 am. I go from screen to screen , laptop ,phone, tv and it&amp;#39;s disheartening. &lt;/p&gt;\n\n&lt;p&gt;I really struggle with the discipline needed for work and for personal growth. I&amp;#39;ve read atomic habits and tried to implement small wins but 1 win to a 16 hour day is still out of balance. I&amp;#39;ve tried to do co-working spaces but my job has a lot of meetings so I end up locked up in one of those phone booths which doesn&amp;#39;t feel much better.&lt;/p&gt;\n\n&lt;p&gt;I live alone and I don&amp;#39;t have kids but I do have 1 cat. I really have no reason to interact with the outside world except to get groceries or do laundry. Every day feels like one long day and even when I break it up with a walk, or a hang with a friend , a gym class , it&amp;#39;s like I have to be a helicopter parent and schedule my every hour to make it work cause I fall off so fast and that in itself is exhausting.&lt;/p&gt;\n\n&lt;p&gt;These feelings really scare me cause it makes me feel like I might need a new job , something hybrid but that feels like it could be an overreaction. Sometimes I feel like i should be able to just start a new habit or hobby and build up a side hustle but then I get intimidated by the prospect of doing that well too. &lt;/p&gt;\n\n&lt;p&gt;Has anyone dealt with this too? How did you cope? Did something help you break the cycle?&lt;/p&gt;\n\n&lt;p&gt;Thank you in advanced. &lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;",
+            "is_self_post": true,
+            "post_type": "text",
+            "author": "accioresearch",
+            "score": 0,
+            "upvote_ratio": 0.46,
+            "num_comments": 124,
+            "created_utc": 1728739712,
+            "url": "https://www.reddit.com/r/remotework/comments/1g204uq/struggling_psychologically_with_remote_work/",
+            "permalink": "/r/remotework/comments/1g204uq/struggling_psychologically_with_remote_work/",
+            "subreddit": "remotework",
+            "link_flair_text": null,
+            "domain": "self.remotework",
+            "is_video": false,
+            "thumbnail": "self",
+            "preview_images": []
+          },
+          "comments": [
+            {
+              "author": "[deleted]",
+              "body": "Working from home is not for everyone.  We even saw that during Covid with school kids, some thrived, some failed miserably.",
+              "score": 54,
+              "created_utc": 1728741643,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "Yeah I think I need to interact with people,\nTo be seen and get immediate real time feedback.",
+                  "score": 5,
+                  "created_utc": 1728745644,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "bugzaway",
+                      "body": "This is the heart of the issue. It's good that you recognize this. WFH is definitely not for everyone.  I have similar issues but on balance I still prefer WFH. \n\nReddit is full of anti-social shut-ins so you will get a lot of very unhelpful \"that's my ideal situation, you are soooo lucky\" comments from people who can't fathom that some of us actually enjoy social interactions. \n\nAll that said, you haven't said a word about your social life outside of work. Do you have friends, family nearby, etc? I am almost certain that what you need is an in-person job, but it might be worth trying to enrich your personal life first.",
+                      "score": 10,
+                      "created_utc": 1728747091,
+                      "depth": 2,
+                      "replies": [
+                        {
+                          "author": "accioresearch",
+                          "body": "Yeah I don't have family near by or at least easy to get to without a 2 hours commute. I try to socialize once a week but then I'll go crazy and do like 4 outings in 2 days and experience social burn out.",
+                          "score": 3,
+                          "created_utc": 1728747349,
+                          "depth": 3,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "author": "xender19",
+                      "body": "I've got bad news for you about working in an office, most of the time when I worked in an office I did not get many positive opportunities to be seen and I rarely got quick or useful feedback. \n\n\nEveryone is so busy being self-absorbed with their own life that they just don't have much bandwidth for that. Sometimes you'll run into a busybody person who does and that's super miserable when you're in the same office. Very very rarely do you find someone who provides this positive connection that you're looking for. \n\n\nYour best course of action is to find that connection outside of work regardless of whether you work remotely or in person. ",
+                      "score": 3,
+                      "created_utc": 1728766227,
+                      "depth": 2,
+                      "replies": [
+                        {
+                          "author": "accioresearch",
+                          "body": "Thanks for this too, I think alot of y'all are on the money. I have to find a way to get external social interaction and that's not necessarily an office in-person though hybrid seems like it could help since it would be a reason to get dressed and put together a look and hit the streets for a bit.",
+                          "score": 1,
+                          "created_utc": 1728769502,
+                          "depth": 3,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "author": "tantamle",
+                  "body": "Comments like this are just designed to evade the question of whether or not OPs experience/productivity is *common* or not.",
+                  "score": -1,
+                  "created_utc": 1728745531,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "accioresearch",
+                      "body": "Thanks , yeah I got so caught up\nDefending myself I forgot my original question too.",
+                      "score": 0,
+                      "created_utc": 1728746690,
+                      "depth": 2,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "author": "UltraJuicyPhysique",
+              "body": "Best tips I can give;\n\nWake up and prep your mornings like your going to office. Go drive to get coffee somewhere and bring back. Self care in mornings + cardio and hit gym 4 times a week. Once a week go out socially to do something movies literally Anything.",
+              "score": 23,
+              "created_utc": 1728744366,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "The gym near me is pricing but I can't feel like this much more so thinking this might be the start.",
+                  "score": 6,
+                  "created_utc": 1728746620,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "UltraJuicyPhysique",
+                      "body": "Bro you don’t leave your house don’t cheap out on your peace/ chance to escape…",
+                      "score": 12,
+                      "created_utc": 1728746778,
+                      "depth": 2,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "author": "akillaninja",
+                  "body": "I was going to say the same thing. Do all of this.",
+                  "score": 2,
+                  "created_utc": 1728747630,
+                  "depth": 1,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "author": "Swgx2023",
+              "body": "I wfh 75% of the time. At about 5:30 I change into my gym clothes and get everything ready to go. Then I sit back down, go back through my emails, and check that I took care of everything I flagged. At about 6 pm, I shut down and go to the gym. In the time it takes me to get there, I clear my head. Also, the gym is a little busy. It has made a huge difference in my stress levels. Even if you can leave the house, walk, drive - anything, try it! Good luck!",
+              "score": 10,
+              "created_utc": 1728744533,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "AdMurky3039",
+              "body": "So get a hybrid job?",
+              "score": 6,
+              "created_utc": 1728745212,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "Big-Sheepherder-6134",
+              "body": "I really think you need a hybrid situation. It would give you variety every week and you probably would appreciate it.",
+              "score": 4,
+              "created_utc": 1728743906,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "Word, I'll see if I can find a hybrid role.",
+                  "score": 1,
+                  "created_utc": 1728745722,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "Big-Sheepherder-6134",
+                      "body": "My brother does two days a week in the office. He likes the variety.",
+                      "score": 1,
+                      "created_utc": 1728747540,
+                      "depth": 2,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "author": "1202020bb",
+              "body": "There is a tool I really like called Flow Club. It’s free for a week then $40/month. It’s like virtual co working sessions facilitated by a moderator. It helps me tap in and focus, I use it now whenever I need to get a deliverable accomplished. Honestly, it changed my entire attitude about remote work and made me feel accountable to getting things done. Highly recommend!! https://www.flow.club/?utm_medium=google-ads&amp;utm_campaign=142379717933-g&amp;utm_content=flow%20club-b-coworkingforadhd-629155953280&amp;gad_source=1&amp;gbraid=0AAAAAon1RgHn2d9_4RqdjbG3eAbovCZ-c",
+              "score": 4,
+              "created_utc": 1728751173,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "Thanks this is really cool, I think an accountability partner would help!",
+                  "score": 1,
+                  "created_utc": 1728751322,
+                  "depth": 1,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "author": "Tattooed_Beauty15",
+              "body": "The opposite is true for me, I dealt with so much office politics to the point of hating people so much. People are noisy and gross. I hated using the bathrooms at the office, I hated taking the bus full of people, working face to face with people, etc.  \n\n\nWorking from home for over a year now and I love being physically away from most people. I can choose who I want to hangout with and not see most unpleasant people. I have a roommate and bf living with me though. Working from home made me appreciate my few friends and is peaceful to work (besides my cat).",
+              "score": 6,
+              "created_utc": 1728746672,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "No_Resolution_9252",
+                  "body": "1 year is nothing. That isn't even enough time for most people to just all but stop working when they are allegedly 'working' remotely. check it out in 2-3 more years.",
+                  "score": 1,
+                  "created_utc": 1728757882,
+                  "depth": 1,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "author": "Ok-Pineapple5077",
+              "body": "Consider a volunteer job for a few hours a week or join a sport league or take a local class. Seems like you’re missing a scheduled thing to do and also regular in person social interaction.",
+              "score": 3,
+              "created_utc": 1728746146,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "sidehustlerrrr",
+              "body": "Get out and make some friends outside of work or pick up a side hustle in person. Seems like a nice flexible job with zero social benefit.",
+              "score": 3,
+              "created_utc": 1728748240,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "Coomstress",
+              "body": "90% of the time I love my remote job; the other 10% I feel a bit like this. (Although, I have urgent work/strict deadlines). What has helped me is scheduling time in my day to walk outside. (I live downtown in a major city). So, I will usually walk about 1/2 mile to get lunch in the middle of the day, and then later I may walk to a coffee shop or corner store to get a latte or Diet Coke. Or, if I have errands to run, I will do those on foot. Just a change of scenery helps. I also go to the gym or yoga class 4-5 nights a week, which can be expensive. But, I am also saving money on gas by not commuting, so I figure it’s worth it.",
+              "score": 3,
+              "created_utc": 1728748491,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "RevolutionStill4284",
+              "body": "Work from office is not for everyone, and same for work from home.",
+              "score": 3,
+              "created_utc": 1728753942,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "taylorr713",
+              "body": "If you continue working from home you need a life outside of work. Something you put on nice clothes for and get excited to do. Maybe go on dates or to local meetups for people looking for friends.",
+              "score": 3,
+              "created_utc": 1728760847,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "citykid2640",
+              "body": "I don’t see the major issue. Just find a hybrid job. Remote isn’t for everyone or every life stage and that’s ok",
+              "score": 3,
+              "created_utc": 1728762896,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "xaiires",
+              "body": "Not everyone is built for wfh and not everyone can manage themselves either. Hybrid might work, but if you need structure to be able to complete your work, maybe switching to a full time in office job is for you, or you'll just have the same problem on your hybrid days.",
+              "score": 5,
+              "created_utc": 1728748163,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "DDDX_cro",
+              "body": "I have a solution for you.  \nStep 1 - tell me what your job is.  \nStep 2 - quit it so i can take it.  \nStep 3 - get an office job since that seems more suitable to your work style.\n\nI'd be in total heaven if I were in your situation....",
+              "score": 10,
+              "created_utc": 1728742710,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "Sounds like you want to quit what you do, or are having trouble finding work. What do you do? \n\nTo be clear, by no means do I think working for rich white old men board members in an office and getting the gold star for being the most profitable employee is for me either. \n\nRemote work is a great evolution especially for parents/families since that often entails such errand-rich lifestyles but if you don't have that then you don't have any real consequences can feel a bit like living in stasis. \n\nIf for your job you're always moving and have shit that needs to be done in order to do the next thing , yes it's exhausting but you're also stacking your day with a million small wins.\n\n I don't wish ppl to get compensation crumbs when they deserve the whole pie or to work horrible hours to make ends meet but I also think there is such a gift in momentum you don't have to make up and drive yourself every second of every day.",
+                  "score": 2,
+                  "created_utc": 1728745087,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "Rt51cali",
+                      "body": "What job are you doing?",
+                      "score": 2,
+                      "created_utc": 1728789211,
+                      "depth": 2,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "author": "No_Resolution_9252",
+                  "body": "You just want a job where you think you can slack off and still get paid.",
+                  "score": -1,
+                  "created_utc": 1728757896,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "DDDX_cro",
+                      "body": "Nah, I want a fully remote one so that I can relocate to a warmer climate, but still return to my beautiful Croatian summers",
+                      "score": 1,
+                      "created_utc": 1728760284,
+                      "depth": 2,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "author": "Nightcalm",
+              "body": "I identify with it.  I struggled for 3 years WFH and it just wasn't for me.  When the company went hybrid that was a little help but in the end I retired.  I identify with your issues.",
+              "score": 5,
+              "created_utc": 1728746124,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "No_Resolution_9252",
+              "body": "You have found one of the fatal flaws with remote work.\n\nI did it about 5 years straight and I would like to never do 5 consecutive years of remote work again. If the choice today were between working the next 5 years 100% in office and the next 5 years 100% remote, I'd chose to go to the office.\n\nHybrid is really ideal, (I am in office 1 day a week) breaks up the week so working from home doesn't just become one circular time block stretching months or years and you get to see people other than who you would see every day.\n\nThe people screaming loudest about remote work can be ignored, most of them are screw offs that aren't working half the time anyways.",
+              "score": 4,
+              "created_utc": 1728757809,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "Rt51cali",
+                  "body": "Well, I have 2 part-time freelance jobs and 1 full-time hybrid job so I work 7 days a week for the past 2 years so definitely not a \"screw off\". \n\nBut I get what you're saying. I think hybrid is best too although right now I am looking for fully remote because I want to move. Remote positions are great because they don't tie you down to one location so theoretically you can stay at the company longer.",
+                  "score": 0,
+                  "created_utc": 1728789495,
+                  "depth": 1,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "author": "[deleted]",
+              "body": "How often are you socializing?  Most humans generally need quite a bit of socialization...  \nI've worked fully remote since before the pandemic, am a pretty solid introvert, and I find a good social balance to be 2-3 evenings/week and 2-3 things planned on the weekend.  Plus be sure to leave home every day, even if it's just for a walk, to the gym or a bike ride.  \n\nSometimes if I get in a rut, a new job/new challenges can be a good thing.  Doesn't necessarily need to mean in-office, just a different set of things to learn and improve at.  Also, taking classes or getting certificates related to my job helps too, even if it's not actually required for the job.\n\nI have a friend who thought she wanted to work remote - threatened to quit her job if they didn't let her - so they did let her go remote, and then she didn't go out and socialize very much and ended up so depressed and miserable she had to get some pretty serious treatment.  People don't always realize they were actually benefitting from the in-office socialization, even if they thought it was stupid and pointless, and that it needs to be replaced with something when you go remote.",
+              "score": 2,
+              "created_utc": 1728742279,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "Thanks for getting it. I'm sorry to hear about your friend. I think part of the issue is I might be more depressed than I realized. \n\nSome folks have suggested hybrid. My company isn't based in my city but I've been considering going for another role though I like the problem space and have gained more influence in the work so it does feel like building something but it also feels so hard to care about on a day to day basis.",
+                  "score": 3,
+                  "created_utc": 1728745527,
+                  "depth": 1,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "author": "2pongz",
+              "body": "You just need something that really excites you more outside of your career, enough for you to set strong boundaries that will open time for personal development. A life other than your career can really put things into perspective.\n\nFor me, I’m building discipline so I can achieve a personal goal next year (explore a new country while working remote, build new connections, and experience a new culture and life that I won’t be able to where I currently am). \n\nIt gets me excited to wake up early and be productive at the earliest chance I can.",
+              "score": 2,
+              "created_utc": 1728761595,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "Thanks I think is part of it too, like I enjoy socializing of course but it's not consistent enough to set strong boundaries around.",
+                  "score": 1,
+                  "created_utc": 1728820508,
+                  "depth": 1,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "author": "Tiltmasterflexx",
+              "body": "So you're struggling because you don't have a social life, hobbies and shut yourself inside.",
+              "score": 2,
+              "created_utc": 1728764598,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "xender19",
+              "body": "I recommend to get therapy. Any chance this is more connected to the pandemic and not getting over it than it is remote work? \n\n\nI was working remotely over a decade ago and everything about the world was completely different back then. Even though I worked from home all day I would spend my evenings at hobby meetups. All of the hobby groups I was in collapsed from covid and haven't come back. ",
+              "score": 2,
+              "created_utc": 1728765919,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "InterjectionJunction",
+              "body": "Huh?",
+              "score": 2,
+              "created_utc": 1728776204,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "Rt51cali",
+              "body": "What type of work? Are you doing monotonous work or is there some interaction with co-workers or customers. I think it really depends on the type of work you're doing. \n\nI find that if I am working remotely doing creative work that I'm excited by, it's not a problem. But if I'm doing monotonous boring office work then I feel very boxed in and start to go a little crazy.",
+              "score": 2,
+              "created_utc": 1728789015,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "My work is creative too, it's UX Research. I'm actually pretty passionate about it too but I cycle between burnout and this loss at sea feeling. \n\nThe work requires giving a lot of yourself in the interviews and other data collection phases. Then analyzing the data and depending on the project the process is different. Then my favorite part but is also exhausting putting the share out together which means crafting the big picture story. \n\nI think a hard part of the work is it's never the same process twice and something a bit more monotonous could be a nice break. I think at the end of everyday my brain is fried.",
+                  "score": 1,
+                  "created_utc": 1728820760,
+                  "depth": 1,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "author": "Only_Seaweed_5815",
+              "body": "I have been remote for 6 years, no kids and I struggled for a long time. But I do like the freedom. I think it helps to get out and socialize a bit. And even though it can be a challenge to maintain a schedule, I find it’s better to maintain one the best you can, even if you do have some irregular days here and there.",
+              "score": 2,
+              "created_utc": 1728790639,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "Yeah I think it's getting the schedule to stick where I struggle most but appreciate you getting that it can be hard for some. \n\nWhen the schedule started to stick, what for you made it sticky? Was it that the activities were things you found super engaging? Or like convenient and close by? \n\nThanks in advanced!",
+                  "score": 1,
+                  "created_utc": 1728821006,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "Only_Seaweed_5815",
+                      "body": "I’ve just realized over the years a certain schedule that works better. So I naturally fell into it but it doesn’t stick all the time! But in general, you just find a rhythm that works better for you and try to do it as much as possible. \n\nIt’s just knowing that your schedule is not always gonna be the way you want it to be. Things happen and sometimes we get distracted. But at the end of the day, I always get my work done.  I think it’s a matter of intentionally eliminating distractions! \n\nAnd it is harder to stay focused when you don’t have kids or outside obligations. I know a lot of people would like to have that “problem “but it is something we have to deal with. So just do the best you can and try to make it a priority as much as possible.",
+                      "score": 1,
+                      "created_utc": 1728841780,
+                      "depth": 2,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "author": "LikeATediousArgument",
+              "body": "label dinner ten smile snails different toy spoon many wakeful\n\n *This post was mass deleted and anonymized with [Redact](https://redact.dev/home)*",
+              "score": 4,
+              "created_utc": 1728741035,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "Word, I always say I'll force myself to leave the house once a day but then it feels so arbitrary and pointless. I think I live for having visible impact on people so it might just be this lifestyle is not for me.",
+                  "score": 1,
+                  "created_utc": 1728745260,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "accioresearch",
+                      "body": "How did you get yourself to leave the house? Can you explain \" FORCING\" ?\n\nI've done the same walk once a day for a few days but then lose interest too.",
+                      "score": 2,
+                      "created_utc": 1728745593,
+                      "depth": 2,
+                      "replies": [
+                        {
+                          "author": "LikeATediousArgument",
+                          "body": "selective like capable many modern hard-to-find chief absorbed cautious sense\n\n *This post was mass deleted and anonymized with [Redact](https://redact.dev/home)*",
+                          "score": 1,
+                          "created_utc": 1728751139,
+                          "depth": 3,
+                          "replies": [
+                            {
+                              "author": "accioresearch",
+                              "body": "Yeah I think today I'm gonna make signs that I hang my bed so as soon as I wake up it says , \" you're dying as you read this, make today count.\" And shit like that",
+                              "score": 2,
+                              "created_utc": 1728751250,
+                              "depth": 4,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "author": "accioresearch",
+              "body": "Thanks for all the suggestions and honest conversation.\n\nThe gym near me is pretty expensive but I do think it's a trade of mental health, so I'll do it!\n\nY'all are under no obligation to return to this post but I think I'll write update when I've done my first gym class. Aiming for this Monday.",
+              "score": 3,
+              "created_utc": 1728750012,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "2014ChevyCaptiva",
+              "body": "For me, the COVID lockdown was horrible for my mental health.  In my area, some smaller restaurants would allow groups of four or fewer people to eat together.  Depending on what projects I was working on, I would schedule lunch meetings with people involved with the project to allow me to have contact with people.  It helped me tremendously.",
+              "score": 3,
+              "created_utc": 1728752545,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "DIARRHEA_CUSTARD_PIE",
+              "body": "If working from home isn’t for you, and you aren’t productive, find an office job. I might sound like a dick but please don’t ruin it for others. It sounds like you might be an extravert and need to work in an environment where you are physically around other humans and can extract their energy and smell their pheromones.\n\nSeriously though… People who complain about having total freedom over their day are like aliens to me, sorry. You have control over you whole day and don’t have to drive to a rich old man’s office building just to have zoom meetings and work on the computer. Are you like a worker bee who just needs to be working 24/7? If you can’t do hobbies then try side hustles that make money then? Do you have interests outside of work?\n\nCompanies you work for are not responsible for your social life or hobbies, just remember that. Your life belongs to you.",
+              "score": 4,
+              "created_utc": 1728743843,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "I figured I'd get at least one , \"I don't get ppl like you\" critiques. All good, I get how it doesn't make sense for some. I don't know about worker bee but I do enjoy rigor, the sense of satisfaction that comes with completion of a task. My work is UX research of a digital service and it's never really done. You're always pushing the ball up the hill trying to get stakeholder buy-in and rarely does it result in immediate change. \n\nI think if I had even just one real responsibility in the real world I could do it. Like at 3pm, pick up the kids or what have you but being completely alone and nothing I do has to be done by any set time to be more efficient, none of it really matters. It's that feeling that really leaves me with feeling lost at sea. \n\nIn contrast, working in a restaurant, you have a bunch of stuff to do and they don't have to go in any particular order either but the consequences are so real. At some point customers come in and you won't have time to do X, Y or Z so it's best to do something now. \n\nI guess if do develop a hobby , I have to figure out how to time it within my day so it doesn't feel like I'm just straight time thefting. \n\nYeah I've tried the side hustle thing too but often it's another thing through a screen when I'm burnt out on screen-based work. Maybe I'll try to get a side hustle that is in physical space.",
+                  "score": 4,
+                  "created_utc": 1728744769,
+                  "depth": 1,
+                  "replies": []
+                },
+                {
+                  "author": "bugzaway",
+                  "body": "&gt;I might sound like a dick but please don’t ruin it for others\n\nYou are being an absolute dick. No one owes you to suppress their lived experiences for your sake. OP has the same  right to complain about his work conditions as everyone else. My god you people are so insufferable. \n\n&gt;Companies you work for are not responsible for your social life or hobbies, just remember that.\n\nThis has zero relevance to OP's issues nor is it remotely what they said.",
+                  "score": -1,
+                  "created_utc": 1728747269,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "DIARRHEA_CUSTARD_PIE",
+                      "body": "&gt; You are being an absolute dick\n\nHence the disclaimer. Thanks for the feedback",
+                      "score": 3,
+                      "created_utc": 1728748036,
+                      "depth": 2,
+                      "replies": []
+                    },
+                    {
+                      "author": "AdMurky3039",
+                      "body": "The point isn't that OP should suppress their lived experiences. However, they should recognize that work from home jobs are coveted and finding an office or hybrid job would be the considerate thing to do when there are so many people who would love to trade places with them.",
+                      "score": 1,
+                      "created_utc": 1728750344,
+                      "depth": 2,
+                      "replies": [
+                        {
+                          "author": "bugzaway",
+                          "body": "That is such a deeply disingenuous and absolutely ridiculous standard to hold people to that I literally cannot believe what I am reading.\n\nWhen have YOU ever made **a career decision** because \"that's the considerate thing to do\"?  Who here has EVER made a decision about work, something that defines our livelihood, the thing that we spend most of our waking moments doing, because... *that's the considerate thing to do* - for nameless people at large at?  Since when is this a thing??\n\nThat's just such a blatantly dishonest thing to say.",
+                          "score": 2,
+                          "created_utc": 1728751669,
+                          "depth": 3,
+                          "replies": [
+                            {
+                              "author": "AdMurky3039",
+                              "body": "So in your worldview asking someone to be considerate is \"deeply disingenuous?\" Okay.",
+                              "score": 1,
+                              "created_utc": 1728751947,
+                              "depth": 4,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "author": "[deleted]",
+              "body": "[deleted]",
+              "score": 3,
+              "created_utc": 1728743639,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "😂😂 good one , I'd be crucified. Plus this lifestyle works so well for parents.",
+                  "score": 2,
+                  "created_utc": 1728744117,
+                  "depth": 1,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "author": "[deleted]",
+              "body": "Get up 2 hours before work, get ready, drive an hour in traffic to your office or a place to work. Work. Have a lunch out. Work more. Drive an hour back to your home. Arrive at home 10 hours after you left for work that morning. Enjoy. \n\nI hate you for complaining about WFH.",
+              "score": 2,
+              "created_utc": 1728745690,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "AdMurky3039",
+                  "body": "It's really frustrating to see people complaining about WFH when it's an easily solvable problem. Just get a hybrid or office job and open up your remote job for someone who actually wants it.",
+                  "score": 3,
+                  "created_utc": 1728750588,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "[deleted]",
+                      "body": "“Hey everyone, my life is too easy, how can I make it harder?”",
+                      "score": 3,
+                      "created_utc": 1728753031,
+                      "depth": 2,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "author": "accioresearch",
+                  "body": "Wow I knew I'd get no sympathy but dam . I'm not saying again that the alternative of in-person / commuter life is better right. I believe there was a study that found the biggest predictor of someone's happiness was not education level or marital status , it was commute time. So I def get how the grind is the grind.\n\nBut if you really don't have a partner or family to break up your day, remote work could be very isolating and it isn't everything it's cracked up to be. \n\nThanks for being a hater on a post that says someone is psychologically struggling. Maybe you should look for a skill that could give you this lifestyle if you resent so much.",
+                  "score": 0,
+                  "created_utc": 1728746226,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "[deleted]",
+                      "body": "Stop whining and do something that gets you out of the house more and recognize how lucky you are to be in the position you’re in?",
+                      "score": 1,
+                      "created_utc": 1728746657,
+                      "depth": 2,
+                      "replies": [
+                        {
+                          "author": "accioresearch",
+                          "body": "I actually do make an effort to express gratitude every day and to pay it forward too. I volunteer and make an effort to check out whatever is happening in the community.\n\nBut on the day to day, I think even when I \"get out the house\" the motivation feels so arbitrary. Walk down the block, to walk down the block, you know?\n\nI get that you have no sympathy for me just wanted to say I do feel gratitude and sometimes feeling lost in something ppl would envy has its own challenges. I guess more than anything this post has showed me how unsafe it is to share these feelings.",
+                          "score": 1,
+                          "created_utc": 1728747100,
+                          "depth": 3,
+                          "replies": [
+                            {
+                              "author": "[deleted]",
+                              "body": "What I’m conveying sounds harsh to you, but that doesn’t make it untrue. Just get out of the house more and enjoy your situation - it’s that simple.",
+                              "score": 1,
+                              "created_utc": 1728747315,
+                              "depth": 4,
+                              "replies": [
+                                {
+                                  "author": "accioresearch",
+                                  "body": "I mean saying you hate me for struggling with something doesn't sound harsh , it is harsh. \n\nAnd saying just do the thing is a lot like saying to a depressed person, stop being depressed, there , solved it. \n\nI believe everyone deserves to find a fulfilling life path and it takes time to construct yours. Making the most of one's privilege especially when you are a child of immigrant families that worked to the bone can feel a pressure in itself to do the most with time. Trust me, I get how this looks like I'm just a whiner but there is a reality to struggling to fill every second of your day if you don't have anything to anchor into. It can feel like whenever Neo from the Matrix first gets booted up into a white void. \n\nThankfully some folks were actually helpful and have mentioned that this struggle is very common for those with ADHD. So great job again at showing your true colors and how little empathy you extend for those in a different life circumstance.",
+                                  "score": 1,
+                                  "created_utc": 1728757729,
+                                  "depth": 5,
+                                  "replies": [
+                                    {
+                                      "author": "[deleted]",
+                                      "body": "You posted asking for feedback. You got my perspective. Seems like it made you think. \n\nNow that you’ve processed what everyone has said, what are some things you’ll do to help yourself here?",
+                                      "score": 2,
+                                      "created_utc": 1728758066,
+                                      "depth": 6,
+                                      "replies": [
+                                        {
+                                          "author": "accioresearch",
+                                          "body": "Thanks to folks willing to work with my emotional state as a starting place I did get some recommendations. Some have recommended an app to virtually co-work with others. That seems promising cause I do struggle to not just let my work spill over to weird hours of the night cause I can and there's no consequence.\n\nThe other is I'm going to sign up for the gym near me and start doing the classes. I think the act of getting ready and needing to be somewhere at a set time can help kick my heart and in mind into a \"go get it\" gear.\n\nAlso really inspired the person who has a second remote job and makes double the paper. The more I do, the more invigorated I feel. Also, some folks mentioned a part time in person. I think maybe a part time as a bartender on the weekends could be good for me.",
+                                          "score": 3,
+                                          "created_utc": 1728758372,
+                                          "depth": 7,
+                                          "replies": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "author": "podcasthellp",
+              "body": "Clubs, organizations, hobby groups, anything that will get you out of the house. I feel the same way sometimes. I need to force myself to get out of the house and having a group with set times really helps hold me accountable. It’s tough but I have to force it otherwise I won’t do it",
+              "score": 1,
+              "created_utc": 1728747506,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "[deleted]",
+              "body": "[deleted]",
+              "score": 1,
+              "created_utc": 1728747636,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "Hey sorry I didn't reply sooner been trying to debunk the haterade comments that honestly think I just want to make my life feel harder.\n\nI can really appreciate your situation. Zoom and screen time the way we get it is so exhausting too. I suspect it's the socializing with no exchange of the in person neurotransmitters like oxytocin that normally cause a positive feedback, loop so even though you're physically still you're still somehow exhausted.",
+                  "score": 2,
+                  "created_utc": 1728757220,
+                  "depth": 1,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "author": "gotchafaint",
+              "body": "This is relatable but I already know I can’t do an office job. I schedule walks, trips to the gym, meetup groups, get togethers with friends. I’m naturally an introvert so I really have to force myself. It’s hard because I’m always feeling behind with work but if I don’t do these things I start to disintegrate",
+              "score": 1,
+              "created_utc": 1728763984,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "beezkneez2k",
+              "body": "Tbh I have certain times that I just sit in zoom with my coworkers to shoot the shit, no work talk. Every day for the first hour is my go to. I don't know if you have that option but it helps!",
+              "score": 1,
+              "created_utc": 1728766668,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "Millimede",
+              "body": "I’m semi-hybrid and work from home four days a week. I have set hours, and I get up and shower and make breakfast, feed my dogs, and head to my home office. I basically have a space set aside for that. I think the problem you’re experiencing is the same as my friend who just kind of works whenever she feels like it and then it feels like she never has a day off because it gets spread out everywhere. You need “work time” and “off time”, maybe set a schedule with your boss so you have an external motivator. I am on 7-3:30, never before or after unless OT is approved, and my time is my time.",
+              "score": 1,
+              "created_utc": 1728774917,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "accioresearch",
+              "body": "I should explain too my remote job isn't one where you knock out the same tasks every day. It's a lot of meetings and then looking for the truth , the big picture in the data. While I love it, it's also taxing since you have to consume so much , process and then generate reports.\n\nI strive to be a UX researcher that captures the users story so my reports won't be , people want a button here but more like users need a save button but more for this to save as they go since they're liking to be rushing due to X. \n\nI think it's how I process info, it's never the same thing twice. But having this discussion I'm realizing my process is more reactive than linear . I think I need to spend more of my day in a state of play.\n\nI just made the motivational signs I said I would make to hang my bed to get me in the right headspace and I feel like that was also so reactive but a state of play too. Wish I could attach an image to show y'all.",
+              "score": 1,
+              "created_utc": 1728778586,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "[deleted]",
+              "body": "[deleted]",
+              "score": 1,
+              "created_utc": 1728797307,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "Actually not true , I do have a life with friends I hang out with weekends. Most people are free weekends but that's still 5 days of the work week. \n\nI struggle more to control the delineation between my working hours and personal hours since it's all in the same place. Some of the folks that were actually helpful have said it can be a neurochemistry thing and related to ADHD so the lack of structure can indeed be hard to deal with.",
+                  "score": 1,
+                  "created_utc": 1728819574,
+                  "depth": 1,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "author": "accioresearch",
+              "body": "To all those who swear this is some middle manager faking this , it's not. Also I'm not hating on Remote work. I say several times how groundbreaking it is especially for parents or those who have errand-rich lives. The flexibility is very freeing. \n\nBut for some, having home and work be the same place can be a struggle and thanks to some of y'all I learned I'm not alone. That it can feel like forcing yourself to do more than you would until you make a new normal for yourself. And if you're someone who struggles with discipline then this can indeed feel like rolling the same ball up the hill over and over. Thankfully some have explained this experience is common with ADHD and that could explain why it's so disheartening for me. \n\nDespite all these salty ppl out here I'm grateful I made this post cause I never would have put that together. \n\nI think this lifestyle can be a super power and I'd like to have that experience but I'm finding it to be the opposite. That if I'm not careful I can end up not leaving the house for days. That I have to force myself to be more social in order to balance it and that part doesn't come easy since i am more introvert. \n\nIf you don't care or don't agree , then keep pushing this post is not asking anything of you.",
+              "score": 1,
+              "created_utc": 1728820050,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "IAmTheBirdDog",
+              "body": "Find a hobby or two that requires you to physically leave your home at regularly scheduled times. Ideally, the hobbies will involve some form of physical fitness. Examples: a recreation sports league, yoga, strength training (with a coach), martial arts, CrossFit, pickle ball, outdoors clubs (hiking, rock climbing, running, etc.), dance, wellness classes (TRX, etc.)\n\nThis will do wonders for your mental and physical health, as well as give you greater appreciation for the time and flexibility afforded by working from home.",
+              "score": 1,
+              "created_utc": 1728832527,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "accioresearch",
+              "body": "Hey y'all just wanted to update in case someone one day finds themselves in the same position.\n\nSince engaging in this discussion, I've been taking it day by day and while I can't say I have developed any new routines , I've been doing a lot more positive self talk and seeing this lifestyle as one I can shape and control much more. \n\nI'm making room for creative pass times after work and it's been helping me break up the screen stuff. \n\nThankful to each of y'all though I don't agree with how quickly some of you came for me just cause I struggle with this lifestyle. Again I don't think struggling with WFH automatically means I want to be in an office or that I'm just spitting privilege in the face. But yeah, so many of you calling me a whiner when I know that's not me was weirdly motivating. Along with the folks sharing their experiences forcing external structure.",
+              "score": 1,
+              "created_utc": 1728995455,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "Inevitable_Fact_3222",
+              "body": "What do you do? ",
+              "score": 1,
+              "created_utc": 1730263342,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "Representative_Sand7",
+              "body": "Relate to this in some respects. I don’t love going out to a place every week, but a hybrid situation where I go in sometimes woild be nice. I feel like I’m home 90 percent of my life.",
+              "score": 1,
+              "created_utc": 1728745908,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "I've spoken to co-workers about it and I believe that referred to themselves as a \"house creature\" 😹and their car dies like 2x a month from lack of use. \n\nHow do you spend that 10% what works for you?",
+                  "score": 2,
+                  "created_utc": 1728746359,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "Coomstress",
+                      "body": "I am introverted and feel like a “house creature” at this point. Especially after Covid. But I do drive to the gym at night and go places on weekends, so my car is doing ok.",
+                      "score": 2,
+                      "created_utc": 1728748633,
+                      "depth": 2,
+                      "replies": []
+                    },
+                    {
+                      "author": "Representative_Sand7",
+                      "body": "Lol I Go to the gym or I even walk to a place nearby just so I have somerging to do, go to the grocery store just to pick up something. I am still trying to get my license so that’s a problem but I have reliable transportation, I occasionally hang out with people too, but yeah can’t do this forever lol",
+                      "score": 1,
+                      "created_utc": 1728747021,
+                      "depth": 2,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "author": "Due_Diamond6247",
+              "body": "It can be tough, that's one of the downside of remote working  \n  \nMy advice is to do something you enjoy during lunch break, before/after work. Do you like exercising? Join an exercise club. Like playing games? Join a gaming community etc..",
+              "score": 1,
+              "created_utc": 1728741270,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "Yeah thanks for getting it , I'll try .",
+                  "score": 2,
+                  "created_utc": 1728745199,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "Due_Diamond6247",
+                      "body": "No problem, hope you feel better soon",
+                      "score": 2,
+                      "created_utc": 1728748986,
+                      "depth": 2,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "author": "Advanced-Lemon7071",
+              "body": "It's ADHD friend. Everything you described is how our brains work. Talk to a doctor who's up-to-date on the latest research and see what you might need to supplement your diet. I’m speaking from experience here. If you have too many different things to think about, get mad or sad because you get distracted and sidetracked so easily, get down on yourself because you haven't managed to form any habits (did you know that other people form habits without even trying? They don't even need lists or reminders. Crazy.), beat yourself up because of how little you accomplished in a day....  any or all of that is ADHD. And having it and not understanding it leads to depression and loneliness. Start with a good healthcare person and do lots of online research. Maybe it isn't ADHD, but it sure sounds like it. And that's a good thing because there are lots of ways to make it better now. Good luck!",
+              "score": 1,
+              "created_utc": 1728748030,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "This actually made weep a bit; I've been wondering if there was something else at play here but I seem Really neurotypical to people so when I ask about it I feel like I'm just taking up space that's not mine. \n\nIt really helps to know there could be other forces at play and I might not be just a lazy whiner who spits privilege in the face.",
+                  "score": 2,
+                  "created_utc": 1728750387,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "Advanced-Lemon7071",
+                      "body": "I’m very similar. Unless you know me well you think I’m totally neurotypical. I am not. Like at all. My husband and I have almost daily conversations now about all the things I’ve done to annoy him our whole marriage that we just didn’t realize were part of this. \n\nHere’s an example. I start a hobby or craft and then stop. Why? It isn’t too hard. Most things are easy for me. Too easy. I enjoy whatever it was. So why stop? \n\nSomeone put it away and I forgot it existed. Seriously. \n\nWhy do I randomly stop taking vitamins, stop going to the gym, stop XYZ? Part of the answer is “object permanence”.  If I don’t see it I don’t remember it exists. And it’s not just a “me” thing. Lots of other people have the same problem and don’t know it. So we all beat ourselves up and try to be more neurotypical. \n\nThere’s a huge list of things, and almost all of it leads to being sad and depressed when you can’t just be like everyone else. \n\nI hope that helps. TikTok and Reels have tons of people on there talking about it now. It’s fun to see how others learned about it and what they’re doing now to make their lives happier and healthier.  Hang in there! The best is yet to come ❤️",
+                      "score": 2,
+                      "created_utc": 1728751076,
+                      "depth": 2,
+                      "replies": [
+                        {
+                          "author": "accioresearch",
+                          "body": "That's how I feel! I want to do everything but then I start and it's like all the other tabs open in my brain got shut down. \n\nI could care so much about something and look in another direction and forget it exists. It really freaks me out cause it's like do I not actually care? \nI just made a plate of food I put mad love into and walked away when it was time to eat it.",
+                          "score": 1,
+                          "created_utc": 1728751464,
+                          "depth": 3,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "author": "reddit-echochamber",
+              "body": "I’m in the same boat. Web developer WFH3 years, i’m going to trade school this year because i need a changw",
+              "score": 1,
+              "created_utc": 1728757544,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "Ok_Chocolate3694",
+              "body": "This sounds awful. I think you’re in need of a change. Get out and interact with the world. You can always go back to isolation later.",
+              "score": 1,
+              "created_utc": 1728759262,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "[deleted]",
+              "body": "Go work in a coffee shop or coworking space. Get a part time in person job at night.",
+              "score": 0,
+              "created_utc": 1728744588,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "Might do the part time at night, I think there's also just the fact that computer work might not be for me long term.\n\nLike I can see myself getting a food truck or something where you handle a good. I enjoy my job as a UX researcher but technology makes so many things abstract. I think my mind wants something concrete.",
+                  "score": 1,
+                  "created_utc": 1728821192,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "[deleted]",
+                      "body": "Try being a server or a bartender. It’ll get you out, it’s exercise, it’s super social, and it will probably give you a new appreciation for your job honestly. Not to mention it’s great extra money.",
+                      "score": 2,
+                      "created_utc": 1728821524,
+                      "depth": 2,
+                      "replies": [
+                        {
+                          "author": "accioresearch",
+                          "body": "Yeah, I started to look at bartender gigs near by.",
+                          "score": 1,
+                          "created_utc": 1728822143,
+                          "depth": 3,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "author": "bugzaway",
+                  "body": "&gt;Go work in a coffee shop or coworking space\n\nDid you even read the post",
+                  "score": 1,
+                  "created_utc": 1728746655,
+                  "depth": 1,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "author": "TehCollector",
+              "body": "No offense it sounds like you need more physical social hobbies. If you can physically cut it join a local running club or start doing group fitness class regardless if your male or female. \n\nI would kill to be in your shoes when it comes to work. But that’s not how the cards played out.\n\nMy good friend is in a very similar situation as you. And he ended up joining an adult soccer league for more socialization.\n\nHope you actually read this..",
+              "score": 0,
+              "created_utc": 1728747441,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "I do think physical / social would help, if folks are right about it being related to ADHD the real time feedback keeps me engaged.",
+                  "score": 0,
+                  "created_utc": 1728751555,
+                  "depth": 1,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "author": "[deleted]",
+              "body": "[removed]",
+              "score": 0,
+              "created_utc": 1728755099,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "accioresearch",
+                  "body": "100% it is , I never said it wasn't . Even within 1st world this is white collar work problems. Doesn't make it unreal but ok.",
+                  "score": 3,
+                  "created_utc": 1728757282,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "[deleted]",
+                      "body": "[removed]",
+                      "score": 0,
+                      "created_utc": 1728791477,
+                      "depth": 2,
+                      "replies": [
+                        {
+                          "author": "accioresearch",
+                          "body": "Respectfully I disagree, I know what I do and I'm good at my job. \n\nI struggle more to control the delineation between my working hours and personal hours since it's all in the same place. Some of the folks that were actually helpful have said it can be a neurochemistry thing and related to ADHD so the lack of structure can indeed be hard to deal with for some.",
+                          "score": 0,
+                          "created_utc": 1728819635,
+                          "depth": 3,
+                          "replies": [
+                            {
+                              "author": "[deleted]",
+                              "body": "[removed]",
+                              "score": 1,
+                              "created_utc": 1728848877,
+                              "depth": 4,
+                              "replies": [
+                                {
+                                  "author": "accioresearch",
+                                  "body": "Kinda my point , this lifestyle requires a person to be really good at time management and without anything to anchor into it's hard for me. Never said I need to go into an office. It's amazing how many of y'all immediately jumped to that conclusion.",
+                                  "score": 1,
+                                  "created_utc": 1729001888,
+                                  "depth": 5,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "author": "No_Lingonberry_5638",
+              "body": "This is my setup.  I’m in heaven.  You have unaddressed mental illnesses and the time available to get help.\n\n\nI do not miss the office at all.  Not even a little bit.  I love full time pay and benefits for less than part time work.\nGetting paid to do whatever you want with PTO is unmatched.\n\nYou have no obligations other than your own and feel intimidated by starting something on the side while being in a role many people would consider on a win.\n\nYeah, seek therapy and feel better.  ✌️",
+              "score": -2,
+              "created_utc": 1728745828,
+              "depth": 0,
+              "replies": [
+                {
+                  "author": "bugzaway",
+                  "body": "&gt;You have unaddressed mental illnesses\n\nThe arrogance and repulsiveness of casually airing an assumption like this cannot be overstated. My god",
+                  "score": 3,
+                  "created_utc": 1728747414,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "No_Lingonberry_5638",
+                      "body": "Thanks for sharing? 😅",
+                      "score": -1,
+                      "created_utc": 1728748022,
+                      "depth": 2,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "author": "AdMurky3039",
+                  "body": "OP doesn't necessarily have mental health issues. WFH just isn't for them.",
+                  "score": 2,
+                  "created_utc": 1728750658,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "No_Lingonberry_5638",
+                      "body": "Thanks for sharing.",
+                      "score": 1,
+                      "created_utc": 1728752305,
+                      "depth": 2,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "author": "[deleted]",
+                  "body": "&gt;you have unaddressed mental illnesses and the available to get help \n\nThat you Dr Phil?? 🙄",
+                  "score": 2,
+                  "created_utc": 1728747567,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "No_Lingonberry_5638",
+                      "body": "Nope. 😂",
+                      "score": 0,
+                      "created_utc": 1728748050,
+                      "depth": 2,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "author": "accioresearch",
+                  "body": "As for therapy, it's pretty hard to get to see\nSomeone. There's more demand than supply at the moment and more often than not , it's remote. \n\nYou said this is your setup. Curious, Are you also single and without family? Do you already have side hustles or hobbies?\n\nI think if I already had a side hustle or hobbies I would find this perfect but since i have to grow them now with the low self-esteem it becomes a vicious cycle.",
+                  "score": 1,
+                  "created_utc": 1728746523,
+                  "depth": 1,
+                  "replies": [
+                    {
+                      "author": "No_Lingonberry_5638",
+                      "body": "Happily single.  Have adult nieces.  I’m as active as I want to be in my community.\n\nSide hustles, hobbies, gym membership, even another full time remote job, and still get at least 7 hours of sleep.\n\nYou have the time, find a therapy practice that’s in person.  \n\nDon’t let low self esteem cripple your opportunities that you can create.  \n\nYour mental health is a blocker which will not get any better in office as you proven by working alone without any micro aggressions or triggers you are still having issues.",
+                      "score": 1,
+                      "created_utc": 1728747674,
+                      "depth": 2,
+                      "replies": [
+                        {
+                          "author": "accioresearch",
+                          "body": "This is so inspiring, the idea of having a whole other income source def helps me feel like I'm leaving so much opportunity on the table.",
+                          "score": 2,
+                          "created_utc": 1728750094,
+                          "depth": 3,
+                          "replies": [
+                            {
+                              "author": "No_Lingonberry_5638",
+                              "body": "Just get your mind right.  Remote work made me realize how much working in general is a scam.\n\nScam back, even harder! 😂\n\nIf you'll get paid the same, get the raise anyway--no matter how hard you work--it doesn't matter.  \n\nIn-person or whatever remote setup, with two or more jobs, it really doesn't matter.",
+                              "score": 1,
+                              "created_utc": 1728752246,
+                              "depth": 4,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "author": "Pondering_Abyss",
+              "body": "This reads like a poorly planned attempt at astroturfing a narrative.",
+              "score": -1,
+              "created_utc": 1728757333,
+              "depth": 0,
+              "replies": []
+            },
+            {
+              "author": "Sad_Conclusion1235",
+              "body": "Don't complain about a good thing.\n\nWork isn't for interacting with humans/social activities. Find a hobby or something you can do after work that involves interacting with people.",
+              "score": -1,
+              "created_utc": 1728759954,
+              "depth": 0,
+              "replies": []
+            }
+          ],
+          "total_comments": 52
+        }
+      ],
+      "count": 2
+    }
+  }
