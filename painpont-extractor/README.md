@@ -1,569 +1,364 @@
-# Pain Point & Market Gap Analyzer API
+# Topics API - Complete Solution
 
-Complete automated pipeline from topic to market gap solutions using AI-powered analysis and Reddit data.
+FastAPI application for querying trending topics from PostgreSQL with year-wise filtering and top rankings.
 
 ---
 
 ## 🚀 Quick Start
 
-### 1. Prerequisites
-
+### Start the API (Easiest Method)
 ```bash
-# Required API Key
-OPENROUTER_API_KEY=sk-or-...
+cd /root/dbas/backend-final/painpont-extractor
+./run_api.sh
 ```
 
-Add this to your `.env` file in the `painpont-extractor` directory.
-
-### 2. Install Dependencies
-
-```bash
-cd painpont-extractor
-pip install -r requirements.txt
-```
-
-### 3. Start Server
-
-```bash
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
-```
-
-### 4. Test API
-
-```bash
-curl -X POST "http://localhost:8000/pipeline/complete" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "market": "senior yoga",
-    "num_results": 20,
-    "top_n": 8,
-    "deep_top_k": 3
-  }'
-```
+**API will be available at:** http://localhost:8000  
+**Interactive Docs:** http://localhost:8000/docs
 
 ---
 
-## 📊 Complete Pipeline Flow
+## 📊 Features
 
-```
-Market Query
-    ↓
-Reddit Search & Scraping
-    ↓
-AI Ranking (Claude 3.5 Sonnet)
-    ↓
-Pain Point Extraction (Claude 3.5 Sonnet)
-    ↓
-Market Gap Solutions (Claude 3.5 Sonnet)
-```
+✅ **PostgreSQL Integration** - 75 trending topics stored in database  
+✅ **Year-wise Filtering** - Filter by 2, 10, or 15 years  
+✅ **Top 6 Rankings** - Get highest growth topics per year  
+✅ **Search Functionality** - Search by keyword in topics/descriptions  
+✅ **Pagination Support** - Limit and offset parameters  
+✅ **Health Monitoring** - Database connectivity checks  
+✅ **Auto Documentation** - Interactive Swagger UI & ReDoc
 
 ---
 
-## 🎯 API Endpoints
+## 🔌 API Endpoints
 
-### 1. **Complete Pipeline** (Recommended)
-
-**Endpoint:** `POST /pipeline/complete`
-
-**Description:** Complete automated pipeline from market query to market gap solutions.
-
-**Request:**
-```json
-{
-  "market": "senior yoga",
-  "num_results": 30,
-  "top_n": 10,
-  "deep_top_k": 5
-}
-```
-
-**Parameters:**
-- `market` (required): The market/query to search Reddit for
-- `num_results` (optional, default: 30): Number of Reddit posts to fetch
-- `top_n` (optional, default: 10): Number of top posts to rank
-- `deep_top_k` (optional, default: 5): Number of posts for deep analysis
-
-**Response:**
-```json
-{
-  "message": "✅ Complete pipeline finished successfully!",
-  "status": "completed",
-  "data": {
-    "executive_summary": "...",
-    "framework_solutions": [...],
-    "opportunity_assessment": [...]
-  }
-}
-```
-
-**What it does:**
-1. Searches Reddit for your market query
-2. AI ranks posts by relevance
-3. Deep analysis of top posts
-4. Extracts pain points
-5. Generates market gap solutions
+| Endpoint | Method | Description | Example |
+|----------|--------|-------------|---------|
+| `/topics` | GET | Get all topics with filters | `curl "http://localhost:8000/topics?limit=5"` |
+| **`/topics/top/{year}`** | **GET** | **🔥 Get top 6 by year** | **`curl "http://localhost:8000/topics/top/10"`** |
+| `/topics/{id}` | GET | Get topic by ID | `curl "http://localhost:8000/topics/1"` |
+| `/topics/stats` | GET | Get statistics | `curl "http://localhost:8000/topics/stats"` |
+| `/health` | GET | Health check | `curl "http://localhost:8000/health"` |
 
 ---
 
-### 2. **Generate Market Expansion**
+## 💡 Usage Examples
 
-**Endpoint:** `POST /generate-prompt`
+### Get Top 6 Topics by Year (NEW!)
+```bash
+# 2 Years - Top trending topics
+curl "http://localhost:8000/topics/top/2"
 
-**Description:** Generate market categories and niches from a topic (no Reddit search).
+# 10 Years - Highest growth
+curl "http://localhost:8000/topics/top/10"
 
-**Request:**
-```json
-{
-  "topic": "fitness for seniors"
-}
+# 15 Years - Long-term trends
+curl "http://localhost:8000/topics/top/15"
 ```
 
 **Response:**
 ```json
 {
-  "message": "Prompt generated successfully",
-  "status": "success",
-  "data": {
-    "topic": "fitness for seniors",
-    "expanded_prompt": "{\"Health\": {\"Senior Fitness\": {...}}}",
-    "timestamp": "2025-10-10T12:00:00"
-  }
-}
-```
-
----
-
-
-### 3. **Pipeline Status**
-
-**Endpoint:** `GET /pipeline/status`
-
-**Description:** Check if all components are available.
-
-**Response:**
-```json
-{
-  "available": true,
-  "message": "Complete pipeline with Reddit scraping is available",
-  "requirements": {
-    "reddit_components": true,
-    "openrouter_api_key": true
-  },
-  "ai_models": {
-    "market_expansion": "anthropic/claude-3.5-sonnet (via OpenRouter)",
-    "pain_point_extraction": "anthropic/claude-3.5-sonnet (via OpenRouter)",
-    "market_gap_generation": "anthropic/claude-3.5-sonnet (via OpenRouter)"
-  }
-}
-```
- 
----
-
-
----
-
-## 🔄 Pipeline Steps Explained
-
-### Step 1: Market Expansion
-- User provides broad topic (e.g., "fitness for seniors")
-- Claude 3.5 Sonnet expands into market hierarchy
-- Output: Categories, niches, sub-niches
-
-**Example Output:**
-```json
-{
-  "Health": {
-    "Senior Fitness": {
-      "Low-Impact Exercise": {
-        "Chair Yoga": {},
-        "Water Aerobics": {}
-      }
+  "time_period": "10 Years",
+  "time_period_requested": "10",
+  "count": 6,
+  "top_topics": [
+    {
+      "id": 26,
+      "topic": "Ai image enhancer",
+      "volume": "165K",
+      "growth": "+9300%",
+      "time_period": "10 Years"
     }
-  }
+    // ... 5 more topics
+  ]
 }
 ```
 
-### Step 2: Niche Extraction
-- System parses market hierarchy
-- Extracts specific, searchable niches
-- Selects most relevant niche for Reddit search
+### Filter Topics by Year
+```bash
+# Both formats work:
+curl "http://localhost:8000/topics?time_period=2&limit=10"
+curl "http://localhost:8000/topics?time_period=2%20Years&limit=10"
+```
 
-**Example:**
-- Extracted: ["Senior Fitness", "Chair Yoga", "Water Aerobics"]
-- Selected: "Senior Fitness" (primary search term)
+### Search Topics
+```bash
+curl "http://localhost:8000/topics?search=AI"
+```
 
-### Step 3: Reddit Search
-- Searches Reddit using extracted niche
-- More targeted than original topic
-- Finds relevant discussions and pain points
+### Pagination
+```bash
+curl "http://localhost:8000/topics?limit=20&offset=0"
+```
 
-### Step 4: AI Ranking
-- Claude ranks posts by relevance
-- Selects top N posts for deep analysis
-- Ensures quality over quantity
+### Combined Filters
+```bash
+curl "http://localhost:8000/topics?time_period=10&search=AI&limit=5"
+```
 
-### Step 5: Deep Analysis
-- Scrapes full JSON for top posts
-- Extracts all comments and replies
-- Structured data extraction
+---
 
-### Step 6: Pain Point Extraction
-- Claude analyzes Reddit data
-- Identifies pain points and frustrations
-- Categorizes and prioritizes
+## 📈 Top Topics Results
 
-### Step 7: Market Gap Generation
-- Claude generates business solutions
-- Framework-based analysis
-- Opportunity assessment and ranking
+### 2 Years (Short-term Trends)
+1. **Pdrn toner** - +6600% growth
+2. **Soursop bitters** - +725%
+3. **Together AI** - +689%
+4. **Shilajit honey** - +645%
+5. **Lash Clusters** - +575%
+6. **Wifi 7 router** - +428%
+
+### 10 Years (Medium-term Growth)
+1. **Ai image enhancer** - +9300% growth
+2. **Preply** - +8800%
+3. **Brightwheel** - +8600%
+4. **Shilajit honey** - +8100%
+5. **Lash Clusters** - +8000%
+6. **20K PowerBank** - +7800%
+
+### 15 Years (Long-term Evolution)
+1. **Ai image enhancer** - +9300% growth
+2. **Preply** - +8800%
+3. **Brightwheel** - +8600%
+4. **Shilajit honey** - +8100%
+5. **Lash Clusters** - +8000%
+6. **20K PowerBank** - +7800%
+
+---
+
+## 🛠️ Management Commands
+
+### Start API
+```bash
+./run_api.sh
+```
+
+### Stop API
+```bash
+pkill -f pgmain.py
+```
+
+### View Logs
+```bash
+tail -f /tmp/api.log
+```
+
+### Check Status
+```bash
+ps aux | grep pgmain
+curl http://localhost:8000/health
+```
+
+---
+
+## ❌ Troubleshooting
+
+### Error: "role 'root' does not exist"
+
+**Cause:** Running API as root instead of postgres user.
+
+**Solution:**
+```bash
+# Use the provided script (recommended)
+./run_api.sh
+
+# OR run manually as postgres user
+sudo -u postgres python3 /tmp/pgmain.py
+```
+
+**For detailed troubleshooting, see:** `TROUBLESHOOTING.md`
 
 ---
 
 ## 📁 Project Structure
 
 ```
-painpont-extractor/
-├── main.py                      # FastAPI application & endpoints
-├── pain_point_extractor.py      # Pain point extraction logic
-├── market_gap_generator.py      # Market gap solution generation
-├── json-extraction.py           # JSON data processing
-├── requirements.txt             # Python dependencies
-├── .env                         # API keys (create this)
-│
-├── idea_expander/               # Market expansion module
-│   ├── __init__.py
-│   └── market_idea_expander.py  # Market expansion with Claude
-│
-├── reddit/                      # Reddit scraping components
-│   ├── google_search.py         # Google search for Reddit URLs
-│   ├── reddit_scraper.py        # Reddit post scraper
-│   ├── openai_ranker.py         # AI-powered post ranking
-│   └── view_post_content.py     # Post content viewer
-│
-└── output/                      # Generated results (auto-created)
-    └── {topic}/
-        ├── {topic}_post_rank_1.json
-        ├── {topic}_extracted_data.json
-        ├── {topic}_pain_points.json
-        ├── {topic}_market_gaps.json
-        └── {topic}_topic_to_market_gaps_result.json
+/root/dbas/backend-final/painpont-extractor/
+├── pgmain.py                    # Main FastAPI application ⭐
+├── run_api.sh                   # Easy start script 🚀
+├── data.json                    # Source data (75 topics)
+├── load_data_to_postgres.py     # Database setup script
+├── test_api.py                  # Comprehensive test suite
+├── API_DOCUMENTATION.md         # Full API documentation 📚
+├── QUICK_START.md              # Quick reference guide
+├── TROUBLESHOOTING.md          # Error solutions
+├── DATABASE_INFO.md            # Database documentation
+└── README.md                   # This file
+
+/tmp/
+├── pgmain.py                    # Runtime copy for postgres user
+└── api.log                      # API logs
 ```
 
 ---
 
-## 💡 Use Cases
+## 🗄️ Database Details
 
-### 1. Market Research
-**Input:** "remote work tools"
-**Output:** Specific pain points in remote collaboration, validated business opportunities
+- **Database:** `topics_db`
+- **User:** `postgres`
+- **Table:** `topics`
+- **Records:** 75 trending topics
+- **Time Periods:** 2 Years, 10 Years, 15 Years (25 topics each)
 
-### 2. Product Validation
-**Input:** "meal prep for busy parents"
-**Output:** Real user frustrations, market gaps, solution concepts
-
-### 3. Niche Discovery
-**Input:** "alternative medicine"
-**Output:** Specific sub-niches, demand signals, opportunity assessment
-
-### 4. Competitive Analysis
-**Input:** "fitness tracking apps"
-**Output:** User complaints about existing solutions, unmet needs
-
----
-
-## 🔑 Environment Variables
-
-Create a `.env` file:
-
-```bash
-# Required
-OPENROUTER_API_KEY=sk-or-v1-...
-
-# Optional (for different AI models)
-# All operations use Claude 3.5 Sonnet by default
-```
-
-Get your OpenRouter API key: [https://openrouter.ai/](https://openrouter.ai/)
-
----
-
-## 📊 Response Structure
-
-### Complete Pipeline Response
-
-```json
-{
-  "message": "Success message",
-  "status": "completed",
-  "data": {
-    "topic": "original user input",
-    "market_query_used": "extracted niche used for search",
-    "extracted_niches": ["list of all niches found"],
-    
-    "reddit_analysis": {
-      "total_posts_found": 30,
-      "posts_ranked": 10,
-      "posts_deep_analyzed": 5
-    },
-    
-    "pain_point_analysis": {
-      "total_pain_points": 45,
-      "categories": 6,
-      "summary": "Overall pain point summary"
-    },
-    
-    "market_gap_solutions": {
-      "executive_summary": "High-level market analysis",
-      
-      "framework_solutions": [
-        {
-          "framework_name": "Market Segmentation Framework",
-          "solutions": [
-            {
-              "name": "Solution Name",
-              "explanation": "Why this solution works",
-              "key_features": ["feature1", "feature2"],
-              "value_proposition": "Core value",
-              "business_model": "Revenue model",
-              "pain_points_addressed": [1, 2, 3]
-          }
-        ]
-      }
-    ],
-      
-      "opportunity_assessment": [
-      {
-        "rank": 1,
-          "solution_name": "Top Solution",
-          "market_size_potential": "Market size estimate",
-          "competitive_advantage": "What makes it unique",
-          "implementation_feasibility": "How easy to build",
-          "category_dominance_potential": "Market position potential"
-        }
-      ]
-    },
-    
-    "output_dir": "/path/to/saved/files",
-    "timestamp": "2025-10-10T12:00:00"
-  }
-}
-```
-
----
-
-## 🛠️ Advanced Usage
-
-### Python Example
-
-```python
-import requests
-
-# Complete pipeline
-    response = requests.post(
-    "http://localhost:8000/topic-to-market-gaps",
-    json={
-        "topic": "fitness for seniors",
-        "num_results": 20,
-        "top_n": 8,
-        "deep_top_k": 3
-    }
-)
-
-        result = response.json()
-market_gaps = result['data']['market_gap_solutions']
-
-# Print solutions
-for solution in market_gaps['framework_solutions']:
-    print(f"Framework: {solution['framework_name']}")
-    for s in solution['solutions']:
-        print(f"  - {s['name']}: {s['value_proposition']}")
-```
-
-### cURL Example
-
-```bash
-# Complete pipeline
-curl -X POST "http://localhost:8000/topic-to-market-gaps" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "topic": "yoga for seniors",
-    "num_results": 20,
-    "top_n": 8,
-    "deep_top_k": 3
-  }' | jq .
-
-# Just market expansion
-curl -X POST "http://localhost:8000/generate-prompt" \
-  -H "Content-Type: application/json" \
-  -d '{"topic": "yoga for seniors"}' | jq .
-
-# Check status
-curl http://localhost:8000/pipeline/status | jq .
+**Schema:**
+```sql
+CREATE TABLE topics (
+    id SERIAL PRIMARY KEY,
+    topic VARCHAR(500) NOT NULL,
+    volume VARCHAR(50),
+    growth VARCHAR(50),
+    description TEXT,
+    url VARCHAR(1000),
+    time_period VARCHAR(50),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 ```
 
 ---
 
 ## 🔧 Configuration
 
-### Customize Reddit Search
+The API can be configured via environment variables:
 
+```bash
+export DB_NAME="topics_db"
+export DB_USER="postgres"
+export DB_PASSWORD=""           # Optional
+export DB_HOST="localhost"
+export DB_PORT="5432"
+```
+
+---
+
+## 📖 Documentation
+
+- **Interactive Swagger UI:** http://localhost:8000/docs
+- **ReDoc Documentation:** http://localhost:8000/redoc
+- **Full API Docs:** See `API_DOCUMENTATION.md`
+- **Quick Reference:** See `QUICK_START.md`
+- **Troubleshooting:** See `TROUBLESHOOTING.md`
+
+---
+
+## 🧪 Testing
+
+Run the comprehensive test suite:
+```bash
+python3 test_api.py
+```
+
+Test the new top topics endpoint:
+```bash
+/tmp/test_top_endpoint.sh
+```
+
+---
+
+## ✨ Key Features Explained
+
+### Flexible Time Period Format
+The API accepts both short and full formats:
+- `2` or `2 Years` → Same result
+- `10` or `10 Years` → Same result
+- `15` or `15 Years` → Same result
+
+### Automatic Growth Sorting
+The top topics endpoint automatically sorts by growth percentage (highest first) using intelligent numeric parsing.
+
+### Error Handling
+The API provides helpful error messages and suggests solutions when issues occur.
+
+---
+
+## 📊 Statistics
+
+```bash
+curl "http://localhost:8000/topics/stats"
+```
+
+**Response:**
 ```json
 {
-  "topic": "your topic",
-  "num_results": 50,    // More Reddit posts (default: 30)
-  "top_n": 15,          // More posts to rank (default: 10)
-  "deep_top_k": 8       // More deep analysis (default: 5)
+  "total_topics": 75,
+  "available_time_periods": ["2 Years", "10 Years", "15 Years"],
+  "breakdown_by_time_period": [
+    {"time_period": "2 Years", "count": 25},
+    {"time_period": "10 Years", "count": 25},
+    {"time_period": "15 Years", "count": 25}
+  ]
 }
 ```
 
-### AI Model
+---
 
-All operations use Claude 3.5 Sonnet via OpenRouter:
-- Market Expansion
-- Pain Point Extraction
-- Market Gap Generation
+## 🎯 Common Use Cases
 
-Model can be changed in the code if needed.
+1. **Trending Analysis** - Get top 6 topics for market research
+2. **Year Comparison** - Compare trends across different time periods
+3. **Keyword Research** - Search for specific topic categories
+4. **Data Export** - Retrieve filtered data for analysis
+5. **Real-time Monitoring** - Check health and connectivity
 
 ---
 
-## 📝 Output Files
+## 💻 Python Client Example
 
-Each pipeline run saves:
+```python
+import requests
 
-```
-output/{topic}/
-├── {topic}_post_rank_1.json       # Top ranked Reddit post (full JSON)
-├── {topic}_post_rank_2.json       # 2nd ranked post
-├── {topic}_post_rank_N.json       # Nth ranked post
-├── {topic}_extracted_data.json    # Processed Reddit data
-├── {topic}_pain_points.json       # Pain point analysis
-├── {topic}_market_gaps.json       # Market gap solutions
-└── {topic}_topic_to_market_gaps_result.json  # Complete result
-```
+# Get top 6 topics for 10 years
+response = requests.get("http://localhost:8000/topics/top/10")
+data = response.json()
 
----
-
-## 🚨 Troubleshooting
-
-### "Reddit components not available"
-```bash
-pip install beautifulsoup4 lxml googlesearch-python openai
-```
-
-### "Invalid API key"
-- Check `.env` file has `OPENROUTER_API_KEY`
-- Get key from [openrouter.ai](https://openrouter.ai)
-
-### "No Reddit posts found"
-- Try a more popular/specific topic
-- Increase `num_results` parameter
-- Check your internet connection
-
-### Server won't start
-```bash
-# Check port 8000 is available
-lsof -i :8000
-
-# Try different port
-uvicorn main:app --reload --port 8001
+print(f"Top {data['count']} topics for {data['time_period']}:")
+for i, topic in enumerate(data['top_topics'], 1):
+    print(f"{i}. {topic['topic']} - {topic['growth']}")
 ```
 
 ---
 
-## 📊 API Features
+## 🔐 Security Notes
 
-✅ **Complete Automation** - One endpoint, full pipeline
-✅ **AI-Powered** - Claude 3.5 Sonnet for all analysis
-✅ **Smart Niche Extraction** - Finds specific markets automatically
-✅ **Real User Data** - Reddit discussions and pain points
-✅ **Business Solutions** - Actionable market gap analysis
-✅ **Structured Output** - JSON with Pydantic validation
-✅ **File Saving** - All intermediate results saved
-✅ **Error Handling** - Robust fallbacks and validation
+- Database uses peer authentication by default
+- No hardcoded passwords in source code
+- API runs as postgres user for security
+- Environment variables for configuration
 
 ---
 
-## 🎯 Key Benefits
+## 📝 Version Info
 
-### 1. **Intelligent Market Discovery**
-- AI expands your topic into specific niches
-- Discovers markets you didn't know existed
-- More targeted than manual research
-
-### 2. **Real Validation**
-- Uses actual Reddit discussions
-- Real pain points from real users
-- Market demand validation
-
-### 3. **Actionable Solutions**
-- Business model suggestions
-- Value proposition frameworks
-- Competitive advantage analysis
-- Implementation feasibility
-
-### 4. **Time Saving**
-- Minutes instead of days
-- Automated end-to-end
-- No manual data collection
+- **API Version:** 1.0.0
+- **FastAPI:** 0.119.0
+- **PostgreSQL:** 16
+- **Python:** 3.12+
 
 ---
 
-## 📞 API Information
+## 🆘 Getting Help
 
-**Base URL:** `http://localhost:8000`
-
-**All Endpoints:**
-- `POST /pipeline/complete` - Complete pipeline (Recommended)
-- `POST /generate-prompt` - Market expansion only
-- `GET /pipeline/status` - Check system status
-- `GET /health` - Health check
-- `GET /` - API information
-
-**Documentation:** `http://localhost:8000/docs` (Swagger UI)
+1. Check interactive documentation: `/docs`
+2. Review troubleshooting guide: `TROUBLESHOOTING.md`
+3. Check API logs: `tail -f /tmp/api.log`
+4. Verify database: `sudo -u postgres psql -d topics_db`
 
 ---
 
-## 🔄 Version
-
-**Current Version:** 2.0.0
-
-**AI Models:**
-- Market Expansion: Claude 3.5 Sonnet (OpenRouter)
-- Pain Point Extraction: Claude 3.5 Sonnet (OpenRouter)
-- Market Gap Generation: Claude 3.5 Sonnet (OpenRouter)
-
-**Key Features:**
-- Topic to market gaps pipeline
-- Intelligent niche extraction
-- Reddit scraping and analysis
-- Complete automation
-
----
-
-## 📄 License
-
-This project is part of the DBAS backend system.
-
----
-
-## 🎉 Get Started
+## ✅ Quick Health Check
 
 ```bash
-# 1. Set up environment
-cd painpont-extractor
-echo "OPENROUTER_API_KEY=your-key-here" > .env
+# 1. Check API is running
+curl http://localhost:8000/health
 
-# 2. Install dependencies
-pip install -r requirements.txt
+# 2. Get statistics
+curl http://localhost:8000/topics/stats
 
-# 3. Start server
-uvicorn main:app --reload
-
-# 4. Test it
-curl -X POST "http://localhost:8000/topic-to-market-gaps" \
-  -H "Content-Type: application/json" \
-  -d '{"topic": "fitness for seniors"}'
+# 3. Test top topics endpoint
+curl http://localhost:8000/topics/top/2
 ```
 
-**You're ready to discover market opportunities!** 🚀
+---
+
+**🎉 You're all set! The API is ready to use.**
+
+For detailed examples and advanced usage, see `API_DOCUMENTATION.md`
