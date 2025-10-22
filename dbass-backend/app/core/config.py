@@ -45,6 +45,14 @@ class Settings(BaseSettings):
     cors_methods: list = ["*"]
     cors_headers: list = ["*"]
     
+    # Database Configuration (for Trending Topics)
+    db_host: str = os.getenv("DB_HOST", "localhost")
+    db_port: int = int(os.getenv("DB_PORT", "5432"))
+    db_name: str = os.getenv("DB_NAME", "trending_topics")
+    db_user: str = os.getenv("DB_USER", "postgres")
+    db_password: str = os.getenv("DB_PASSWORD", "")
+    db_schema: str = os.getenv("DB_SCHEMA", "public")
+    
     class Config:
         env_file = ".env"
         case_sensitive = False
