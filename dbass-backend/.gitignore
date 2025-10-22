@@ -24,6 +24,8 @@ wheels/
 venv/
 ENV/
 env/
+dbas/
+.venv/
 
 # Environment variables
 .env
