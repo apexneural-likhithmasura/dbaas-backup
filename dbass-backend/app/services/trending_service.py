@@ -346,3 +346,4 @@ class TrendingTopicsService:
 # Global service instance
 trending_service = TrendingTopicsService()
 
+

@@ -9,6 +9,7 @@ from . import market_gap_routes
 from . import market_idea_routes
 from . import reddit_routes
 from . import trending_routes
+from . import auth_routes
 
 # Create main router
 router = APIRouter()
@@ -19,3 +20,4 @@ router.include_router(market_gap_routes.router, prefix="/market-gaps", tags=["Ma
 router.include_router(market_idea_routes.router, prefix="/market-ideas", tags=["Market Ideas"])
 router.include_router(reddit_routes.router, prefix="/reddit", tags=["Reddit Research"])
 router.include_router(trending_routes.router, prefix="/trending", tags=["Trending Topics"])
+router.include_router(auth_routes.router, prefix="/auth", tags=["Authentication"])

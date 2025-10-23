@@ -116,3 +116,4 @@ class TrendingTopicResponse(BaseModel):
             datetime: lambda v: v.isoformat() if v else None
         }
 
+
