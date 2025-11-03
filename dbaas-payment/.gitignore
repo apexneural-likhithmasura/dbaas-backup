@@ -1,0 +1,73 @@
+# ---- OS / Editor Files ----
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.tmp
+*.swp
+*.swo
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+.env
+.venv/
+env/
+venv/
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ---- Node / JavaScript ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnpm-debug.log*
+
+# ---- IDE / Editor Config ----
+.vscode/
+.idea/
+*.code-workspace
+
+# ---- Environment / Credentials ----
+.env.local
+.env.development
+.env.production
+*.secret
+*.key
+*.pem
+
+# ---- Compiled / Cache ----
+*.out
+*.class
+*.o
+*.so
+
+# ---- Data / Artifacts ----
+*.csv
+*.dat
+*.db
+*.sqlite3
+*.h5
+
+# ---- System Backups ----
+*.bak
+*.old
+*.orig
+*.save
+
+# ---- Docker ----
+/docker-compose.override.yml
+*.pid
+
+# ---- Jupyter ----
+.ipynb_checkpoints/

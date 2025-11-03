@@ -1,0 +1,76 @@
+═══════════════════════════════════════════════════════════════════
+  TRENDING TOPICS API - ENDPOINT REFERENCE
+═══════════════════════════════════════════════════════════════════
+
+BASE URL: http://localhost:8000/dbas/api/trending
+
+═══════════════════════════════════════════════════════════════════
+📊 ENDPOINT - Top 6 Trending Topics
+═══════════════════════════════════════════════════════════════════
+
+GET /top-trending
+
+Returns the top 6 trending topics sorted by growth percentage.
+
+Example:
+  curl http://localhost:8000/dbas/api/trending/top-trending
+
+Response:
+  {
+    "status": "success",
+    "message": "Retrieved top 6 trending topics",
+    "data": [...],
+    "count": 6,
+    "timestamp": "2025-10-22T10:30:00"
+  }
+
+═══════════════════════════════════════════════════════════════════
+📁 FILES ADDED
+═══════════════════════════════════════════════════════════════════
+
+✅ app/db/database.py                  - Database connection manager
+✅ app/models/trending_models.py       - Pydantic models
+✅ app/services/trending_service.py    - Business logic
+✅ app/api/routes/trending_routes.py   - API endpoints
+
+═══════════════════════════════════════════════════════════════════
+🔧 FILES MODIFIED
+═══════════════════════════════════════════════════════════════════
+
+✅ app/core/config.py          - Added DB configuration
+✅ app/api/routes/route.py     - Registered trending routes
+✅ env.example                 - Added DB environment variables
+
+═══════════════════════════════════════════════════════════════════
+⚙️  REQUIRED ENVIRONMENT VARIABLES
+═══════════════════════════════════════════════════════════════════
+
+Add to your .env file:
+
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=trending_topics
+DB_USER=postgres
+DB_PASSWORD=your-password
+DB_SCHEMA=public
+
+═══════════════════════════════════════════════════════════════════
+🚀 QUICK START
+═══════════════════════════════════════════════════════════════════
+
+1. Configure database credentials in .env
+2. Start the server: python run.py
+3. Test endpoint: curl http://localhost:8000/dbas/api/trending/top-trending
+4. View docs: http://localhost:8000/dbas/api/docs
+
+═══════════════════════════════════════════════════════════════════
+
+✅ INTEGRATION COMPLETE - NO EXISTING CODE MODIFIED!
+
+All existing endpoints and functionality remain untouched.
+New trending topics endpoints are fully operational.
+
+See TRENDING_API_GUIDE.md for detailed documentation.
+
+═══════════════════════════════════════════════════════════════════
+
