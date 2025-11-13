@@ -1,5 +1,20 @@
-stage('Deploy to WSL Backend') {
-    steps {
+node {
+    stage('Checkout Backend Code') {
+        checkout([
+            $class: 'GitSCM',
+            branches: [[name: "*/feature/code-merge"]],
+            userRemoteConfigs: [[
+                url: 'https://github.com/apexneural-likhithmasura/dbaas-backup.git',
+                credentialsId: 'github-token'
+            ]]
+        ])
+    }
+
+    stage('Zip Backend') {
+        bat "\"C:\\Program Files\\7-Zip\\7z.exe\" a backend.zip .\\*"
+    }
+
+    stage('Deploy to WSL Backend') {
         sshPublisher(publishers: [
             sshPublisherDesc(
                 configName: 'wsl-ssh',
@@ -7,7 +22,6 @@ stage('Deploy to WSL Backend') {
                     sshTransfer(
                         sourceFiles: 'backend.zip',
                         remoteDirectory: '/home/pandu',
-                        removePrefix: '',
                         execCommand: '''
                             cd /home/pandu
 
@@ -17,13 +31,13 @@ stage('Deploy to WSL Backend') {
                             echo "📦 Unzipping backend..."
                             unzip -o /home/pandu/backend.zip -d /var/www/backend/app
 
-                            echo "📦 Installing Python dependencies..."
+                            echo "📦 Installing dependencies..."
                             /var/www/backend/venv/bin/pip install -r /var/www/backend/app/requirements.txt
 
-                            echo "🔄 Restarting backend service..."
-                            echo pandu_password_here | sudo -S systemctl restart backend
+                            echo "🔄 Restarting backend..."
+                            sudo systemctl restart backend
 
-                            echo "🧹 Cleaning up..."
+                            echo "🧹 Cleaning..."
                             rm /home/pandu/backend.zip
 
                             echo "✔ Backend deployed successfully!"
@@ -33,5 +47,9 @@ stage('Deploy to WSL Backend') {
                 verbose: true
             )
         ])
+    }
+
+    stage('Cleanup') {
+        cleanWs()
     }
 }
