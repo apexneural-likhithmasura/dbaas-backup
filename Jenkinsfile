@@ -7,7 +7,7 @@ pipeline {
             steps {
                 checkout([
                     $class: 'GitSCM',
-                    branches: [[name: "*/main"]],
+                    branches: [[name: "*/feature/code-merge"]],
                     userRemoteConfigs: [[
                         url: 'https://github.com/apexneural-likhithmasura/dbaas-backup.git',
                         credentialsId: 'github-token'
@@ -36,23 +36,23 @@ pipeline {
                                 execCommand: '''
                                     cd /home/pandu
 
-                                    # clean old backend
+                                    echo "🗑 Removing old backend code..."
                                     rm -rf /var/www/backend/app/*
 
-                                    # unzip new code
+                                    echo "📦 Unzipping backend..."
                                     unzip -o backend.zip -d /var/www/backend/app
 
-                                    # install python dependencies
+                                    echo "📦 Installing Python dependencies..."
                                     /var/www/backend/venv/bin/pip install --upgrade pip
                                     /var/www/backend/venv/bin/pip install -r /var/www/backend/app/requirements.txt
 
-                                    # restart systemd service
+                                    echo "🔄 Restarting backend service..."
                                     sudo systemctl restart backend
 
-                                    # cleanup
+                                    echo "🧹 Cleaning up..."
                                     rm backend.zip
 
-                                    echo "Backend deployed successfully"
+                                    echo "✔ Backend deployed successfully!"
                                 '''
                             )
                         ],
