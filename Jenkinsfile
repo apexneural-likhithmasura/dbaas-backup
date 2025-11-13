@@ -21,7 +21,7 @@ node {
                 transfers: [
                     sshTransfer(
                         sourceFiles: 'backend.zip',
-                        remoteDirectory: '/home/pandu',
+                        remoteDirectory: '',
                         execCommand: '''
                             cd /home/pandu
 
